@@ -3,7 +3,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar/Navbar";
 
 export const metadata = {
   title: {
