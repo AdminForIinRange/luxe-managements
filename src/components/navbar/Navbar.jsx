@@ -47,7 +47,7 @@ const fetchUser = await fetchUsers();
         mt={"25px"}
       >
 
-      {console.log(fetchUser)}
+      {/* {console.log(fetchUser)} */}
         <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
           <Box
             bg={"white"}
