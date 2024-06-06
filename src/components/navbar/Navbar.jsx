@@ -35,7 +35,7 @@ const Navbar = async () => {
     },
   ];
 
-
+const fetchUser = await fetchUsers();
  
   return (
     <>
@@ -47,7 +47,7 @@ const Navbar = async () => {
         mt={"25px"}
       >
 
-      {fetchUsers}
+      {console.log(fetchUser)}
         <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
           <Box
             bg={"white"}
