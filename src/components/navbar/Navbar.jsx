@@ -1,8 +1,9 @@
+import { fetchUsers } from "@/app/lib/data";
 import { Box, HStack, Spacer, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = async () => {
   const links = [
     {
       name: "Home",
@@ -33,6 +34,9 @@ const Navbar = () => {
       link: "/contact",
     },
   ];
+
+
+ 
   return (
     <>
       <HStack
@@ -42,6 +46,8 @@ const Navbar = () => {
         align={"center"}
         mt={"25px"}
       >
+
+      {fetchUsers}
         <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
           <Box
             bg={"white"}
