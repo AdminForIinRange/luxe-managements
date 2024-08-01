@@ -61,7 +61,7 @@ const Navbar = ({}) => {
       {/* Mobile Navbar */}
       {isTablet ? (
         <Box>
-          <HStack justify={"space-between"} w={"100%"} h={"100%"} px={"5"} mt={"15px"}>
+          <HStack justify={"space-between"} w={"100%"} h={"100%"} px={"5"} mt={"18px"}>
             <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
               {" "}
               <Box w={["100px", "100px", "400px", "400px", "400px", "400px"]}>
@@ -111,7 +111,7 @@ const Navbar = ({}) => {
             position={"fixed"}
             justify={"center"}
             align={"center"}
-            mt={"10px"}
+            mt={"15px"}
           >
             <HStack
               w={"100%"}
