@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         />
         
       </head>
-      <body className="RootLayout" style={{ backgroundColor: "#000", }}>
+      <body className="RootLayout" style={{ }}>
         <ChakraProvider>{children}</ChakraProvider>
       </body>
     </html>
