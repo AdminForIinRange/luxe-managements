@@ -1,18 +1,18 @@
 
-import React from 'react';
-
+import { Box } from "@chakra-ui/react";
+import { fetchUsers } from "./lib/data";
+import HomePage from "@/components/navbar/landingPage/homePage/homePage";
 const Home = () => {
-
-  const items = ['Apple', 'Banana', 'Orange'];
-
-
-const itemList = items.map((items))
 
   return (
     <>
-Hello world
+    <HomePage/>
+
+
+      
     </>
   );
 };
 
 export default Home;
+
