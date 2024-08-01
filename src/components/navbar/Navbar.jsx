@@ -61,36 +61,46 @@ const Navbar = ({}) => {
       {/* Mobile Navbar */}
       {isTablet ? (
         <Box>
-          <HStack
-            position={"fixed"}
-            zIndex={"5"}
-            px={"15"}
-            w={"100%"}
-            justify={"left"}
-            align={"start"}
-            mt={"10px"}
-          >
-            <Box
-              backdropFilter="blur(2.5px)"
-              transition={"all 0.3s ease-in-out"}
-              bg={"rgb(255, 255, 255,0.05)"}
-              border={"1px solid rgb(255, 255, 255,0.25)"}
-              boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
-              rounded={"15px"}
-              w={"45px"}
-              h={"35px"}
-              borderRadius={"10px"}
-            >
-              <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
-                <FaBars size={"20px"} color="rgb(255, 255, 255,0.5)" />
-              </HStack>
-            </Box>
+          <HStack justify={"space-between"} w={"100%"} h={"100%"} px={"5"} mt={"15px"}>
+            <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
+              {" "}
+              <Box w={["100px", "100px", "400px", "400px", "400px", "400px"]}>
+                <a href="/">
+                  {" "}
+                  <Image src={Logo} width={"100%"} height={"100%"} alt="logo" />
+                </a>
+              </Box>{" "}
+            </HStack>
             <HStack
+             
+              zIndex={"5"}
+             
               w={"100%"}
-              h={"100%"}
-              justify={"center"}
-              align={"center"}
-            ></HStack>
+              justify={"right"}
+              align={"start"}
+            
+            >
+              <Box
+                backdropFilter="blur(2.5px)"
+                transition={"all 0.3s ease-in-out"}
+                bg={"rgb(255, 255, 255,0.05)"}
+                border={"1px solid rgb(255, 255, 255,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
+                rounded={"15px"}
+                w={"35px"}
+                h={"30px"}
+                borderRadius={"10px"}
+              >
+                <HStack
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"center"}
+                  align={"center"}
+                >
+                  <FaBars size={"15px"} color={"black"} />
+                </HStack>
+              </Box>
+            </HStack>
           </HStack>
         </Box>
       ) : (
@@ -121,14 +131,21 @@ const Navbar = ({}) => {
                   h={"100%"}
                   justify={"center"}
                   align={"center"}
-                  gap={["20px", "30px", "40px", "50px", "50px"]}
+                  gap={["20px", "20px", "20px", "50px", "50px"]}
                   fontFamily={"Poppins"}
                   px={["2", "2", "5", "5", "5"]}
                 >
-                  <Box w={["500px", "500px", "400px", "400px", "400px", "400px"]}>
+                  <Box
+                    w={["500px", "500px", "400px", "400px", "400px", "400px"]}
+                  >
                     <a href="/">
                       {" "}
-                      <Image src={Logo} width={"100%"} height={"100%"} alt="logo" />
+                      <Image
+                        src={Logo}
+                        width={"100%"}
+                        height={"100%"}
+                        alt="logo"
+                      />
                     </a>
                   </Box>
 
@@ -140,7 +157,7 @@ const Navbar = ({}) => {
                   >
                     <Box
                       bgColor={"black"}
-                      h={"90%"}
+                      h={["80%", "80%", "80%", "80%", "90%", "90%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "50%"]}
                       bg={"rgb(255, 255, 255,1)"}
                       borderRadius={"15px"}
