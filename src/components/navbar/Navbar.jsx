@@ -125,11 +125,12 @@ const Navbar = ({}) => {
                   fontFamily={"Poppins"}
                   px={["2", "2", "5", "5", "5"]}
                 >
-                  <Text
-                    fontSize={["25px", "25px", "25px", "25px", "30px", "30px"]}
-                  >
-                  <Image src={Logo} width={250} height={250} alt="logo" />
-                  </Text>
+                  <Box w={["500px", "500px", "400px", "400px", "400px", "400px"]}>
+                    <a href="/">
+                      {" "}
+                      <Image src={Logo} width={"100%"} height={"100%"} alt="logo" />
+                    </a>
+                  </Box>
 
                   <HStack
                     w={"100%"}
@@ -140,13 +141,30 @@ const Navbar = ({}) => {
                     <Box
                       bgColor={"black"}
                       h={"90%"}
-                      w={"50%"}
+                      w={["90%", "90%", "90%", "90%", "70%", "50%"]}
                       bg={"rgb(255, 255, 255,1)"}
                       borderRadius={"15px"}
-                      boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
+                      _hover={{
+                        boxShadow: "0 0 25px rgba(0,0,0,0.3)",
+                      }}
+                      transition={"all 0.3s ease-in-out"}
+                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                     >
                       <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
-                        <Input w={"100%"} border={"none"} variant="unstyled" fontSize={["12px", "12px", "12px", "12px", "14px", "16px"]} placeholder="Search..."   />
+                        <Input
+                          w={"100%"}
+                          border={"none"}
+                          variant="unstyled"
+                          fontSize={[
+                            "12px",
+                            "12px",
+                            "12px",
+                            "12px",
+                            "14px",
+                            "16px",
+                          ]}
+                          placeholder="Search..."
+                        />
 
                         <Text
                           fontSize={[
