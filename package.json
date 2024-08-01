@@ -13,6 +13,8 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "framer-motion": "^11.2.10",
     "luxe-managements": "file:",
     "mongodb": "^6.7.0",
