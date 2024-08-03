@@ -114,16 +114,16 @@ const Navbar = ({}) => {
             mt={"15px"}
           >
             <HStack
-              w={"100%"}
+              w={"100%"} 
               h={"100%"}
               justify={"center"}
               align={"center"}
               mb={"16.5px"}
             >
               <Box
-                backdropFilter={yValue ? "blur(8px)" : "blur(2.5px)"}
+                backdropFilter={"blur(2.5px)"}
                 transition={"all 0.3s ease-in-out"}
-                w={yValue ? ["95%", "95%", "85%", "85%", "85%", "65%"] : "95%"}
+                w={"95%"}
                 h={"50px"}
               >
                 <HStack
