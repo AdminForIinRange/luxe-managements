@@ -9,10 +9,9 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <VStack  px={["100px", "100px", "0px", "0px", "0px", "0px"]}>
+
 
     <HomePage/>
-    </VStack>
 
 
       
