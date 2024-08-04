@@ -19,6 +19,11 @@ import skyRise2 from "../../../assets/img/skyRise2.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import AboutPage from "../aboutPage/aboutPage";
 import { FcCustomerSupport } from "react-icons/fc";
+import womenCalling from "../../../assets/img/womenCalling.jpg";
+import interior2 from "../../../assets/img/interior2.jpg";
+import interior3 from "../../../assets/img/interior3.jpg";
+import interior4 from "../../../assets/img/interior4.jpg";
+import interior5 from "../../../assets/img/interior5.jpg";
 const HomePage = () => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -29,31 +34,35 @@ const HomePage = () => {
     }); // Initialize AOS with desired options
   }, []);
 
-  const frontFliter = [
-{}
-  ];
+  const frontFliter = [{}];
 
   const navBox = [
     {
       name: "Contact Us",
       desc: "If you have any questions or need more convincing please don't hesitate to contact us.",
+
       link: "#",
       icon: <FcCustomerSupport />,
       speicals: "",
+      img: womenCalling.src,
     },
     {
       name: "View our Services",
-      desc: "",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
       link: "#",
       icon: <GoDotFill color="green" />,
       speicals: "",
+      img: interior5.src,
     },
     {
       name: "View our properties",
-      desc: "",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
       link: "#",
       icon: <GoDotFill color="green" />,
       speicals: "",
+      img: interior3.src,
     },
   ];
   return (
@@ -377,38 +386,40 @@ const HomePage = () => {
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
         <HStack
-          w={"70%"}
+          w={"80%"}
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={"30px"}
+          gap={"80px"}
         >
-          {navBox.map(({ name, desc, icon, speicals, link }) => (
+          {navBox.map(({ name, desc, icon, speicals, link, img }) => (
             <Box
               key={name}
               w={["260px", "260px", "100%", "100%", "100%"]}
               h={["200px", "200px", "250px", "290px", "310px"]}
-              border={"1.8px solid #B5B5B5"}
+              boxShadow={"2xl"}
               rounded={"xl"}
               p={["2", "2", "2", "3", "4"]}
+              style={{
+                backgroundImage: `url(${img})`,
+              
+              }}
+              bgPos={"center"}
+              bgSize={"cover"}
+              textShadow={"0px 0px 50px black"}
             >
-              <VStack align={"left"} w={"100%"} h={"100%"}>
-                <HStack>
+              <VStack
+                align={"left"}
+                w={"100%"}
+                h={"100%"}
+                color={"white"}
+                zIndex={3}
+              >
+                <HStack fliter={"blur(0px)"} zIndex={3}>
                   <Text
-
+                    zIndex={3}
                     w={"70%"}
-                    fontSize={["12px", "12px", "12px", "12px", "14px", "54px"]}
-                    fontWeight={"700"}
-                    textAlign={"left"}
-                  >
-                    {icon}
-                  </Text>
-                </HStack>
-                <HStack>
-                  <Text
-
-                    w={"70%"}
-                    fontSize={["12px", "12px", "12px", "12px", "14px", "24px"]}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >
@@ -418,7 +429,6 @@ const HomePage = () => {
 
                 <HStack>
                   <Text
-   
                     fontSize={["12px", "12px", "12px", "12px", "16px"]}
                     fontWeight={"400"}
                     textAlign={"left"}
