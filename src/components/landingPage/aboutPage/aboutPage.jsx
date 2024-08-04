@@ -14,6 +14,11 @@ import { GoDotFill } from "react-icons/go";
 import interior from "../../../assets/img/interior.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+import { IoHappyOutline } from "react-icons/io5";
+import { FaListUl } from "react-icons/fa";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { IoGitBranch } from "react-icons/io5";
 import { FcCustomerSupport } from "react-icons/fc";
 const AboutPage = () => {
   const [fliter, setFliter] = React.useState(true);
@@ -262,12 +267,12 @@ const AboutPage = () => {
               color={"black"}
               bgGradient="linear(to-r, green, red)"
             >
-              Maximize Your Rental Income
+              Say Goodbye to Hosting Hassles
             </Text>
 
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "30px"]}
               justify={"center"}
               align={"start"}
               gap={"10px"}
@@ -281,7 +286,7 @@ const AboutPage = () => {
                 </Text>
 
                 <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
+                  fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
                 >
                   Stress-Free Experience
                 </Text>
@@ -300,7 +305,7 @@ const AboutPage = () => {
                 </Text>
 
                 <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
+                  fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
                 >
                   Versatile Platform Use
                 </Text>
@@ -314,10 +319,10 @@ const AboutPage = () => {
             </HStack>
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "30px"]}
               justify={"center"}
               align={"start"}
-              gap={"10px"}
+              gap={"35px"}
             >
               <VStack w={"100%"} justify={"start"} align={"left"}>
                 <Text
