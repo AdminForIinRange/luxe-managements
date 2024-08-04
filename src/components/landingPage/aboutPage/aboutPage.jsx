@@ -45,7 +45,7 @@ const AboutPage = () => {
           color={"black"}
           bgGradient="linear(to-r, green, red)"
         >
-          Maximize Your Rental Income
+        Seamless Exceptional Management
         </Text>
       </HStack>
 

@@ -447,7 +447,7 @@ const HomePage = () => {
                   justify={"left"}
                   align={"center"}
                   fontWeight={"500"}
-                  transition="transform, 0.3s ease-in-out"
+                  transition="transform, 0.3s ease"
                   _hover={{
                     marginLeft: "10px",
                   }}
