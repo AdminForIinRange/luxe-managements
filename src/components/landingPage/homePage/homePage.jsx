@@ -1,12 +1,12 @@
 "use client";
-import { Box, HStack, VStack, Text , Divider} from "@chakra-ui/react";
+import { Box, HStack, VStack, Text, Divider, Select } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { GoDotFill } from "react-icons/go";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import interior from "../../../assets/img/interior.jpg";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
-
+import { RiArrowDropDownLine } from "react-icons/ri";
 const HomePage = () => {
   useEffect(() => {
     Aos.init({
@@ -15,6 +15,13 @@ const HomePage = () => {
       mirror: true,
     }); // Initialize AOS with desired options
   }, []);
+
+  const frontFliter = [
+    {
+      id: 1,
+      name: "House",
+    },
+  ];
   return (
     // add some functional content at the end of the banner
     <>
@@ -37,7 +44,7 @@ const HomePage = () => {
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
           >
-            <VStack w={"100%"} h={"100%"} align={"center"} justify={"center"}>
+            <VStack w={"100%"} h={"100%"} align={"center"} justify={"top"} mt={"70px"}>
               <Text
                 fontSize={["30px", "30px", "35px", "45px", "85px", "85px"]}
                 fontWeight={500}
@@ -78,7 +85,7 @@ const HomePage = () => {
       >
         <Box
           w={"70%"}
-          h={"115px"}
+          h={"125px"}
           bgColor={"white"}
           shadow={"lg"}
           rounded={"10px"}
@@ -91,48 +98,112 @@ const HomePage = () => {
             align={"center"}
             gap={"10px"}
             p={"10px"}
-            px={"130px"}
+            transition={"all 0.3s ease"}
           >
-            <VStack>
-              <Text fontWeight={400} color={"gray.700"} >Property Type</Text>
+            <VStack
+              w={"100%"}
+              h={"100%"}
+              _hover={{ bg: "gray.100" }}
+              align={"center"}
+              justify={"center"}
+              cursor={"pointer"}
+              rounded={"18px"}
+              transition={"all 0.3s ease"}
+            >
+              <HStack>
+                <Text textAlign={"center"} fontWeight={400} color={"gray.700"}>
+                  Property Type
+                </Text>
+                <Text fontSize={"25px"}>
+                  
+                <RiArrowDropDownLine  />
+                </Text>
+              </HStack>
+
               <Box>
-                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"} >
+                <Text fontWeight={700} fontSize={"28px"} color={"gray.600"}>
                   House
                 </Text>
               </Box>
             </VStack>{" "}
-
             <Divider orientation="vertical" borderColor="gray.400" h="100%" />
-          
-            <VStack>
-              <Text fontWeight={400} color={"gray.700"} >Post Code</Text>
+            <VStack
+              w={"100%"}
+              h={"100%"}
+              _hover={{ bg: "gray.100" }}
+              align={"center"}
+              justify={"center"}
+              cursor={"pointer"}
+              rounded={"18px"}
+              transition={"all 0.3s ease"}
+            >
+               <HStack>
+                <Text textAlign={"center"} fontWeight={400} color={"gray.700"}>
+              Post Code
+                </Text>
+                <Text fontSize={"25px"}>
+                  
+                <RiArrowDropDownLine  />
+                </Text>
+              </HStack>
               <Box>
-                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"}>
+                <Text fontWeight={700} fontSize={"28px"} color={"gray.600"}>
                   5000
                 </Text>
               </Box>
             </VStack>
             <Divider orientation="vertical" borderColor="gray.400" h="100%" />
-          
-            <VStack>
-              <Text  fontWeight={400} color={"gray.700"} >Service</Text>
-              <Box >
-                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"} >
-                Linen/Amenity
+            <VStack
+              w={"100%"}
+              h={"100%"}
+              _hover={{ bg: "gray.100" }}
+              align={"center"}
+              justify={"center"}
+              cursor={"pointer"}
+              rounded={"18px"}
+              transition={"all 0.3s ease"}
+            >
+              <HStack>
+                <Text textAlign={"center"} fontWeight={400} color={"gray.700"}>
+               Service
+                </Text>
+                <Text fontSize={"25px"}>
+                  
+                <RiArrowDropDownLine  />
+                </Text>
+              </HStack>
+              <Box>
+                <Text fontWeight={700} fontSize={"28px"} color={"gray.600"}>
+                  Linen/Amenity
                 </Text>
               </Box>
             </VStack>
             <Divider orientation="vertical" borderColor="gray.400" h="100%" />
-          
-            <VStack>
-              <Text  fontWeight={400}>Currently listed</Text>
-              <Box >
-                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"}>
+            <VStack
+              w={"100%"}
+              h={"100%"}
+              _hover={{ bg: "gray.100" }}
+              align={"center"}
+              justify={"center"}
+              cursor={"pointer"}
+              rounded={"18px"}
+              transition={"all 0.3s ease"}
+            >
+        <HStack>
+                <Text textAlign={"center"} fontWeight={400} color={"gray.700"}>
+                Currently listed
+                </Text>
+                <Text fontSize={"25px"}>
+                  
+                <RiArrowDropDownLine  />
+                </Text>
+              </HStack>
+              <Box>
+                <Text fontWeight={700} fontSize={"28px"} color={"gray.600"}>
                   Not Listed
                 </Text>
               </Box>
             </VStack>
-            
           </HStack>
         </Box>
       </HStack>
