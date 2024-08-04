@@ -1,10 +1,11 @@
 "use client";
-import { Box, HStack, VStack, Text } from "@chakra-ui/react";
+import { Box, HStack, VStack, Text , Divider} from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { GoDotFill } from "react-icons/go";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import img from "../../../assets/img.jpg";
+import interior from "../../../assets/img/interior.jpg";
+import skyRise2 from "../../../assets/img/skyRise2.jpg";
 
 const HomePage = () => {
   useEffect(() => {
@@ -14,16 +15,27 @@ const HomePage = () => {
       mirror: true,
     }); // Initialize AOS with desired options
   }, []);
-  return ( // add some functional content at the end of the banner
+  return (
+    // add some functional content at the end of the banner
     <>
       <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
-        <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
+        <HStack
+          w={"100%"}
+          h={"100%"}
+          justify={"center"}
+          align={"center"}
+          pl={"5px"}
+          py={"5px"}
+        >
           <Box
+            className="animate__animated animate__fadeInUp"
             rounded={"10px"}
-            mt={"90px"}
-            w={["90%", "90%", "90%", "90%", "90%", "90%"]}
-            h={"500px"}
-            bg={"gray"}
+            borderBottomRadius={"100px"}
+            w={["90%", "90%", "90%", "90%", "90%", "100%"]}
+            h={"600px"}
+            bgPos={"center 60%"}
+            bgSize={"cover"}
+            style={{ backgroundImage: `url(${skyRise2.src})` }}
           >
             <VStack w={"100%"} h={"100%"} align={"center"} justify={"center"}>
               <Text
@@ -35,7 +47,7 @@ const HomePage = () => {
                 className="animate__animated animate__fadeInDown"
                 color={"white"} // Adding white outline effect
                 bgGradient="linear(to-r, green, red)"
-                // textShadow={"0px 0px 5px white"}
+                textShadow={"0px 0px 5px gray"}
               >
                 Luxe Managements{" "}
               </Text>
@@ -48,13 +60,85 @@ const HomePage = () => {
                 mt={["0px", "0px", "15px", "15px", "15px", "15px"]}
                 w={["80%", "60%", "50%", "50%", "50%", "30%"]}
                 className="animate__animated animate__fadeInDown"
+                textShadow={"0px 0px 5px gray"}
               >
-                Top Airbnb Management Company in Adelaide. 
+                Top Airbnb Management Company in Adelaide.
               </Text>
-            </VStack> 
+            </VStack>
           </Box>
         </HStack>
       </HStack>
+
+      <HStack
+        w={"100%"}
+        h={"100%"}
+        justify={"center"}
+        align={"center"}
+        mt={"-100px"}
+      >
+        <Box
+          w={"70%"}
+          h={"115px"}
+          bgColor={"white"}
+          shadow={"lg"}
+          rounded={"10px"}
+          zIndex={"10"}
+        >
+          <HStack
+            w={"100%"}
+            h={"100%"}
+            justify={"space-between"}
+            align={"center"}
+            gap={"10px"}
+            p={"10px"}
+            px={"130px"}
+          >
+            <VStack>
+              <Text fontWeight={400} color={"gray.700"} >Property Type</Text>
+              <Box>
+                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"} >
+                  House
+                </Text>
+              </Box>
+            </VStack>{" "}
+
+            <Divider orientation="vertical" borderColor="gray.400" h="100%" />
+          
+            <VStack>
+              <Text fontWeight={400} color={"gray.700"} >Post Code</Text>
+              <Box>
+                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"}>
+                  5000
+                </Text>
+              </Box>
+            </VStack>
+            <Divider orientation="vertical" borderColor="gray.400" h="100%" />
+          
+            <VStack>
+              <Text  fontWeight={400} color={"gray.700"} >Service</Text>
+              <Box >
+                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"} >
+                Linen/Amenity
+                </Text>
+              </Box>
+            </VStack>
+            <Divider orientation="vertical" borderColor="gray.400" h="100%" />
+          
+            <VStack>
+              <Text  fontWeight={400}>Currently listed</Text>
+              <Box >
+                <Text fontWeight={700} fontSize={"24px"} color={"gray.600"}>
+                  Not Listed
+                </Text>
+              </Box>
+            </VStack>
+            
+          </HStack>
+        </Box>
+      </HStack>
+
+      {/* 
+below is the a display of Services and about */}
 
       <HStack
         justify={"center"}
@@ -68,7 +152,7 @@ const HomePage = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "65px"]}
+          gap={["15px", "25px", "35px", "45px", "55px", "200px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["90%", "65%", "30%", "30%", "30%", "30%"]}>
@@ -87,14 +171,11 @@ const HomePage = () => {
                 border={"1px solid rgb(255, 255, 255,0.25)"}
                 py={[1, 1, 2, 2, 2, 2]}
               >
-                <Box
-                 
-                >
+                <Box>
                   <GoDotFill color="black" fontSize={"20px"} />
                 </Box>
                 <Box>
                   <Text
-                   
                     w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
@@ -109,7 +190,6 @@ const HomePage = () => {
             </HStack>
             <Text
               data-aos="fade-up"
-             
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               w={["100%", "100%", "90%", "90%", "90%", "90%"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
@@ -124,7 +204,6 @@ const HomePage = () => {
             </Text>
             <Text
               data-aos="fade-up"
-             
               fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
@@ -144,7 +223,7 @@ const HomePage = () => {
             </Text>
           </Box>
           <Box
-            style={{ backgroundImage: `url(${img.src})` }}
+            style={{ backgroundImage: `url(${interior.src})` }}
             data-aos="flip-up" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             w={["380px", "380px", "450px", "450px", "550px", "550px"]}
@@ -164,7 +243,6 @@ const HomePage = () => {
               h={"100%"}
               p={"10px"}
               borderRadius={"30px"}
-              
             >
               <HStack
                 p={"5px"}

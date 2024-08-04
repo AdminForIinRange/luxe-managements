@@ -34,7 +34,7 @@ const Navbar = ({}) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 100) {
+      if (scrollY > 200) {
         setYvalue(true);
       } else {
         setYvalue(false);
@@ -105,28 +105,28 @@ const Navbar = ({}) => {
         </Box>
       ) : (
         <Box>
-          <HStack
+          <HStack        transition={"all 0.3s ease-in-out"}
             w={"100%"}
             zIndex={"5"}
             position={"fixed"}
             justify={"center"}
             align={"center"}
             mt={"15px"}
-          >
-            <HStack
+          > 
+            <HStack        transition={"all 0.3s ease-in-out"} 
               w={"100%"} 
               h={"100%"}
               justify={"center"}
               align={"center"}
               mb={"16.5px"}
             >
-              <Box
+              <Box 
                 backdropFilter={"blur(2.5px)"}
                 transition={"all 0.3s ease-in-out"}
                 w={"95%"}
                 h={"50px"}
               >
-                <HStack
+                <HStack        transition={"all 0.3s ease-in-out"}
                   w={"100%"}
                   h={"100%"}
                   justify={"center"}
@@ -148,14 +148,17 @@ const Navbar = ({}) => {
                       />
                     </a>
                   </Box>
-
-                  <HStack
+                 
+                  <HStack 
+                  transition={"all 0.3s ease-in-out"}
                     w={"100%"}
                     h={"100%"}
                     justify={"center"}
                     align={"center"}
                   >
                     <Box
+                className="animate__animated animate__zoomIn"
+                    display={ !yValue ? "none" : "block"}
                       bgColor={"black"}
                       h={["80%", "80%", "80%", "80%", "90%", "90%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}
@@ -167,7 +170,7 @@ const Navbar = ({}) => {
                       transition={"all 0.3s ease-in-out"}
                       boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                     >
-                      <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
+             <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
                         <Input
                           w={"100%"}
                           border={"none"}
@@ -199,7 +202,7 @@ const Navbar = ({}) => {
                       </HStack>
                     </Box>
                   </HStack>
-
+                
                   {links.map(({ name, link }, index) => (
                     <>
                       <HStack
