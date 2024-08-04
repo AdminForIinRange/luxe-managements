@@ -29,6 +29,36 @@ const AboutPage = () => {
       mirror: true,
     }); // Initialize AOS with desired options
   }, []);
+
+  const topBoxIcons = [
+    {
+      title: " Stress-Free Experience",
+      icon: <IoHappyOutline />,
+      description:
+        "We provide a stress-free experience for our clients. Our team of experienced professionals is dedicated to delivering exceptional service. ",
+    },
+    {
+      title: "  Versatile Platform Use",
+      icon: <IoGitBranch />,
+      description:
+        "Utilize platforms like Airbnb, Booking.com, and traditional rentals for maximum flexibility.",
+    },
+  ];
+
+  const bottomBoxIcons = [
+    {
+      title: "Comprehensive Services",
+      icon: <FaListUl />,
+      description:
+        "Benefit from meticulous maintenance, professional cleaning, and efficient tenant booking.",
+    },
+    {
+      title: "Increased Rental Income",
+      icon: <FaArrowTrendUp />,
+      description:
+        "Boost rental income by an average of 40% and improve occupancy rates with our seasoned Airbnb management team in Adelaide.",
+    },
+  ];
   return (
     <>
       <HStack
@@ -188,7 +218,7 @@ const AboutPage = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "200px"]}
+          gap={["15px", "25px", "35px", "45px", "55px", "150px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
@@ -272,97 +302,66 @@ const AboutPage = () => {
 
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "15px", "15px", "15px", "30px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "40px"]}
               justify={"center"}
               align={"start"}
-              gap={"10px"}
+              gap={"70px"}
             >
-              <VStack w={"100%"} justify={"start"} align={"left"}>
-                <Text
-                  textAlign={"left"}
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
-                >
-                  <FcCustomerSupport />
-                </Text>
+              {topBoxIcons.map(({ title, icon, description }) => (
+                <VStack w={"100%"} justify={"start"} align={"left"} key={title}>
+                  <Text
+                    textAlign={"left"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
+                  >
+                    {icon}
+                  </Text>
 
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
-                >
-                  Stress-Free Experience
-                </Text>
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-                >
-                  Enjoy expert care, management, and support for hassle-free
-                  property ownership.
-                </Text>
-              </VStack>
-              <VStack w={"100%"} justify={"start"} align={"left"}>
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
-                >
-                  <FcCustomerSupport />
-                </Text>
-
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
-                >
-                  Versatile Platform Use
-                </Text>
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-                >
-                  Utilize platforms like Airbnb, Booking.com, and traditional
-                  rentals for maximum flexibility.
-                </Text>
-              </VStack>
+                  <Text
+                    w={"100%"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
+                  >
+                    {title}
+                  </Text>
+                  <Text
+                    w={"100%"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                  >
+                    {description}
+                  </Text>
+                </VStack>
+              ))}
             </HStack>
+
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "15px", "15px", "15px", "30px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "40px"]}
               justify={"center"}
               align={"start"}
-              gap={"35px"}
+              gap={"50px"}
             >
-              <VStack w={"100%"} justify={"start"} align={"left"}>
-                <Text
-                  textAlign={"left"}
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
-                >
-                  <FcCustomerSupport />
-                </Text>
+              {bottomBoxIcons.map(({ title, icon, description }) => (
+                <VStack w={"100%"} justify={"start"} align={"left"} key={title}>
+                  <Text
+                    textAlign={"left"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
+                  >
+                    {icon}
+                  </Text>
 
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
-                >
-                  Comprehensive Services
-                </Text>
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-                >
-                  Benefit from meticulous maintenance, professional cleaning,
-                  and efficient tenant booking.
-                </Text>
-              </VStack>
-              <VStack w={"100%"} justify={"start"} align={"left"}>
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
-                >
-                  <FcCustomerSupport />
-                </Text>
-
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
-                >
-                  Increased Rental Income
-                </Text>
-                <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-                >
-                  Boost rental income by an average of 40% and improve occupancy
-                  rates with our seasoned Airbnb management team in Adelaide.
-                </Text>
-              </VStack>
+                  <Text
+                    w={"100%"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
+                  >
+                    {title}
+                  </Text>
+                  <Text
+                    w={"100%"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                  >
+                    {description}
+                  </Text>
+                </VStack>
+              ))}
             </HStack>
             {/* <Text
               data-aos="fade-left"
