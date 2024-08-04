@@ -12,11 +12,13 @@ import React, { useEffect } from "react";
 import { GoDotFill } from "react-icons/go";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import interior from "../../../assets/img/interior.jpg";
+
+import { HiArrowLongRight } from "react-icons/hi2";
 import { FaSearch } from "react-icons/fa";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
+import AboutPage from "../aboutPage/aboutPage";
+import { FcCustomerSupport } from "react-icons/fc";
 const HomePage = () => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -28,9 +30,30 @@ const HomePage = () => {
   }, []);
 
   const frontFliter = [
+{}
+  ];
+
+  const navBox = [
     {
-      id: 1,
-      name: "House",
+      name: "Contact Us",
+      desc: "If you have any questions or need more convincing please don't hesitate to contact us.",
+      link: "#",
+      icon: <FcCustomerSupport />,
+      speicals: "",
+    },
+    {
+      name: "View our Services",
+      desc: "",
+      link: "#",
+      icon: <GoDotFill color="green" />,
+      speicals: "",
+    },
+    {
+      name: "View our properties",
+      desc: "",
+      link: "#",
+      icon: <GoDotFill color="green" />,
+      speicals: "",
     },
   ];
   return (
@@ -301,163 +324,137 @@ const HomePage = () => {
                 rounded={"18px"}
                 transition={"all 0.3s ease"}
               >
-                
                 <Box>
-                <Text
-                fontSize={["12px", "12px", "12px", "12px", "14px", "32px"]}
-                cursor={"pointer"}
-              >
-                <FaSearch  />
-              </Text>
+                  <Text
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "32px"]}
+                    cursor={"pointer"}
+                  >
+                    <FaSearch />
+                  </Text>
                 </Box>
               </VStack>
             </HStack>
           ) : (
-            <HStack  w={"100%"} h={"100%"} justify={"end"} px={"36px"}  transition={"all 0.3s ease"} >
+            <HStack
+              w={"100%"}
+              h={"100%"}
+              justify={"end"}
+              px={"36px"}
+              transition={"all 0.3s ease"}
+            >
               <Input
-            
                 w={"100%"}
                 border={"none"}
                 variant="unstyled"
                 fontSize={["12px", "12px", "12px", "12px", "14px", "28px"]}
                 placeholder="Search a service you need..."
-               
               />
 
               <Text
-              rounded={"15px"}
-              transition={"all 0.3s ease"}
-              p={"25px"}
-               _hover={{ bg: "teal.300", color: "white" }}
-               color={"teal.300"}
-               bg={"white"}
-               fontSize={["12px", "12px", "12px", "12px", "14px", "32px"]}
+                rounded={"15px"}
+                transition={"all 0.3s ease"}
+                p={"25px"}
+                _hover={{ bg: "teal.300", color: "white" }}
+                color={"teal.300"}
+                bg={"white"}
+                fontSize={["12px", "12px", "12px", "12px", "14px", "32px"]}
                 cursor={"pointer"}
               >
-                <FaSearch  />
+                <FaSearch />
               </Text>
             </HStack>
           )}
         </Box>
       </HStack>
 
+      <HStack
+        fontFamily={"poppins"}
+        bg={"white"}
+        w={"100%"}
+        h={"100%"}
+        justify={"center"}
+        align={"center"}
+        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+      >
+        <HStack
+          w={"70%"}
+          h={"100%"}
+          justify={"center"}
+          align={"start"}
+          gap={"30px"}
+        >
+          {navBox.map(({ name, desc, icon, speicals, link }) => (
+            <Box
+              key={name}
+              w={["260px", "260px", "100%", "100%", "100%"]}
+              h={["200px", "200px", "250px", "290px", "310px"]}
+              border={"1.8px solid #B5B5B5"}
+              rounded={"xl"}
+              p={["2", "2", "2", "3", "4"]}
+            >
+              <VStack align={"left"} w={"100%"} h={"100%"}>
+                <HStack>
+                  <Text
+
+                    w={"70%"}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "54px"]}
+                    fontWeight={"700"}
+                    textAlign={"left"}
+                  >
+                    {icon}
+                  </Text>
+                </HStack>
+                <HStack>
+                  <Text
+
+                    w={"70%"}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "24px"]}
+                    fontWeight={"700"}
+                    textAlign={"left"}
+                  >
+                    {name}
+                  </Text>
+                </HStack>
+
+                <HStack>
+                  <Text
+   
+                    fontSize={["12px", "12px", "12px", "12px", "16px"]}
+                    fontWeight={"400"}
+                    textAlign={"left"}
+                  >
+                    {desc}
+                  </Text>
+                </HStack>
+                <HStack
+                  cursor={"pointer"}
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"end"}
+                  align={"end"}
+                  fontWeight={"500"}
+                  transition="transform, 0.3s ease-in-out"
+                  _hover={{
+                    marginLeft: "5px",
+                  }}
+                >
+                  <HStack align={"center"} mr={"5px"}>
+                    <Text fontSize={"12px"} as={"span"}>
+                      Learn more
+                    </Text>{" "}
+                    <HiArrowLongRight fontSize={"30px"} />
+                  </HStack>
+                </HStack>
+              </VStack>
+            </Box>
+          ))}
+        </HStack>
+      </HStack>
+
       {/* 
 below is the a display of Services and about */}
 
-      <HStack
-        justify={"center"}
-        align={"center"}
-        w={"100%"}
-        h={"100%"}
-        mt={["150px", "150px", "150px", "200px", "250px", "250px"]}
-      >
-        <HStack
-          justify={"center"}
-          align={"start"}
-          w={"100%"}
-          h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "200px"]}
-          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-        >
-          <Box w={["90%", "65%", "30%", "30%", "30%", "30%"]}>
-            <HStack
-              w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={"center"}
-              h={"100%"}
-            >
-              <HStack
-                data-aos="fade-up"
-                rounded={"100px"}
-                justify={"start"}
-                align={"center"}
-                h={"100%"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
-                py={[1, 1, 2, 2, 2, 2]}
-              >
-                <Box>
-                  <GoDotFill color="black" fontSize={"20px"} />
-                </Box>
-                <Box>
-                  <Text
-                    w={"100%"}
-                    h={"100%"}
-                    textAlign={"center"}
-                    color={"black"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
-                    fontWeight={500}
-                  >
-                    Improve
-                  </Text>
-                </Box>
-              </HStack>
-            </HStack>
-            <Text
-              data-aos="fade-up"
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              w={["100%", "100%", "90%", "90%", "90%", "90%"]}
-              fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
-              fontWeight={500}
-              fontFamily={"Poppins"}
-              bgClip="text"
-              textAlign={["center", "center", "left", "left", "left", "left"]}
-              color={"black"}
-              bgGradient="linear(to-r, green, red)"
-            >
-              Maximize Your Rental Income
-            </Text>
-            <Text
-              data-aos="fade-up"
-              fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              textAlign={["center", "center", "left", "left", "left", "left"]}
-              fontFamily={"Poppins"}
-              color={"black"}
-              w={"100%"}
-              fontWeight={300}
-            >
-              Optimize your income and ease your mind with our experienced
-              Airbnb Management team in Adelaide.
-              <br />
-              <br />
-              We handle everything for you, from listing your property on
-              Airbnb, Booking.com, and more, to maximizing rental profits.
-              Experience hassle-free short-term rentals with Adelaide's leading
-              Airbnb management service.
-            </Text>
-          </Box>
-          <Box
-            style={{ backgroundImage: `url(${interior.src})` }}
-            data-aos="flip-up" // chnage dir
-            border={"5px solid rgb(255, 255, 255,0.25)"}
-            w={["380px", "380px", "450px", "450px", "550px", "550px"]}
-            h={["350px", "350px", "350px", "400px", "400px", "400px"]}
-            bg={"rgb(255, 255, 255,0.025)"}
-            backdropFilter="blur(1.5px)"
-            p={"10px"}
-            borderRadius={"30px"}
-            bgPos={"center"}
-            bgSize={"cover"}
-          >
-            <Box
-              data-aos="flip-down"
-              bgPos={"center"}
-              bgSize={"cover"}
-              w={"100%"}
-              h={"100%"}
-              p={"10px"}
-              borderRadius={"30px"}
-            >
-              <HStack
-                p={"5px"}
-                justify={"start"}
-                align={"start"}
-                w={"100%"}
-              ></HStack>
-            </Box>
-          </Box>
-        </HStack>
-      </HStack>
+      <AboutPage />
     </>
   );
 };
