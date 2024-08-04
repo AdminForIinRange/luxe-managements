@@ -18,7 +18,7 @@ const AboutPage = () => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 500,
       easing: "ease-in-out",
       mirror: true,
     }); // Initialize AOS with desired options

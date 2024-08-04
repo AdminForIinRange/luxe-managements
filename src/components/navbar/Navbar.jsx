@@ -158,8 +158,11 @@ const Navbar = ({}) => {
                     align={"center"}
                   >
                     <Box
-                      className="animate__animated animate__zoomIn"
-                      display={!yValue ? "none" : "block"}
+                      className={
+                        yValue
+                          ? "animate__animated animate__zoomIn"
+                          : "animate__animated animate__zoomOut"
+                      }
                       bgColor={"black"}
                       h={["80%", "80%", "80%", "80%", "90%", "90%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}
