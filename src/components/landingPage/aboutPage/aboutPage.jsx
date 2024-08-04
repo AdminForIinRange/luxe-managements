@@ -66,7 +66,7 @@ const AboutPage = () => {
         align={"start"}
         w={"100%"}
         h={"100%"}
-        gap={["15px", "25px", "35px", "45px", "55px", "200px"]}
+
         wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
       >
@@ -103,10 +103,10 @@ const AboutPage = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "200px"]}
+          gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
-          <Box w={["90%", "65%", "30%", "30%", "30%", "30%"]}>
+          <Box w={["90%", "65%", "30%", "30%", "30%", "35%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
@@ -177,7 +177,7 @@ const AboutPage = () => {
             style={{ backgroundImage: `url(${interior.src})` }}
             data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
-            w={["380px", "380px", "450px", "450px", "550px", "550px"]}
+            w={["380px", "380px", "450px", "450px", "550px", "635px"]}
             h={["350px", "350px", "350px", "400px", "400px", "400px"]}
             bg={"rgb(255, 255, 255,0.025)"}
             backdropFilter="blur(1.5px)"
@@ -218,7 +218,7 @@ const AboutPage = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "150px"]}
+          gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
@@ -226,7 +226,7 @@ const AboutPage = () => {
             data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             w={["380px", "380px", "450px", "450px", "550px", "550px"]}
-            h={["350px", "350px", "350px", "400px", "400px", "400px"]}
+            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
             bg={"rgb(255, 255, 255,0.025)"}
             backdropFilter="blur(1.5px)"
             p={"10px"}
@@ -251,7 +251,7 @@ const AboutPage = () => {
               ></HStack>
             </Box>
           </Box>
-          <Box w={["90%", "65%", "30%", "30%", "30%", "30%"]}>
+          <Box w={["90%", "65%", "30%", "30%", "30%", "40%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
@@ -302,29 +302,31 @@ const AboutPage = () => {
 
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "15px", "15px", "15px", "40px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "60px"]}
               justify={"center"}
               align={"start"}
-              gap={"70px"}
+              gap={"50px"}
             >
               {topBoxIcons.map(({ title, icon, description }) => (
-                <VStack w={"100%"} justify={"start"} align={"left"} key={title}>
-                  <Text
+                <VStack w={"5000px"} h={"100%"} justify={"start"} align={"left"} key={title}>
+                  <Text  data-aos="fade-up"
                     textAlign={"left"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "30px"]}
                   >
                     {icon}
                   </Text>
 
-                  <Text
+                  <Text data-aos="fade-up"
+                  fontWeight={500}
                     w={"100%"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]} 
                   >
                     {title}
                   </Text>
-                  <Text
+                  <Text  data-aos="fade-up"
                     w={"100%"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
                   >
                     {description}
                   </Text>
@@ -334,29 +336,30 @@ const AboutPage = () => {
 
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "15px", "15px", "15px", "40px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "50px"]}
               justify={"center"}
               align={"start"}
               gap={"50px"}
             >
               {bottomBoxIcons.map(({ title, icon, description }) => (
-                <VStack w={"100%"} justify={"start"} align={"left"} key={title}>
-                  <Text
+                <VStack w={"100%"} justify={"start"} align={"left"} key={title} >
+                  <Text  data-aos="fade-up"
                     textAlign={"left"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "26px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "30px"]}
                   >
                     {icon}
                   </Text>
 
-                  <Text
+                  <Text  mt={["10px", "10px", "10px", "10px", "10px", "10px"]}  data-aos="fade-up" 
+                  fontWeight={500}
                     w={"100%"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "18px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
                   >
                     {title}
                   </Text>
-                  <Text
+                  <Text  data-aos="fade-up" 
                     w={"100%"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
                   >
                     {description}
                   </Text>
