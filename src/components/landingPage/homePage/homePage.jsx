@@ -35,11 +35,10 @@ const HomePage = () => {
   }, []);
 
   const frontFliter = [{}];
-
   const navBox = [
     {
       name: "Contact Us",
-      desc: "If you have any questions or need more convincing please don't hesitate to contact us.",
+      desc: "Have questions? Reach out to us for all your Airbnb management needs.",
 
       link: "#",
       icon: <FcCustomerSupport />,
@@ -48,7 +47,7 @@ const HomePage = () => {
     },
     {
       name: "View our Services",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Maximize your rental income with our expert Airbnb management in Adelaide.",
 
       link: "#",
       icon: <GoDotFill color="green" />,
@@ -56,8 +55,8 @@ const HomePage = () => {
       img: interior5.src,
     },
     {
-      name: "View our properties",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "View our Portfolio",
+      desc: "See how we manage properties in Adelaide for hassle-free short-term rentals.",
 
       link: "#",
       icon: <GoDotFill color="green" />,
@@ -65,6 +64,7 @@ const HomePage = () => {
       img: interior3.src,
     },
   ];
+
   return (
     // add some functional content at the end of the banner
     <>
@@ -394,28 +394,32 @@ const HomePage = () => {
         >
           {navBox.map(({ name, desc, icon, speicals, link, img }) => (
             <Box
+            
               key={name}
               w={["260px", "260px", "100%", "100%", "100%"]}
-              h={["200px", "200px", "250px", "290px", "310px"]}
-              boxShadow={"2xl"}
-              rounded={"xl"}
+              h={["200px", "200px", "250px", "290px", "250px"]}
+              borderLeft={"1px solid #A0AEC0"}
+              borderRight={"1px solid #A0AEC0"}
+            
               p={["2", "2", "2", "3", "4"]}
-              style={{
-                backgroundImage: `url(${img})`,
-              
-              }}
               bgPos={"center"}
               bgSize={"cover"}
               textShadow={"0px 0px 50px black"}
             >
               <VStack
+              p={["2", "2", "2", "3", "4"]}
+                style={{ backgroundImage: `url(${img})` }}
+                bgPos={"center"}
+                bgSize={"cover"}
                 align={"left"}
                 w={"100%"}
                 h={"100%"}
                 color={"white"}
+                rounded={"18px"}
                 zIndex={3}
+              
               >
-                <HStack fliter={"blur(0px)"} zIndex={3}>
+                <HStack  zIndex={3}>
                   <Text
                     zIndex={3}
                     w={"70%"}
@@ -440,19 +444,25 @@ const HomePage = () => {
                   cursor={"pointer"}
                   w={"100%"}
                   h={"100%"}
-                  justify={"end"}
-                  align={"end"}
+                  justify={"left"}
+                  align={"center"}
                   fontWeight={"500"}
                   transition="transform, 0.3s ease-in-out"
                   _hover={{
-                    marginLeft: "5px",
+                    marginLeft: "10px",
                   }}
                 >
-                  <HStack align={"center"} mr={"5px"}>
-                    <Text fontSize={"12px"} as={"span"}>
+                  <HStack
+                    align={"center"}
+                    borderRadius={"10px"}
+                    px={"8px"}
+                    mr={"5px"}
+                    bg={"white"}
+                  >
+                    <Text fontSize={"12px"} as={"span"} color={"black"}>
                       Learn more
                     </Text>{" "}
-                    <HiArrowLongRight fontSize={"30px"} />
+                    <HiArrowLongRight color="black" fontSize={"30px"} />
                   </HStack>
                 </HStack>
               </VStack>
