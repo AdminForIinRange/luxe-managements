@@ -61,7 +61,13 @@ const Navbar = ({}) => {
       {/* Mobile Navbar */}
       {isTablet ? (
         <Box>
-          <HStack justify={"space-between"} w={"100%"} h={"100%"} px={"5"} mt={"18px"}>
+          <HStack
+            justify={"space-between"}
+            w={"100%"}
+            h={"100%"}
+            px={"5"}
+            mt={"18px"}
+          >
             <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
               {" "}
               <Box w={["100px", "100px", "400px", "400px", "400px", "400px"]}>
@@ -71,15 +77,7 @@ const Navbar = ({}) => {
                 </a>
               </Box>{" "}
             </HStack>
-            <HStack
-             
-              zIndex={"5"}
-             
-              w={"100%"}
-              justify={"right"}
-              align={"start"}
-            
-            >
+            <HStack zIndex={"5"} w={"100%"} justify={"right"} align={"start"}>
               <Box
                 backdropFilter="blur(2.5px)"
                 transition={"all 0.3s ease-in-out"}
@@ -105,28 +103,31 @@ const Navbar = ({}) => {
         </Box>
       ) : (
         <Box>
-          <HStack        transition={"all 0.3s ease-in-out"}
+          <HStack
+            transition={"all 0.3s ease-in-out"}
             w={"100%"}
             zIndex={"5"}
             position={"fixed"}
             justify={"center"}
             align={"center"}
             mt={"15px"}
-          > 
-            <HStack        transition={"all 0.3s ease-in-out"} 
-              w={"100%"} 
+          >
+            <HStack
+              transition={"all 0.3s ease-in-out"}
+              w={"100%"}
               h={"100%"}
               justify={"center"}
               align={"center"}
               mb={"16.5px"}
             >
-              <Box 
+              <Box
                 backdropFilter={"blur(2.5px)"}
                 transition={"all 0.3s ease-in-out"}
                 w={"95%"}
                 h={"50px"}
               >
-                <HStack        transition={"all 0.3s ease-in-out"}
+                <HStack
+                  transition={"all 0.3s ease-in-out"}
                   w={"100%"}
                   h={"100%"}
                   justify={"center"}
@@ -148,17 +149,17 @@ const Navbar = ({}) => {
                       />
                     </a>
                   </Box>
-                 
-                  <HStack 
-                  transition={"all 0.3s ease-in-out"}
+
+                  <HStack
+                    transition={"all 0.3s ease-in-out"}
                     w={"100%"}
                     h={"100%"}
                     justify={"center"}
                     align={"center"}
                   >
                     <Box
-                className="animate__animated animate__zoomIn"
-                    display={ !yValue ? "none" : "block"}
+                      className="animate__animated animate__zoomIn"
+                      display={!yValue ? "none" : "block"}
                       bgColor={"black"}
                       h={["80%", "80%", "80%", "80%", "90%", "90%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}
@@ -170,7 +171,7 @@ const Navbar = ({}) => {
                       transition={"all 0.3s ease-in-out"}
                       boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                     >
-             <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
+                      <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
                         <Input
                           w={"100%"}
                           border={"none"}
@@ -202,7 +203,7 @@ const Navbar = ({}) => {
                       </HStack>
                     </Box>
                   </HStack>
-                
+
                   {links.map(({ name, link }, index) => (
                     <>
                       <HStack
