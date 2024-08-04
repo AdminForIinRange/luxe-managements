@@ -34,7 +34,7 @@ const Navbar = ({}) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 200) {
+      if (scrollY > 525) {
         setYvalue(true);
       } else {
         setYvalue(false);
@@ -121,6 +121,7 @@ const Navbar = ({}) => {
               mb={"16.5px"}
             >
               <Box
+                borderRadius={"18px"}
                 backdropFilter={"blur(2.5px)"}
                 transition={"all 0.3s ease-in-out"}
                 w={"95%"}
@@ -163,6 +164,8 @@ const Navbar = ({}) => {
                           ? "animate__animated animate__zoomIn"
                           : "animate__animated animate__zoomOut"
                       }
+
+                      display={yValue - 25 ?   "none" : "block"}
                       bgColor={"black"}
                       h={["80%", "80%", "80%", "80%", "90%", "90%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}

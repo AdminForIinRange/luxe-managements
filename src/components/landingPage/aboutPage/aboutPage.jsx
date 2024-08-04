@@ -27,10 +27,34 @@ const AboutPage = () => {
     <>
       <HStack
         justify={"center"}
+        align={"start"}
+        w={"100%"}
+        h={"100%"}
+        gap={["15px", "25px", "35px", "45px", "55px", "200px"]}
+        wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
+      >
+        <Text
+
+          w={["100%", "100%", "90%", "90%", "90%", "100%"]}
+          fontSize={["30px", "30px", "35px", "45px", "85px", "65px"]}
+          fontWeight={300}
+          fontFamily={"Poppins"}
+          bgClip="text"
+          textAlign={["center", "center", "center", "center", "center", "center"]}
+          color={"black"}
+          bgGradient="linear(to-r, green, red)"
+        >
+          Maximize Your Rental Income
+        </Text>
+      </HStack>
+
+      <HStack
+        justify={"center"}
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["150px", "150px", "150px", "200px", "250px", "250px"]}
+        mt={["15px", "15px", "15px", "15px", "15px", "155px"]}
       >
         <HStack
           justify={"center"}
@@ -78,7 +102,7 @@ const AboutPage = () => {
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               w={["100%", "100%", "90%", "90%", "90%", "90%"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
-              fontWeight={500}
+              fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
               textAlign={["center", "center", "left", "left", "left", "left"]}
