@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import {
   Box,
   HStack,
@@ -15,18 +15,17 @@ import interior from "../../../assets/img/interior.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const AboutPage = () => {
-
-    const [fliter, setFliter] = React.useState(true);
-    useEffect(() => {
-      Aos.init({
-        duration: 1000,
-        easing: "ease-in-out",
-        mirror: true,
-      }); // Initialize AOS with desired options
-    }, []);
+  const [fliter, setFliter] = React.useState(true);
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      mirror: true,
+    }); // Initialize AOS with desired options
+  }, []);
   return (
     <>
-          <HStack
+      <HStack
         justify={"center"}
         align={"center"}
         w={"100%"}
@@ -49,7 +48,7 @@ const AboutPage = () => {
               h={"100%"}
             >
               <HStack
-                data-aos="fade-right"
+                data-aos="fade-left"
                 rounded={"100px"}
                 justify={"start"}
                 align={"center"}
@@ -75,7 +74,7 @@ const AboutPage = () => {
               </HStack>
             </HStack>
             <Text
-               data-aos="fade-left"
+              data-aos="fade-left"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               w={["100%", "100%", "90%", "90%", "90%", "90%"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
@@ -89,7 +88,7 @@ const AboutPage = () => {
               Maximize Your Rental Income
             </Text>
             <Text
-                       data-aos="fade-left"
+              data-aos="fade-left"
               fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
@@ -110,7 +109,7 @@ const AboutPage = () => {
           </Box>
           <Box
             style={{ backgroundImage: `url(${interior.src})` }}
-            data-aos="fade-left" // chnage dir
+            data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             w={["380px", "380px", "450px", "450px", "550px", "550px"]}
             h={["350px", "350px", "350px", "400px", "400px", "400px"]}
@@ -122,7 +121,7 @@ const AboutPage = () => {
             bgSize={"cover"}
           >
             <Box
-               data-aos="fade-left"
+              data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}
