@@ -9,10 +9,10 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 export const metadata = {
   title: {
-    default: "Next.js 14 Homepage",
+    default: "Luxe Managements",
     template: "%s | Next.js 14",
   },
-  description: "Next.js starter app description",
+  description: "Top Airbnb Management Company in Adelaide.",
 };
 
 export default function RootLayout({ children }) {
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         />
         
       </head>
-      <body className="RootLayout" style={{ }}>
+      <body className="RootLayout" >
         <ChakraProvider>{children}</ChakraProvider>
       </body>
     </html>
