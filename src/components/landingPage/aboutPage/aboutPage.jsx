@@ -71,6 +71,7 @@ const AboutPage = () => {
         mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
       >
         <Text
+
           w={["100%", "100%", "90%", "90%", "90%", "100%"]}
           fontSize={["30px", "30px", "35px", "45px", "85px", "65px"]}
           fontWeight={300}
@@ -96,7 +97,7 @@ const AboutPage = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["15px", "15px", "15px", "15px", "15px", "155px"]}
+        mt={["15px", "15px", "15px", "15px", "155px", "155px"]}
       >
         <HStack
           justify={"center"}
@@ -177,7 +178,7 @@ const AboutPage = () => {
             style={{ backgroundImage: `url(${interior.src})` }}
             data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
-            w={["380px", "380px", "450px", "450px", "550px", "635px"]}
+            w={["380px", "380px", "450px", "450px", "550px", "550px"]}
             h={["350px", "350px", "350px", "400px", "400px", "400px"]}
             bg={"rgb(255, 255, 255,0.025)"}
             backdropFilter="blur(1.5px)"
@@ -211,7 +212,7 @@ const AboutPage = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["15px", "15px", "15px", "15px", "15px", "155px"]}
+        mt={["15px", "15px", "15px", "15px", "155px", "155px"]}
       >
         <HStack
           justify={"center"}
@@ -251,7 +252,7 @@ const AboutPage = () => {
               ></HStack>
             </Box>
           </Box>
-          <Box w={["90%", "65%", "30%", "30%", "30%", "40%"]}>
+          <Box w={["90%", "65%", "30%", "30%", "30%", "45%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}

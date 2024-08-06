@@ -87,7 +87,7 @@ const HomePage = () => {
             className="animate__animated animate__fadeIn"
             rounded={"10px"}
             borderBottomRadius={"100px"}
-            w={["90%", "90%", "90%", "90%", "90%", "100%"]}
+            w={["100%", "100%", "100%", "100%", "100%", "100%"]}
             h={"600px"}
             bgPos={"center 60%"}
             bgSize={"cover"}
