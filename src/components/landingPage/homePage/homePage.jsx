@@ -136,9 +136,9 @@ const HomePage = () => {
                 align={"center"}
               >
                 <Box
+                  transition={"all 0.3s ease"}
                   cursor={"pointer"}
                   onClick={() => setFliter(false)}
-                  transition={"all 0.3s ease"}
                   _hover={{ height: "70px" }}
                   h={!fliter ? "70px" : "50px"}
                   p={!fliter ? "5px" : "2.5px"}
@@ -202,9 +202,9 @@ const HomePage = () => {
               align={"center"}
               gap={"10px"}
               p={"10px"}
-              transition={"all 0.3s ease"}
             >
               <VStack
+                transition={"all 0.3s ease"}
                 w={"100%"}
                 h={"100%"}
                 _hover={{ bg: "gray.100" }}
@@ -212,7 +212,6 @@ const HomePage = () => {
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
-                transition={"all 0.3s ease"}
               >
                 <HStack>
                   <Text
@@ -235,6 +234,7 @@ const HomePage = () => {
               </VStack>{" "}
               <Divider orientation="vertical" borderColor="gray.400" h="100%" />
               <VStack
+                transition={"all 0.3s ease"}
                 w={"100%"}
                 h={"100%"}
                 _hover={{ bg: "gray.100" }}
@@ -242,7 +242,6 @@ const HomePage = () => {
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
-                transition={"all 0.3s ease"}
               >
                 <HStack>
                   <Text
@@ -264,6 +263,7 @@ const HomePage = () => {
               </VStack>
               <Divider orientation="vertical" borderColor="gray.400" h="100%" />
               <VStack
+                transition={"all 0.3s ease"}
                 w={"100%"}
                 h={"100%"}
                 _hover={{ bg: "gray.100" }}
@@ -271,7 +271,6 @@ const HomePage = () => {
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
-                transition={"all 0.3s ease"}
               >
                 <HStack>
                   <Text
@@ -293,6 +292,7 @@ const HomePage = () => {
               </VStack>
               <Divider orientation="vertical" borderColor="gray.400" h="100%" />
               <VStack
+                transition={"all 0.3s ease"}
                 w={"100%"}
                 h={"100%"}
                 _hover={{ bg: "gray.100" }}
@@ -300,7 +300,6 @@ const HomePage = () => {
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
-                transition={"all 0.3s ease"}
               >
                 <HStack>
                   <Text
@@ -322,6 +321,7 @@ const HomePage = () => {
               </VStack>
               <Divider orientation="vertical" borderColor="gray.400" h="100%" />
               <VStack
+                transition={"all 0.3s ease"}
                 w={"30%"}
                 h={"100%"}
                 _hover={{ bg: "teal.300", color: "white" }}
@@ -331,7 +331,6 @@ const HomePage = () => {
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
-                transition={"all 0.3s ease"}
               >
                 <Box>
                   <Text
@@ -344,13 +343,7 @@ const HomePage = () => {
               </VStack>
             </HStack>
           ) : (
-            <HStack
-              w={"100%"}
-              h={"100%"}
-              justify={"end"}
-              px={"36px"}
-              transition={"all 0.3s ease"}
-            >
+            <HStack w={"100%"} h={"100%"} justify={"end"} px={"36px"}>
               <Input
                 w={"100%"}
                 border={"none"}
@@ -394,20 +387,18 @@ const HomePage = () => {
         >
           {navBox.map(({ name, desc, icon, speicals, link, img }) => (
             <Box
-            
               key={name}
               w={["260px", "260px", "100%", "100%", "100%"]}
               h={["200px", "200px", "250px", "290px", "250px"]}
               borderLeft={"1px solid #A0AEC0"}
               borderRight={"1px solid #A0AEC0"}
-            
               p={["2", "2", "2", "3", "4"]}
               bgPos={"center"}
               bgSize={"cover"}
               textShadow={"0px 0px 50px black"}
             >
               <VStack
-              p={["2", "2", "2", "3", "4"]}
+                p={["2", "2", "2", "3", "4"]}
                 style={{ backgroundImage: `url(${img})` }}
                 bgPos={"center"}
                 bgSize={"cover"}
@@ -417,9 +408,8 @@ const HomePage = () => {
                 color={"white"}
                 rounded={"18px"}
                 zIndex={3}
-              
               >
-                <HStack  zIndex={3}>
+                <HStack zIndex={3}>
                   <Text
                     zIndex={3}
                     w={"70%"}
@@ -447,19 +437,26 @@ const HomePage = () => {
                   justify={"left"}
                   align={"center"}
                   fontWeight={"500"}
-                  transition="transform, 0.3s ease"
-                  _hover={{
-                    marginLeft: "10px",
-                  }}
+
                 >
-                  <HStack
+                  <HStack                transition={"all 0.05s ease"}
                     align={"center"}
                     borderRadius={"10px"}
                     px={"8px"}
                     mr={"5px"}
                     bg={"white"}
+                    _hover={{
+                      marginLeft: "10px",
+                    }}
                   >
-                    <Text fontSize={"12px"} as={"span"} color={"black"}>
+                    <Text
+     
+                      fontSize={"12px"}
+                      as={"span"}
+                      color={"black"}
+
+                    
+                    >
                       Learn more
                     </Text>{" "}
                     <HiArrowLongRight color="black" fontSize={"30px"} />
