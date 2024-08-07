@@ -66,12 +66,10 @@ const AboutPage = () => {
         align={"start"}
         w={"100%"}
         h={"100%"}
-
         wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
       >
         <Text
-
           w={["100%", "100%", "90%", "90%", "90%", "100%"]}
           fontSize={["30px", "30px", "35px", "45px", "85px", "65px"]}
           fontWeight={300}
@@ -175,12 +173,11 @@ const AboutPage = () => {
             </Text>
           </Box>
           <Box
-            style={{ backgroundImage: `url(${interior.src})` }}
-            data-aos="fade-right" // chnage dir
+            // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             w={["380px", "380px", "450px", "450px", "550px", "550px"]}
-            h={["350px", "350px", "350px", "400px", "400px", "400px"]}
-            bg={"rgb(255, 255, 255,0.025)"}
+            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+            bg={"rgb(0,0,0,0.15)"}
             backdropFilter="blur(1.5px)"
             p={"10px"}
             borderRadius={"30px"}
@@ -188,7 +185,8 @@ const AboutPage = () => {
             bgSize={"cover"}
           >
             <Box
-              data-aos="fade-right"
+              style={{ backgroundImage: `url(${interior.src})` }}
+              // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}
@@ -223,12 +221,11 @@ const AboutPage = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
-            style={{ backgroundImage: `url(${interior.src})` }}
-            data-aos="fade-right" // chnage dir
+            // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             w={["380px", "380px", "450px", "450px", "550px", "550px"]}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            bg={"rgb(255, 255, 255,0.025)"}
+            bg={"rgb(0,0,0,0.15)"}
             backdropFilter="blur(1.5px)"
             p={"10px"}
             borderRadius={"30px"}
@@ -236,7 +233,8 @@ const AboutPage = () => {
             bgSize={"cover"}
           >
             <Box
-              data-aos="fade-right"
+              style={{ backgroundImage: `url(${interior.src})` }}
+              // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}
@@ -273,6 +271,7 @@ const AboutPage = () => {
                 </Box>
                 <Box>
                   <Text
+                    fontFamily={"Poppins"}
                     w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
@@ -309,23 +308,33 @@ const AboutPage = () => {
               gap={"50px"}
             >
               {topBoxIcons.map(({ title, icon, description }) => (
-                <VStack w={"5000px"} h={"100%"} justify={"start"} align={"left"} key={title}>
-                  <Text  data-aos="fade-up"
+                <VStack
+                  fontFamily={"Poppins"}
+                  w={"5000px"}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
+                >
+                  <Text
+                    data-aos="fade-up"
                     textAlign={"left"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "30px"]}
                   >
                     {icon}
                   </Text>
 
-                  <Text data-aos="fade-up"
-                  fontWeight={500}
+                  <Text
+                    data-aos="fade-up"
+                    fontWeight={500}
                     w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
-                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]} 
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
                   >
                     {title}
                   </Text>
-                  <Text  data-aos="fade-up"
+                  <Text
+                    data-aos="fade-up"
                     w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
                   >
@@ -343,22 +352,32 @@ const AboutPage = () => {
               gap={"50px"}
             >
               {bottomBoxIcons.map(({ title, icon, description }) => (
-                <VStack w={"100%"} justify={"start"} align={"left"} key={title} >
-                  <Text  data-aos="fade-up"
+                <VStack
+                  fontFamily={"Poppins"}
+                  w={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
+                >
+                  <Text
+                    data-aos="fade-up"
                     textAlign={"left"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "30px"]}
                   >
                     {icon}
                   </Text>
 
-                  <Text  mt={["10px", "10px", "10px", "10px", "10px", "10px"]}  data-aos="fade-up" 
-                  fontWeight={500}
+                  <Text
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
+                    data-aos="fade-up"
+                    fontWeight={500}
                     w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
                   >
                     {title}
                   </Text>
-                  <Text  data-aos="fade-up" 
+                  <Text
+                    data-aos="fade-up"
                     w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
                   >
