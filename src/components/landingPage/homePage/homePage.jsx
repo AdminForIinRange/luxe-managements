@@ -9,21 +9,14 @@ import {
   Input,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import { GoDotFill } from "react-icons/go";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-import { HiArrowLongRight } from "react-icons/hi2";
 import { FaSearch } from "react-icons/fa";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import AboutPage from "../aboutPage/aboutPage";
-import { FcCustomerSupport } from "react-icons/fc";
-import womenCalling from "../../../assets/img/womenCalling.jpg";
-import interior2 from "../../../assets/img/interior2.jpg";
-import interior3 from "../../../assets/img/interior3.jpg";
-import interior4 from "../../../assets/img/interior4.jpg";
-import interior5 from "../../../assets/img/interior5.jpg";
+import QuickNavBox from "../quickNavBox/quickNavBox";
+
 const HomePage = () => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -35,35 +28,6 @@ const HomePage = () => {
   }, []);
 
   const frontFliter = [{}];
-  const navBox = [
-    {
-      name: "Contact Us",
-      desc: "Have questions? Reach out to us for all your Airbnb management needs.",
-
-      link: "#",
-      icon: <FcCustomerSupport />,
-      speicals: "",
-      img: womenCalling.src,
-    },
-    {
-      name: "View our Services",
-      desc: "Maximize your rental income with our expert Airbnb management in Adelaide.",
-
-      link: "#",
-      icon: <GoDotFill color="green" />,
-      speicals: "",
-      img: interior5.src,
-    },
-    {
-      name: "View our Portfolio",
-      desc: "See how we manage properties in Adelaide for hassle-free short-term rentals.",
-
-      link: "#",
-      icon: <GoDotFill color="green" />,
-      speicals: "",
-      img: interior3.src,
-    },
-  ];
 
   return (
     // add some functional content at the end of the banner
@@ -369,109 +333,10 @@ const HomePage = () => {
         </Box>
       </HStack>
 
-      <HStack
-        fontFamily={"poppins"}
-        bg={"white"}
-        w={"100%"}
-        h={"100%"}
-        justify={"center"}
-        align={"center"}
-        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
-      >
-        <HStack
-          w={"80%"}
-          h={"100%"}
-          justify={"center"}
-          align={"start"}
-          gap={"80px"}
-        >
-          {navBox.map(({ name, desc, icon, speicals, link, img }) => (
-            <Box
-              key={name}
-              w={["260px", "260px", "100%", "100%", "100%"]}
-              h={["200px", "200px", "250px", "290px", "250px"]}
-              borderLeft={"1px solid #A0AEC0"}
-              borderRight={"1px solid #A0AEC0"}
-              p={["2", "2", "2", "3", "4"]}
-              bgPos={"center"}
-              bgSize={"cover"}
-              textShadow={"0px 0px 50px black"}
-            >
-              <VStack
-                p={["2", "2", "2", "3", "4"]}
-                style={{ backgroundImage: `url(${img})` }}
-                bgPos={"center"}
-                bgSize={"cover"}
-                align={"left"}
-                w={"100%"}
-                h={"100%"}
-                color={"white"}
-                rounded={"18px"}
-                zIndex={3}
-              >
-                <HStack zIndex={3}>
-                  <Text
-                    zIndex={3}
-                    w={"70%"}
-                    fontSize={["12px", "12px", "12px", "12px", "14px", "28px"]}
-                    fontWeight={"700"}
-                    textAlign={"left"}
-                  >
-                    {name}
-                  </Text>
-                </HStack>
-
-                <HStack>
-                  <Text
-                    fontSize={["12px", "12px", "12px", "12px", "16px"]}
-                    fontWeight={"400"}
-                    textAlign={"left"}
-                  >
-                    {desc}
-                  </Text>
-                </HStack>
-                <HStack
-                  cursor={"pointer"}
-                  w={"100%"}
-                  h={"100%"}
-                  justify={"left"}
-                  align={"center"}
-                  fontWeight={"500"}
-
-                >
-                  <HStack                transition={"all 0.05s ease"}
-                    align={"center"}
-                    borderRadius={"10px"}
-                    px={"8px"}
-                    mr={"5px"}
-                    bg={"white"}
-                    _hover={{
-                      marginLeft: "10px",
-                    }}
-                  >
-                    <Text
-     
-                      fontSize={"12px"}
-                      as={"span"}
-                      color={"black"}
-
-                    
-                    >
-                      Learn more
-                    </Text>{" "}
-                    <HiArrowLongRight color="black" fontSize={"30px"} />
-                  </HStack>
-                </HStack>
-              </VStack>
-            </Box>
-          ))}
-        </HStack>
-      </HStack>
-
-      {/* 
-below is the a display of Services and about */}
 
       <AboutPage />
+      <QuickNavBox />
+
     </>
   );
 };

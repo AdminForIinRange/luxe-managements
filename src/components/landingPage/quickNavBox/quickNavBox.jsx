@@ -1,0 +1,139 @@
+"use client";
+
+import {
+  Box,
+  HStack,
+  VStack,
+  Text,
+  Divider,
+  Select,
+  Input,
+} from "@chakra-ui/react";
+
+import React from "react";
+import womenCalling from "../../../assets/img/womenCalling.jpg";
+import interior3 from "../../../assets/img/interior3.jpg";
+import interior5 from "../../../assets/img/interior5.jpg";
+import { HiArrowLongRight } from "react-icons/hi";
+const QuickNavBox = () => {
+  const navBox = [
+    {
+      name: "Contact Us",
+      desc: "Have questions? Reach out to us for all your Airbnb management needs.",
+
+      link: "#",
+
+      speicals: "",
+      img: womenCalling.src,
+    },
+    {
+      name: "View our Services",
+      desc: "Maximize your rental income with our expert Airbnb management in Adelaide.",
+
+      link: "#",
+
+      speicals: "",
+      img: interior5.src,
+    },
+    {
+      name: "View our Portfolio",
+      desc: "See how we manage properties in Adelaide for hassle-free short-term rentals.",
+      link: "#",
+
+      speicals: "",
+      img: interior3.src,
+    },
+  ];
+  return (
+    <>
+      <HStack
+        fontFamily={"poppins"}
+        bg={"white"}
+        w={"100%"}
+        h={"100%"}
+        justify={"center"}
+        align={"center"}
+        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+      >
+        <HStack
+          w={"80%"}
+          h={"100%"}
+          justify={"center"}
+          align={"start"}
+          gap={"80px"}
+        >
+          {navBox.map(({ name, desc, icon, speicals, link, img }, index) => (
+            <Box
+              key={index}
+              w={["260px", "260px", "100%", "100%", "100%"]}
+              h={["200px", "200px", "250px", "290px", "250px"]}
+              borderLeft={"1px solid #A0AEC0"}
+              borderRight={"1px solid #A0AEC0"}
+              p={["2", "2", "2", "3", "4"]}
+              textShadow={"0px 0px 50px black"}
+            >
+              <VStack
+                p={["2", "2", "2", "3", "4"]}
+                style={{ backgroundImage: `url(${img})` }}
+                bgPos={"center"}
+                bgSize={"cover"}
+                align={"left"}
+                w={"100%"}
+                h={"100%"}
+                color={"white"}
+                rounded={"18px"}
+                zIndex={3}
+              >
+                <HStack zIndex={3}>
+                  <Text
+                    zIndex={3}
+                    w={"70%"}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "28px"]}
+                    fontWeight={"700"}
+                    textAlign={"left"}
+                  >
+                    {name}
+                  </Text>
+                </HStack>
+
+                <HStack>
+                  <Text
+                    fontSize={["12px", "12px", "12px", "12px", "16px"]}
+                    fontWeight={"400"}
+                    textAlign={"left"}
+                  >
+                    {desc}
+                  </Text>
+                </HStack>
+                <HStack
+                  cursor={"pointer"}
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"left"}
+                  align={"center"}
+                  fontWeight={"500"}
+                >
+                  <HStack
+                    transition={"all 0.05s ease"}
+                    align={"center"}
+                    borderRadius={"10px"}
+                    px={"8px"}
+                    mr={"5px"}
+                    bg={"white"}
+                  >
+                    <Text fontSize={"12px"} as={"span"} color={"black"}>
+                      Learn more
+                    </Text>{" "}
+                    <HiArrowLongRight color="black" fontSize={"30px"} />
+                  </HStack>
+                </HStack>
+              </VStack>
+            </Box>
+          ))}
+        </HStack>
+      </HStack>
+    </>
+  );
+};
+
+export default QuickNavBox;
