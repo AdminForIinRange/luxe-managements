@@ -23,9 +23,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import Image from "next/image";
-import { RiSpaceShipFill } from "react-icons/ri";
-import { GiRapidshareArrow, GiReturnArrow } from "react-icons/gi";
-import { GiWideArrowDunk } from "react-icons/gi";
+
 const Navbar = ({}) => {
   const [isTablet] = useMediaQuery("(max-width: 767px)");
   const [night, setNight] = useState(true);

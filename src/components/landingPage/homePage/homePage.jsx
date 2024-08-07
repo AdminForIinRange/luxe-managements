@@ -9,8 +9,10 @@ import {
   Input,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 import { FaSearch } from "react-icons/fa";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -56,6 +58,7 @@ const HomePage = () => {
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
+            loading="lazy"
           >
             <VStack
               w={"100%"}
@@ -333,10 +336,8 @@ const HomePage = () => {
         </Box>
       </HStack>
 
-
-      <AboutPage />
       <QuickNavBox />
-
+      <AboutPage />
     </>
   );
 };

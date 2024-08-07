@@ -14,9 +14,9 @@ import React from "react";
 import womenCalling from "../../../assets/img/womenCalling.jpg";
 import interior3 from "../../../assets/img/interior3.jpg";
 import interior5 from "../../../assets/img/interior5.jpg";
-import { HiArrowLongRight } from "react-icons/hi";
+import { HiArrowLongRight } from "react-icons/hi2";
 const QuickNavBox = () => {
-  const navBox = [
+  const box = [
     {
       name: "Contact Us",
       desc: "Have questions? Reach out to us for all your Airbnb management needs.",
@@ -39,7 +39,6 @@ const QuickNavBox = () => {
       name: "View our Portfolio",
       desc: "See how we manage properties in Adelaide for hassle-free short-term rentals.",
       link: "#",
-
       speicals: "",
       img: interior3.src,
     },
@@ -62,7 +61,7 @@ const QuickNavBox = () => {
           align={"start"}
           gap={"80px"}
         >
-          {navBox.map(({ name, desc, icon, speicals, link, img }, index) => (
+          {box.map(({ name, desc }, index) => (
             <Box
               key={index}
               w={["260px", "260px", "100%", "100%", "100%"]}
@@ -74,7 +73,7 @@ const QuickNavBox = () => {
             >
               <VStack
                 p={["2", "2", "2", "3", "4"]}
-                style={{ backgroundImage: `url(${img})` }}
+                backgroundImage={`url(${box[index].img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
                 align={"left"}
@@ -106,25 +105,30 @@ const QuickNavBox = () => {
                   </Text>
                 </HStack>
                 <HStack
+                  transition={"transform 0.3s ease"}
+                  _hover={{
+                    transform: "translateX(10px)",
+                  }}
                   cursor={"pointer"}
-                  w={"100%"}
                   h={"100%"}
                   justify={"left"}
-                  align={"center"}
+                  align={"end"}
                   fontWeight={"500"}
                 >
                   <HStack
-                    transition={"all 0.05s ease"}
                     align={"center"}
                     borderRadius={"10px"}
                     px={"8px"}
                     mr={"5px"}
                     bg={"white"}
+                    color={"black"}
                   >
-                    <Text fontSize={"12px"} as={"span"} color={"black"}>
+                    <Text fontSize={"12px"} color={"black"}>
                       Learn more
                     </Text>{" "}
-                    <HiArrowLongRight color="black" fontSize={"30px"} />
+                    <Text fontSize={"30px"}>
+                      <HiArrowLongRight color="black" />
+                    </Text>
                   </HStack>
                 </HStack>
               </VStack>
