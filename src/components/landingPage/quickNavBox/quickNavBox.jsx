@@ -15,6 +15,7 @@ import womenCalling from "../../../assets/img/womenCalling.jpg";
 import interior3 from "../../../assets/img/interior3.jpg";
 import interior5 from "../../../assets/img/interior5.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
+
 const QuickNavBox = () => {
   const box = [
     {

@@ -20,6 +20,9 @@ import { FaListUl } from "react-icons/fa";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoGitBranch } from "react-icons/io5";
 import { FcCustomerSupport } from "react-icons/fc";
+import Image from "next/image";
+import collage from "../../../assets/img/collage.png";
+import { HiArrowLongRight } from "react-icons/hi2";
 const AboutPage = () => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -102,154 +105,9 @@ const AboutPage = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
+          gap={["15px", "25px", "35px", "45px", "0px", "5px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
-          <Box w={["90%", "65%", "30%", "30%", "30%", "35%"]}>
-            <HStack
-              w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={"center"}
-              h={"100%"}
-            >
-              <HStack
-                data-aos="fade-left"
-                rounded={"100px"}
-                justify={"start"}
-                align={"center"}
-                h={"100%"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
-                py={[1, 1, 2, 2, 2, 2]}
-              >
-                <Box>
-                  <GoDotFill color="black" fontSize={"20px"} />
-                </Box>
-                <Box>
-                  <Text
-                    w={"100%"}
-                    h={"100%"}
-                    textAlign={"center"}
-                    color={"black"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
-                    fontWeight={500}
-                  >
-                    Improve
-                  </Text>
-                </Box>
-              </HStack>
-            </HStack>
-            <Text
-              data-aos="fade-left"
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              w={["100%", "100%", "90%", "90%", "90%", "90%"]}
-              fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
-              fontWeight={300}
-              fontFamily={"Poppins"}
-              bgClip="text"
-              textAlign={["center", "center", "left", "left", "left", "left"]}
-              color={"black"}
-              bgGradient="linear(to-r, green, red)"
-            >
-              Maximize Your Rental Income
-            </Text>
-            <Text
-              data-aos="fade-left"
-              fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              textAlign={["center", "center", "left", "left", "left", "left"]}
-              fontFamily={"Poppins"}
-              color={"black"}
-              w={"100%"}
-              fontWeight={300}
-            >
-              Optimize your income and ease your mind with our experienced
-              Airbnb Management team in Adelaide.
-              <br />
-              <br />
-              We handle everything for you, from listing your property on
-              Airbnb, Booking.com, and more, to maximizing rental profits.
-              Experience hassle-free short-term rentals with Adelaide's leading
-              Airbnb management service.
-            </Text>
-          </Box>
-          <Box
-            // data-aos="fade-right" // chnage dir
-            border={"5px solid rgb(255, 255, 255,0.25)"}
-            w={["380px", "380px", "450px", "450px", "550px", "550px"]}
-            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            bg={"rgb(0,0,0,0.15)"}
-            backdropFilter="blur(1.5px)"
-            p={"10px"}
-            borderRadius={"30px"}
-            bgPos={"center"}
-            bgSize={"cover"}
-          >
-            <Box
-              style={{ backgroundImage: `url(${interior.src})` }}
-              // data-aos="fade-right"
-              bgPos={"center"}
-              bgSize={"cover"}
-              w={"100%"}
-              h={"100%"}
-              p={"10px"}
-              borderRadius={"30px"}
-            >
-              <HStack
-                p={"5px"}
-                justify={"start"}
-                align={"start"}
-                w={"100%"}
-              ></HStack>
-            </Box>
-          </Box>
-        </HStack>
-      </HStack>
-
-      <HStack
-        justify={"center"}
-        align={"center"}
-        w={"100%"}
-        h={"100%"}
-        mt={["15px", "15px", "15px", "15px", "155px", "155px"]}
-      >
-        <HStack
-          justify={"center"}
-          align={"start"}
-          w={"100%"}
-          h={"100%"}
-          gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
-          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-        >
-          <Box
-            // data-aos="fade-right" // chnage dir
-            border={"5px solid rgb(255, 255, 255,0.25)"}
-            w={["380px", "380px", "450px", "450px", "550px", "550px"]}
-            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            bg={"rgb(0,0,0,0.15)"}
-            backdropFilter="blur(1.5px)"
-            p={"10px"}
-            borderRadius={"30px"}
-            bgPos={"center"}
-            bgSize={"cover"}
-          >
-            <Box
-              style={{ backgroundImage: `url(${interior.src})` }}
-              // data-aos="fade-right"
-              bgPos={"center"}
-              bgSize={"cover"}
-              w={"100%"}
-              h={"100%"}
-              p={"10px"}
-              borderRadius={"30px"}
-            >
-              <HStack
-                p={"5px"}
-                justify={"start"}
-                align={"start"}
-                w={"100%"}
-              ></HStack>
-            </Box>
-          </Box>
           <Box w={["90%", "65%", "30%", "30%", "30%", "45%"]}>
             <HStack
               w={"100%"}
@@ -271,15 +129,200 @@ const AboutPage = () => {
                 </Box>
                 <Box>
                   <Text
-                    fontFamily={"Poppins"}
                     w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
                     fontWeight={500}
                   >
-                    Improve
+                    Maximize Earnings
+                  </Text>
+                </Box>
+              </HStack>
+            </HStack>
+            <Text
+              data-aos="fade-left"
+              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
+              fontWeight={300}
+              fontFamily={"Poppins"}
+              bgClip="text"
+              textAlign={["center", "center", "left", "left", "left", "left"]}
+              color={"black"}
+              bgGradient="linear(to-r, green, red)"
+            >
+              Maximize Your Rental Income
+            </Text>
+            <Text
+              data-aos="fade-left"
+              fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              textAlign={["center", "center", "left", "left", "left", "left"]}
+              fontFamily={"Poppins"}
+              color={"black"}
+              w={"80%"} // !important
+              fontWeight={300}
+            >
+              Optimize your income and ease your mind with our experienced
+              Airbnb Management team in Adelaide.
+              <br />
+              <br />
+              We handle everything for you, from listing your property on
+              Airbnb, Booking.com, and more, to maximizing rental profits.
+              Experience hassle-free short-term rentals with Adelaide's leading
+              Airbnb management service.
+            </Text>
+
+            <HStack
+              mt={["50px", "50px", "50px", "25px", "25px", "25px"]}
+              w={"170px"}
+              transition={"transform 0.3s ease"}
+              _hover={{
+                transform: "translateX(10px)",
+              }}
+              align={"center"}
+              borderRadius={"10px"}
+              px={"8px"}
+              py={"5px"}
+              mr={"5px"}
+              bg={"white"}
+              color={"black"}
+              bgColor={"black"}
+            >
+              <Text
+                fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                color={"white"}
+                px={"8px"}
+              >
+                Learn more
+              </Text>{" "}
+              <Text fontSize={"30px"}>
+                <HiArrowLongRight color="white" />
+              </Text>
+            </HStack>
+          </Box>
+          {/* <Image src={collage} width={500} /> */}
+          <Box
+          display={["block", "block", "block", "none", "none", "none"]}
+            // data-aos="fade-right" // chnage dir
+            border={"5px solid rgb(255, 255, 255,0.25)"}
+            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+            w={["380px", "380px", "450px", "450px", "550px", "600px"]}
+            bg={"rgb(0,0,0,0.05)"}
+            backdropFilter="blur(1.5px)"
+            borderRadius={"30px"}
+            bgPos={"center"}
+            bgSize={"cover"}
+            p={"10px"}
+          >
+            <Box
+              style={{ backgroundImage: `url(${interior.src})` }}
+              // data-aos="fade-right"
+              bgPos={"center"}
+              bgSize={"cover"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+              borderRadius={"30px"}
+            >
+              <HStack
+                p={"5px"}
+                justify={"start"}
+                align={"start"}
+                w={"100%"}
+              ></HStack>
+            </Box>
+
+            {/* <Image src={collage} />   //!cool */}
+          </Box>
+          <Box
+          display={["none", "none", "none", "block", "block", "block"]}
+            // data-aos="fade-right" // chnage dir
+      
+            w={["380px", "380px", "450px", "450px", "550px", "600px"]}
+
+           
+
+          >
+           
+
+            <Image src={collage} /> 
+          </Box>
+        </HStack>
+      </HStack>
+
+      <HStack
+        justify={"center"}
+        align={"center"}
+        w={"100%"}
+        h={"100%"}
+        mt={["15px", "15px", "15px", "15px", "155px", "155px"]}
+      >
+        <HStack
+          justify={"center"}
+          align={"start"}
+          w={"100%"}
+          h={"100%"}
+          gap={["15px", "25px", "35px", "45px", "55px", "50px"]}
+          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        >
+          <Box
+            // data-aos="fade-right" // chnage dir
+            border={"5px solid rgb(255, 255, 255,0.25)"}
+            w={["380px", "380px", "450px", "450px", "550px", "550px"]}
+            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+            bg={"rgb(0,0,0,0.05)"}
+            backdropFilter="blur(1.5px)"
+            p={"10px"}
+            borderRadius={"30px"}
+            bgPos={"center"}
+            bgSize={"cover"}
+          >
+            <Box
+              style={{ backgroundImage: `url(${interior.src})` }}
+              // data-aos="fade-right"
+              bgPos={"center"}
+              bgSize={"cover"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+              borderRadius={"30px"}
+            ></Box>
+          </Box>
+          <Box
+            w={["90%", "65%", "30%", "30%", "30%", "45%"]}
+            // bg={"red.200"}
+          >
+            <HStack
+              w={"100%"}
+              justify={["center", "center", "start", "start", "start", "start"]}
+              align={"center"}
+              h={"100%"}
+              gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
+            >
+              <HStack
+                data-aos="fade-left"
+                rounded={"100px"}
+                justify={"start"}
+                align={"center"}
+                h={"100%"}
+                border={"1px solid rgb(255, 255, 255,0.25)"}
+                py={[1, 1, 2, 2, 2, 2]}
+              >
+                <Box>
+                  <GoDotFill color="black" fontSize={"20px"} />
+                </Box>
+                <Box>
+                  <Text
+                    fontFamily={"Poppins"}
+                    h={"100%"}
+                    textAlign={"center"}
+                    color={"black"}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                    fontWeight={500}
+                  >
+                    Feel at ease
                   </Text>
                 </Box>
               </HStack>
@@ -288,7 +331,6 @@ const AboutPage = () => {
             <Text
               data-aos="fade-left"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              w={["100%", "100%", "90%", "90%", "90%", "90%"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
               fontWeight={300}
               fontFamily={"Poppins"}
@@ -310,7 +352,7 @@ const AboutPage = () => {
               {topBoxIcons.map(({ title, icon, description }) => (
                 <VStack
                   fontFamily={"Poppins"}
-                  w={"5000px"}
+                  w={"100%"}
                   h={"100%"}
                   justify={"start"}
                   align={"left"}
@@ -327,15 +369,14 @@ const AboutPage = () => {
                   <Text
                     data-aos="fade-up"
                     fontWeight={500}
-                    w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
                   >
                     {title}
                   </Text>
                   <Text
+                    fontWeight={300}
                     data-aos="fade-up"
-                    w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
                   >
                     {description}
@@ -371,14 +412,13 @@ const AboutPage = () => {
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
                     data-aos="fade-up"
                     fontWeight={500}
-                    w={"100%"}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
                   >
                     {title}
                   </Text>
                   <Text
                     data-aos="fade-up"
-                    w={"100%"}
+                    fontWeight={300}
                     fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
                   >
                     {description}
