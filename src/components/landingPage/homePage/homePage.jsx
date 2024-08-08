@@ -64,7 +64,7 @@ const HomePage = () => {
           justify={"center"}
           align={"center"}
           pl={"5px"}
-          py={"5px"}
+pr={"5px"}
         >
           <Box
             className="animate__animated animate__fadeIn"
@@ -85,7 +85,7 @@ const HomePage = () => {
               mt={"70px"}
             >
               <Text
-                fontSize={["30px", "30px", "35px", "85px", "85px", "85px"]}
+                fontSize={["65px", "75px", "75px", "85px", "85px", "85px"]}
                 fontWeight={500}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
@@ -114,7 +114,7 @@ const HomePage = () => {
               </Text>
 
               <HStack
-                mt={"-100px"}
+                mt={["-250px", "-250px", "-250px", "-100px","-100px","-100px", ] }
                 w={"100%"}
                 h={"100%"}
                 justify={"center"}
@@ -168,11 +168,11 @@ const HomePage = () => {
         h={"100%"}
         justify={"center"}
         align={"center"}
-        mt={"-100px"}
+        mt={["-250px", "-250px", "-250px", "-100px","-100px","-100px", ] }
       >
         {" "}
         <Box
-          w={["70%", "70%" , "70%" , "70%" , "80%" , "70%"]}
+          w={["90%", "90%" , "90%" , "80%" , "80%" , "80%"]}
           h={"125px"}
           bgColor={"white"}
           shadow={"lg"}
@@ -203,7 +203,7 @@ const HomePage = () => {
                   >
                     <HStack>
                       <Text
-                    fontSize={[""]}
+                    fontSize={["10px", "10px","14px","14px","14px","14px"]}
                         textAlign={"center"}
                         fontWeight={400}
                         color={"gray.700"}
@@ -218,7 +218,7 @@ const HomePage = () => {
                     <Box>
                       <Text
                         fontWeight={700}
-                        fontSize={"28px"}
+                        fontSize={["20px", "20px", "24px", "24px", "28px", "28px"]}
                         color={"gray.600"}
                       >
                         {value}
@@ -282,9 +282,9 @@ const HomePage = () => {
           )}
         </Box>
       </HStack>
-
+{/* 
       <QuickNavBox />
-      <AboutPage />
+      <AboutPage /> */}
     </>
   );
 };
