@@ -91,9 +91,10 @@ const HomePage = () => {
                 fontFamily={"Poppins"}
                 bgClip="text" // Clip the background to the text
                 className="animate__animated animate__fadeInDown"
-                color={"white"} // Adding white outline effect
+                color={["red", "blue", "white", "green", "yellow" , "white"]} // Adding white outline effect
                 bgGradient="linear(to-r, green, red)"
                 textShadow={"0px 0px 5px gray"}
+                
               >
                 Luxe Managements{" "}
               </Text>
@@ -129,7 +130,7 @@ const HomePage = () => {
                   bgColor={"white"}
                   rounded={"10px"}
                   shadow={"lg"}
-                  w={"125px"}
+                  w={["125px" ,"125px","125px","125px","125px","125px"]}
                   mt={"100px"}
                   fontSize={"18px"}
                   bg={!fliter ? "white" : "gray.200"}
@@ -171,7 +172,7 @@ const HomePage = () => {
       >
         {" "}
         <Box
-          w={"70%"}
+          w={["70%", "70%" , "70%" , "70%" , "80%" , "70%"]}
           h={"125px"}
           bgColor={"white"}
           shadow={"lg"}
@@ -190,7 +191,7 @@ const HomePage = () => {
               {frontFliter.map(({ title, value }, index) => (
                 <>
                   <VStack
-                    key={title}
+                    key={index}
                     transition={"all 0.3s ease"}
                     w={"100%"}
                     h={"100%"}
@@ -202,6 +203,7 @@ const HomePage = () => {
                   >
                     <HStack>
                       <Text
+                    fontSize={[""]}
                         textAlign={"center"}
                         fontWeight={400}
                         color={"gray.700"}
