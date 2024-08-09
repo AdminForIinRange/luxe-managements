@@ -94,7 +94,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["8%", "8%", "8%", "8%", "10%", "10%"]}
+        px={["8%", "12%", "12%", "12%", "10%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -250,7 +250,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-       px={["60px", "60px", "5%", "8%", "10%", "10%"]}
+      px={["8%", "12%", "12%", "12%", "10%", "10%"]}
         justify={"center"}
         align={"center"}
         w={"100%"}
