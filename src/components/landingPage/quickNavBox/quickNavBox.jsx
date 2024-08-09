@@ -66,7 +66,7 @@ const QuickNavBox = () => {
             <Box
               key={index}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={["200px", "200px", "250px", "250px", "250px", "250px"]}
+              h={["200px", "200px", "250px", "250px", "300px", "250px"]}
               borderLeft={"1px solid #A0AEC0"}
               borderRight={"1px solid #A0AEC0"}
               p={["2", "2", "2", "3", "4"]}

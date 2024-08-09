@@ -227,7 +227,7 @@ const AboutPage = () => {
               h={"100%"}
               p={"10px"}
               borderRadius={"30px"}
-            >
+            >                                                 
               <HStack
                 p={"5px"}
                 justify={"start"}
