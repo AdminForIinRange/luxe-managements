@@ -71,7 +71,7 @@ pr={"5px"}
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-            h={"600px"}
+            h={["525px", "525px", "525px", "525px", "600px", "600px"]}
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
@@ -85,7 +85,7 @@ pr={"5px"}
               mt={"70px"}
             >
               <Text
-                fontSize={["65px", "75px", "75px", "85px", "85px", "85px"]}
+                fontSize={["65px", "65px", "65px", "75px", "85px", "85px"]}
                 fontWeight={500}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
@@ -114,7 +114,7 @@ pr={"5px"}
               </Text>
 
               <HStack
-                mt={["-250px", "-250px", "-250px", "-100px","-100px","-100px", ] }
+                mt={["-200px", "-200px", "-200px", "-200px","-100px","-100px", ] }
                 w={"100%"}
                 h={"100%"}
                 justify={"center"}
@@ -168,7 +168,7 @@ pr={"5px"}
         h={"100%"}
         justify={"center"}
         align={"center"}
-        mt={["-250px", "-250px", "-250px", "-100px","-100px","-100px", ] }
+        mt={["-115px", "-115px", "-115px", "-100px","-100px","-100px", ] }
       >
         {" "}
         <Box
@@ -286,9 +286,9 @@ pr={"5px"}
           )}
         </Box>
       </HStack>
-{/* 
+
       <QuickNavBox />
-      <AboutPage /> */}
+      {/* <AboutPage /> */}
     </>
   );
 };
