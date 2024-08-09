@@ -94,7 +94,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["8%", "12%", "12%", "12%", "10%", "10%"]}
+        px={["8%", "8%", "8%", "8%", "10%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -250,7 +250,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-      px={["8%", "12%", "12%", "12%", "10%", "10%"]}
+          px={["8%", "8%", "8%", "8%", "10%", "10%"]}
         justify={"center"}
         align={"center"}
         w={"100%"}
@@ -289,7 +289,7 @@ const AboutPage = () => {
               borderRadius={"30px"}
             ></Box>
           </Box>
-          <Box w={["90%", "90%", "60%", "60%", "50%", "50%"]}>
+          <Box w={["100%", "100%", "100%", "60%", "50%", "50%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
