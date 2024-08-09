@@ -94,7 +94,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["8%", "8%", "8%", "8%", "10%", "10%"]}
+      px={["6%", "6%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -242,7 +242,7 @@ const AboutPage = () => {
             display={["none", "none", "none", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
 
-            w={["390px", "390px", "390px", "390px", "550px", "600px"]}
+            w={["390px", "390px", "390px", "390px", "450px", "600px"]}
           >
             <Image src={collage} />
           </Box>
@@ -250,7 +250,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-          px={["8%", "8%", "8%", "8%", "10%", "10%"]}
+          px={["6%", "6%", "6%", "6%", "6%", "10%"]}
         justify={"center"}
         align={"center"}
         w={"100%"}
@@ -262,7 +262,7 @@ const AboutPage = () => {
           align={"start"}
           w={"100%"}
           h={"100%"}
-          gap={["55px", "55px", "55px", "55px", "55px", "55px"]}
+          gap={["45px", "45px", "45px", "45px", "45px", "45px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
@@ -289,7 +289,7 @@ const AboutPage = () => {
               borderRadius={"30px"}
             ></Box>
           </Box>
-          <Box w={["100%", "100%", "100%", "60%", "50%", "50%"]}>
+          <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
