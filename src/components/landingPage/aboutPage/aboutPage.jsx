@@ -94,7 +94,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["60px", "60px", "60px", "8%", "10%", "10%"]}
+        px={["8%", "8%", "8%", "8%", "10%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -117,7 +117,7 @@ const AboutPage = () => {
               h={"100%"}
             >
               <HStack
-                data-aos="fade-left"
+                data-aos="fade-in"
                 rounded={"100px"}
                 justify={"start"}
                 align={"center"}
@@ -144,7 +144,7 @@ const AboutPage = () => {
             </HStack>
             <Text
             w={["80%", "80%", "80%", "80%", "80%", "80%"]}
-              data-aos="fade-left"
+              data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -157,7 +157,7 @@ const AboutPage = () => {
               Maximize Your Rental Income
             </Text>
             <Text
-              data-aos="fade-left"
+              data-aos="fade-in"
               fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
@@ -250,7 +250,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-       px={["60px", "60px", "60px", "8%", "10%", "10%"]}
+       px={["60px", "60px", "5%", "8%", "10%", "10%"]}
         justify={"center"}
         align={"center"}
         w={"100%"}
@@ -266,6 +266,7 @@ const AboutPage = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
+          display={["none", "none", "none", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["600px", "600px", "600px", "600px", "600px", "600px"]}
@@ -288,7 +289,7 @@ const AboutPage = () => {
               borderRadius={"30px"}
             ></Box>
           </Box>
-          <Box w={["100%", "100%", "100%", "60%", "50%", "50%"]}>
+          <Box w={["90%", "90%", "60%", "60%", "50%", "50%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
@@ -297,7 +298,7 @@ const AboutPage = () => {
               gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
             >
               <HStack
-                data-aos="fade-left"
+                data-aos="fade-in"
                 rounded={"100px"}
                 justify={"start"}
                 align={"center"}
@@ -324,7 +325,7 @@ const AboutPage = () => {
             </HStack>
 
             <Text
-              data-aos="fade-left"
+              data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -339,7 +340,7 @@ const AboutPage = () => {
 
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "20px", "20px", "60px", "60px"]}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
               align={"start"}
               gap={"50px"}
@@ -365,7 +366,7 @@ const AboutPage = () => {
                   <Text
                     data-aos="fade-up"
                     fontWeight={500}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
+                    fontSize={["18px", "18px", "18px", "18px", "20px", "20px"]}
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
                   >
                     {title}
@@ -373,7 +374,7 @@ const AboutPage = () => {
                   <Text
                     fontWeight={300}
                     data-aos="fade-up"
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
                     
                   >
                     {description}
@@ -384,7 +385,7 @@ const AboutPage = () => {
 
             <HStack
               w={"100%"}
-              mt={["15px", "15px", "60px", "60px", "60px", "60px"]}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
               align={"start"}
               gap={"50px"}
@@ -409,14 +410,14 @@ const AboutPage = () => {
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
                     data-aos="fade-up"
                     fontWeight={500}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "20px"]}
+                    fontSize={["18px", "18px", "18px", "18px", "20px", "20px"]}
                   >
                     {title}
                   </Text>
                   <Text
                     data-aos="fade-up"
                     fontWeight={300}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "15px"]}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
                   >
                     {description}
                   </Text>
@@ -424,7 +425,7 @@ const AboutPage = () => {
               ))}
             </HStack>
             {/* <Text
-              data-aos="fade-left"
+              data-aos="fade-in"
               fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
