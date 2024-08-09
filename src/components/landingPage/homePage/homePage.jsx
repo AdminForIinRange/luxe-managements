@@ -64,7 +64,7 @@ const HomePage = () => {
           justify={"center"}
           align={"center"}
           pl={"5px"}
-pr={"5px"}
+          pr={"5px"}
         >
           <Box
             className="animate__animated animate__fadeIn"
@@ -91,10 +91,9 @@ pr={"5px"}
                 fontFamily={"Poppins"}
                 bgClip="text" // Clip the background to the text
                 className="animate__animated animate__fadeInDown"
-                color={["red", "blue", "white", "green", "yellow" , "white"]} // Adding white outline effect
+                color={["red", "blue", "white", "green", "yellow", "white"]} // Adding white outline effect
                 bgGradient="linear(to-r, green, red)"
                 textShadow={"0px 0px 5px gray"}
-                
               >
                 Luxe Managements{" "}
               </Text>
@@ -114,7 +113,14 @@ pr={"5px"}
               </Text>
 
               <HStack
-                mt={["-200px", "-200px", "-200px", "-200px","-100px","-100px", ] }
+                mt={[
+                  "-200px",
+                  "-200px",
+                  "-200px",
+                  "-200px",
+                  "-100px",
+                  "-100px",
+                ]}
                 w={"100%"}
                 h={"100%"}
                 justify={"center"}
@@ -130,7 +136,7 @@ pr={"5px"}
                   bgColor={"white"}
                   rounded={"10px"}
                   shadow={"lg"}
-                  w={["125px" ,"125px","125px","125px","125px","125px"]}
+                  w={["125px", "125px", "125px", "125px", "125px", "125px"]}
                   mt={"100px"}
                   fontSize={"18px"}
                   bg={!fliter ? "white" : "gray.200"}
@@ -168,11 +174,11 @@ pr={"5px"}
         h={"100%"}
         justify={"center"}
         align={"center"}
-        mt={["-115px", "-115px", "-115px", "-100px","-100px","-100px", ] }
+        mt={["-115px", "-115px", "-115px", "-100px", "-100px", "-100px"]}
       >
         {" "}
         <Box
-          w={["90%", "90%" , "90%" , "85%" , "80%" , "80%"]}
+          w={["90%", "90%", "90%", "85%", "80%", "80%"]}
           h={"125px"}
           bgColor={"white"}
           shadow={"lg"}
@@ -202,10 +208,16 @@ pr={"5px"}
                     rounded={"18px"}
                     px={"10px"}
                   >
-                    <HStack >
+                    <HStack>
                       <Text
-            
-                    fontSize={["10px", "10px","14px","14px","14px","14px"]}
+                        fontSize={[
+                          "10px",
+                          "10px",
+                          "14px",
+                          "14px",
+                          "14px",
+                          "14px",
+                        ]}
                         textAlign={"center"}
                         fontWeight={400}
                         color={"gray.700"}
@@ -219,9 +231,15 @@ pr={"5px"}
 
                     <Box>
                       <Text
-                                
                         fontWeight={700}
-                        fontSize={["20px", "20px", "24px", "24px", "28px", "28px"]}
+                        fontSize={[
+                          "20px",
+                          "20px",
+                          "24px",
+                          "24px",
+                          "28px",
+                          "28px",
+                        ]}
                         color={"gray.600"}
                       >
                         {value}
@@ -288,7 +306,7 @@ pr={"5px"}
       </HStack>
 
       <QuickNavBox />
-      {/* <AboutPage /> */}
+      <AboutPage />
     </>
   );
 };

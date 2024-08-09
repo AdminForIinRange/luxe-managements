@@ -56,17 +56,17 @@ const QuickNavBox = () => {
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
         <HStack
-          w={"80%"}
+          w={["90%", "90%", "90%", "85%", "80%", "80%"]}
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={"80px"}
+          gap={["25px", "25px", "25px", "25px", "80px", "80px"]}
         >
-          {box.map(({ name, desc }, index) => (
+          {box.map(({ name, desc, img }, index) => (
             <Box
               key={index}
-              w={["260px", "260px", "100%", "100%", "100%"]}
-              h={["200px", "200px", "250px", "290px", "250px"]}
+              w={["100%", "100%", "100%", "100%", "100%", "100%"]}
+              h={["200px", "200px", "250px", "250px", "250px", "250px"]}
               borderLeft={"1px solid #A0AEC0"}
               borderRight={"1px solid #A0AEC0"}
               p={["2", "2", "2", "3", "4"]}
@@ -74,7 +74,7 @@ const QuickNavBox = () => {
             >
               <VStack
                 p={["2", "2", "2", "3", "4"]}
-                backgroundImage={`url(${box[index].img})`}
+                backgroundImage={`url(${img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
                 align={"left"}
@@ -88,7 +88,7 @@ const QuickNavBox = () => {
                   <Text
                     zIndex={3}
                     w={"70%"}
-                    fontSize={["12px", "12px", "12px", "12px", "14px", "28px"]}
+                    fontSize={["12px", "12px", "12px", "22px", "28px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >
@@ -98,7 +98,7 @@ const QuickNavBox = () => {
 
                 <HStack>
                   <Text
-                    fontSize={["12px", "12px", "12px", "12px", "16px"]}
+                    fontSize={["12px", "12px", "14px", "14px", "16px", "16px"]}
                     fontWeight={"400"}
                     textAlign={"left"}
                   >

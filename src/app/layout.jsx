@@ -2,8 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "animate.css";
 import "aos";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const inter = Inter({ subsets: ["latin"] });
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -16,11 +16,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
- 
   return (
     <html lang="en">
-   
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -40,9 +37,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
-        
       </head>
-      <body className="RootLayout" >
+      <body className="RootLayout">
         <ChakraProvider>{children}</ChakraProvider>
       </body>
     </html>

@@ -204,7 +204,7 @@ const AboutPage = () => {
           </Box>
           {/* <Image src={collage} width={500} /> */}
           <Box
-          display={["block", "block", "block", "none", "none", "none"]}
+            display={["block", "block", "block", "none", "none", "none"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
@@ -237,17 +237,12 @@ const AboutPage = () => {
             {/* <Image src={collage} />   //!cool */}
           </Box>
           <Box
-          display={["none", "none", "none", "block", "block", "block"]}
+            display={["none", "none", "none", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
-      
+
             w={["380px", "380px", "450px", "450px", "550px", "600px"]}
-
-           
-
           >
-           
-
-            <Image src={collage} /> 
+            <Image src={collage} />
           </Box>
         </HStack>
       </HStack>
