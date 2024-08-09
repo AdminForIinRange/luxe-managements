@@ -172,7 +172,7 @@ pr={"5px"}
       >
         {" "}
         <Box
-          w={["90%", "90%" , "90%" , "80%" , "80%" , "80%"]}
+          w={["90%", "90%" , "90%" , "85%" , "80%" , "80%"]}
           h={"125px"}
           bgColor={"white"}
           shadow={"lg"}
@@ -200,9 +200,11 @@ pr={"5px"}
                     justify={"center"}
                     cursor={"pointer"}
                     rounded={"18px"}
+                    px={"10px"}
                   >
-                    <HStack>
+                    <HStack >
                       <Text
+            
                     fontSize={["10px", "10px","14px","14px","14px","14px"]}
                         textAlign={"center"}
                         fontWeight={400}
@@ -217,6 +219,7 @@ pr={"5px"}
 
                     <Box>
                       <Text
+                                
                         fontWeight={700}
                         fontSize={["20px", "20px", "24px", "24px", "28px", "28px"]}
                         color={"gray.600"}
@@ -245,6 +248,7 @@ pr={"5px"}
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
+                px={"10px"}
               >
                 <Box>
                   <Text
