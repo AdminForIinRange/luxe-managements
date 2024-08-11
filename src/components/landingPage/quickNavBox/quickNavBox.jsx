@@ -56,18 +56,19 @@ const QuickNavBox = () => {
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
         <HStack
-          flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-          w={["98%", "98%", "90%", "85%", "80%", "80%"]}
+          flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          w={["98%", "90%", "95%", "88%", "80%", "80%"]}
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={["5px", "5px", "25px", "25px", "80px", "80px"]}
+          gap={["5px", "0px", "15px", "25px", "80px", "80px"]}
         >
           {box.map(({ name, desc, img }, index) => (
             <Box
+         
               key={index}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={["175px", "250px", "250px", "250px", "300px", "250px"]}
+              h={["175px", "185px", "250px", "250px", "300px", "300px"]}
               // bg={"gray.100"}
               // rounded={"18px"}
             
@@ -90,7 +91,7 @@ const QuickNavBox = () => {
                   <Text
                     zIndex={3}
                     w={"70%"}
-                    fontSize={["20px", "18px", "22px", "22px", "28px", "28px"]}
+                    fontSize={["20px", "22px", "22px", "22px", "28px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >
@@ -100,7 +101,7 @@ const QuickNavBox = () => {
 
                 <HStack>
                   <Text
-                    fontSize={["12px", "11px", "14px", "14px", "16px", "16px"]}
+                    fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                     fontWeight={"400"}
                     textAlign={"left"}
                   >
@@ -127,7 +128,7 @@ const QuickNavBox = () => {
                     mr={"5px"}
                     bg={"white"}
                     color={"black"}
-                    w={["100%", "100%", "70%", "70%", "70%", "70%"]}
+                    w={["100%", "30%", "70%", "70%", "60%", "50%"]}
                   >
                     <Text
                       fontSize={"12px"}
@@ -138,7 +139,7 @@ const QuickNavBox = () => {
                     </Text>{" "}
                     <Text fontSize={"30px"}   display={[
                         "block",
-                        "none",
+                        "block",
                         "block",
                         "block",
                         "block",

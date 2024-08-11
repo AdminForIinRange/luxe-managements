@@ -82,7 +82,7 @@ const HomePage = () => {
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-            h={["375px", "410px", "480px", "525px", "600px", "600px"]}
+            h={["375px", "410px", "450px", "525px", "600px", "600px"]}
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
@@ -93,7 +93,7 @@ const HomePage = () => {
               h={"100%"}
               align={"center"}
               justify={"top"}
-              mt={"25px"}
+              mt={["10px", "10px", "50px", "60px", "70px", "70px"]}
             >
               <Text
                 w={["90%", "95%", "100%", "100%", "100%", "100%"]}
@@ -103,7 +103,7 @@ const HomePage = () => {
                 fontFamily={"Poppins"}
                 bgClip="text" // Clip the background to the text
                 className="animate__animated animate__fadeInDown"
-                color={["red", "blue", "white", "green", "yellow", "white"]} // Adding white outline effect
+                color={"white"} // Adding white outline effect
                 bgGradient="linear(to-r, green, red)"
                 textShadow={"0px 0px 5px gray"}
               >
@@ -314,7 +314,7 @@ const HomePage = () => {
 
               <HStack
                 transition={"all 0.3s ease"}
-                w={"15%"}
+                w={["15%", "15%", "15%", "10%", "8%", "8%"]}
                 h={"100%"}
                 _hover={{ bg: "teal.300", color: "white" }}
                 color={"teal.300"}
@@ -336,7 +336,7 @@ const HomePage = () => {
 
               <HStack
                 transition={"all 0.3s ease"}
-                w={"15%"}
+                w={["15%", "15%", "15%", "10%", "8%", "8%"]}
                 h={"100%"}
                 _hover={{ bg: "gray.300", color: "white" }}
                 color={"gray.300"}
