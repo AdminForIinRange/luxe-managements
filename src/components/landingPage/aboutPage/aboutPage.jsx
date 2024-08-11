@@ -73,7 +73,7 @@ const AboutPage = () => {
         mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
       >
         <Text
-          w={["90%", "90%", "70%", "70%", "90%", "100%"]}
+          w={["95%", "95%", "70%", "70%", "90%", "100%"]}
           fontSize={["45px", "45px", "45px", "45px", "85px", "65px"]}
           fontWeight={300}
           fontFamily={"Poppins"}
@@ -94,7 +94,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["6%", "6%", "6%", "6%", "6%", "10%"]}
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -102,24 +102,38 @@ const AboutPage = () => {
         mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
       >
         <HStack
-          justify={"space-between"}
-          align={"start"}
+          justify={[
+            "center",
+            "center",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+          ]}
+          align={["center", "center", "start", "start", "start", "start"]}
           w={"100%"}
           h={"100%"}
-          gap={["5px", "5px", "5px", "5px", "0px", "5px"]}
+          gap={["5px", "5px", "5px", "5px", "5px", "5px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
-          <Box w={["70%", "70%", "70%", "60%", "50%", "50%"]}>
+          <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
-              align={"center"}
+              align={["center", "center", "start", "start", "start", "start"]}
               h={"100%"}
             >
               <HStack
-                data-aos="fade-in"
+                // data-aos="fade-in"
                 rounded={"100px"}
-                justify={"start"}
+                justify={[
+                  "center",
+                  "center",
+                  "start",
+                  "start",
+                  "start",
+                  "start",
+                ]}
                 align={"center"}
                 h={"100%"}
                 border={"1px solid rgb(255, 255, 255,0.25)"}
@@ -143,8 +157,8 @@ const AboutPage = () => {
               </HStack>
             </HStack>
             <Text
-              w={["80%", "80%", "80%", "80%", "80%", "80%"]}
-              data-aos="fade-in"
+              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
+              // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -157,13 +171,13 @@ const AboutPage = () => {
               Maximize Your Rental Income
             </Text>
             <Text
-              data-aos="fade-in"
+              // data-aos="fade-in"
               fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
               fontFamily={"Poppins"}
               color={"black"}
-              w={"80%"} // !important
+              w={["100%", "100%", "80%", "80%", "80%", "80%"]} // !important
               fontWeight={300}
             >
               Optimize your income and ease your mind with our experienced
@@ -177,40 +191,55 @@ const AboutPage = () => {
             </Text>
 
             <HStack
-              mt={["50px", "50px", "50px", "25px", "25px", "25px"]}
-              w={"170px"}
-              transition={"transform 0.3s ease"}
-              _hover={{
-                transform: "translateX(10px)",
-              }}
+              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
+              justify={["center", "center", "start", "start", "start", "start"]}
               align={"center"}
-              borderRadius={"10px"}
-              px={"8px"}
-              py={"5px"}
-              mr={"5px"}
-              bg={"white"}
-              color={"black"}
-              bgColor={"black"}
             >
-              <Text
-                fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-                color={"white"}
+              <HStack
+                mt={["50px", "50px", "50px", "25px", "25px", "25px"]}
+                w={["200px", "200px", "170px", "170px", "170px", "170px"]}
+                transition={"transform 0.3s ease"}
+                _hover={{
+                  transform: "translateX(10px)",
+                }}
+                justify={[
+                  "center",
+                  "center",
+                  "start",
+                  "start",
+                  "start",
+                  "start",
+                ]}
+                align={"center"}
+                borderRadius={"10px"}
                 px={"8px"}
+                py={"5px"}
+                mr={"5px"}
+                bg={"white"}
+                color={"black"}
+                bgColor={"black"}
               >
-                Learn more
-              </Text>{" "}
-              <Text fontSize={"30px"}>
-                <HiArrowLongRight color="white" />
-              </Text>
+                <Text
+                  fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                  color={"white"}
+                  px={"8px"}
+                >
+                  Learn more
+                </Text>{" "}
+                <Text fontSize={"30px"}>
+                  <HiArrowLongRight color="white" />
+                </Text>
+              </HStack>
             </HStack>
           </Box>
           {/* <Image src={collage} width={500} /> */}
           <Box
-            display={["block", "block", "block", "none", "none", "none"]}
+            mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+            display={["block", "block", "none", "none", "none", "none"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            w={["380px", "380px", "350px", "450px", "550px", "550px"]}
+            w={["100%", "100%", "350px", "450px", "550px", "550px"]}
             bg={"rgb(0,0,0,0.05)"}
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
@@ -239,7 +268,7 @@ const AboutPage = () => {
             {/* <Image src={collage} />   //!cool */}
           </Box>
           <Box
-            display={["none", "none", "none", "block", "block", "block"]}
+            display={["none", "none", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
 
             w={["390px", "390px", "390px", "390px", "450px", "600px"]}
@@ -250,7 +279,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["6%", "6%", "6%", "6%", "6%", "10%"]}
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"}
         align={"center"}
         w={"100%"}
@@ -298,7 +327,7 @@ const AboutPage = () => {
               gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
             >
               <HStack
-                data-aos="fade-in"
+                // data-aos="fade-in"
                 rounded={"100px"}
                 justify={"start"}
                 align={"center"}
@@ -325,7 +354,7 @@ const AboutPage = () => {
             </HStack>
 
             <Text
-              data-aos="fade-in"
+              // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -339,6 +368,7 @@ const AboutPage = () => {
             </Text>
 
             <HStack
+              h={"100%"}
               w={"100%"}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
@@ -355,24 +385,24 @@ const AboutPage = () => {
                   key={title}
                 >
                   <Text
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     textAlign={"left"}
-                    fontSize={["24px", "24px", "24px", "24px", "30px", "30px"]}
+                    fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
                   >
                     {icon}
                   </Text>
 
                   <Text
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     fontWeight={500}
-                    fontSize={["18px", "18px", "18px", "18px", "20px", "20px"]}
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                   >
                     {title}
                   </Text>
                   <Text
                     fontWeight={300}
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
                   >
                     {description}
@@ -382,38 +412,40 @@ const AboutPage = () => {
             </HStack>
 
             <HStack
+              h={"100%"}
               w={"100%"}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
               align={"start"}
-              gap={"50px"}
+              gap={["50px", "50px", "50px", "50px", "50px", "50px"]}
             >
               {bottomBoxIcons.map(({ title, icon, description }) => (
                 <VStack
                   fontFamily={"Poppins"}
                   w={"100%"}
+                  h={"100%"}
                   justify={"start"}
                   align={"left"}
                   key={title}
                 >
                   <Text
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     textAlign={"left"}
-                    fontSize={["24px", "24px", "24px", "24px", "30px", "30px"]}
+                    fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
                   >
                     {icon}
                   </Text>
 
                   <Text
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     fontWeight={500}
-                    fontSize={["18px", "18px", "18px", "18px", "20px", "20px"]}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                   >
                     {title}
                   </Text>
                   <Text
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     fontWeight={300}
                     fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
                   >
@@ -423,7 +455,7 @@ const AboutPage = () => {
               ))}
             </HStack>
             {/* <Text
-              data-aos="fade-in"
+              // data-aos="fade-in"
               fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
