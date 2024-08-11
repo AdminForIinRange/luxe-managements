@@ -47,7 +47,6 @@ const QuickNavBox = () => {
   return (
     <>
       <HStack
-   
         fontFamily={"poppins"}
         bg={"white"}
         w={"100%"}
@@ -56,27 +55,28 @@ const QuickNavBox = () => {
         align={"center"}
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
-        <HStack flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        <HStack
+          flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
           w={["90%", "95%", "90%", "85%", "80%", "80%"]}
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={["15px", "15px", "25px", "25px", "80px", "80px"]}
+          gap={["15px", "10px", "25px", "25px", "80px", "80px"]}
         >
           {box.map(({ name, desc, img }, index) => (
             <Box
               key={index}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={["180px", "150px", "250px", "250px", "300px", "250px"]}
+              h={["180px", "250px", "250px", "250px", "300px", "250px"]}
               bg={"gray.100"}
               rounded={"18px"}
               // borderLeft={"1px solid #A0AEC0"}
               // borderRight={"1px solid #A0AEC0"}
-              p={["2", "2", "2", "3", "4" , "4"]}
+              p={["2", "2", "2", "3", "4", "4"]}
               // textShadow={"0px 0px 50px black"}
             >
               <VStack
-                p={["2", "2", "2", "3", "4", "4"]}
+                p={["2", "1", "2", "3", "4", "4"]}
                 // backgroundImage={`url(${img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
@@ -120,6 +120,7 @@ const QuickNavBox = () => {
                   fontWeight={"500"}
                 >
                   <HStack
+                  p={["5px", "5px", "0px", "0px", "0px", "0px"]}
                     align={"center"}
                     borderRadius={"10px"}
                     px={"8px"}
@@ -127,10 +128,21 @@ const QuickNavBox = () => {
                     bg={"white"}
                     color={"black"}
                   >
-                    <Text fontSize={"12px"} color={"black"}>
+                    <Text
+                      fontSize={"12px"}
+                      color={"black"}
+                    
+                    >
                       Learn more
                     </Text>{" "}
-                    <Text fontSize={"30px"}>
+                    <Text fontSize={"30px"}   display={[
+                        "block",
+                        "none",
+                        "block",
+                        "block",
+                        "block",
+                        "block",
+                      ]} >
                       <HiArrowLongRight color="black" />
                     </Text>
                   </HStack>
@@ -146,19 +158,8 @@ const QuickNavBox = () => {
 
 export default QuickNavBox;
 
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <>
+{
+  /* <>
 <HStack
   fontFamily={"poppins"}
   bg={"white"}
@@ -250,4 +251,5 @@ export default QuickNavBox;
     ))}
   </HStack>
 </HStack>
-</> */}
+</> */
+}
