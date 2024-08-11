@@ -57,33 +57,32 @@ const QuickNavBox = () => {
       >
         <HStack
           flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-          w={["90%", "95%", "90%", "85%", "80%", "80%"]}
+          w={["98%", "98%", "90%", "85%", "80%", "80%"]}
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={["15px", "10px", "25px", "25px", "80px", "80px"]}
+          gap={["5px", "5px", "25px", "25px", "80px", "80px"]}
         >
           {box.map(({ name, desc, img }, index) => (
             <Box
               key={index}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={["180px", "250px", "250px", "250px", "300px", "250px"]}
-              bg={"gray.100"}
-              rounded={"18px"}
-              // borderLeft={"1px solid #A0AEC0"}
-              // borderRight={"1px solid #A0AEC0"}
-              p={["2", "2", "2", "3", "4", "4"]}
-              // textShadow={"0px 0px 50px black"}
+              h={["175px", "250px", "250px", "250px", "300px", "250px"]}
+              // bg={"gray.100"}
+              // rounded={"18px"}
+            
+              p={["2", "2", "2", "3", "3", "3"]}
+              textShadow={"0px 0px 50px black"}
             >
               <VStack
-                p={["2", "1", "2", "3", "4", "4"]}
-                // backgroundImage={`url(${img})`}
+                p={["3", "3", "3", "3", "4", "4"]}
+                backgroundImage={`url(${img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
                 align={"left"}
                 w={"100%"}
                 h={"100%"}
-                color={"gray.700"} // white
+                color={"white"} // white
                 rounded={"18px"}
                 zIndex={3}
               >
@@ -91,7 +90,7 @@ const QuickNavBox = () => {
                   <Text
                     zIndex={3}
                     w={"70%"}
-                    fontSize={["18px", "18px", "22px", "22px", "28px", "28px"]}
+                    fontSize={["20px", "18px", "22px", "22px", "28px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >
@@ -101,7 +100,7 @@ const QuickNavBox = () => {
 
                 <HStack>
                   <Text
-                    fontSize={["11px", "11px", "14px", "14px", "16px", "16px"]}
+                    fontSize={["12px", "11px", "14px", "14px", "16px", "16px"]}
                     fontWeight={"400"}
                     textAlign={"left"}
                   >
@@ -120,13 +119,15 @@ const QuickNavBox = () => {
                   fontWeight={"500"}
                 >
                   <HStack
-                  p={["5px", "5px", "0px", "0px", "0px", "0px"]}
+                  justify={["center", "center", "center", "center", "center", "center"]}
+                  p={["5px", "5px", "5px", "1px", "1px", "1px"]}
                     align={"center"}
                     borderRadius={"10px"}
                     px={"8px"}
                     mr={"5px"}
                     bg={"white"}
                     color={"black"}
+                    w={["100%", "100%", "70%", "70%", "70%", "70%"]}
                   >
                     <Text
                       fontSize={"12px"}

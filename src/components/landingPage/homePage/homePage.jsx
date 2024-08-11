@@ -82,7 +82,7 @@ const HomePage = () => {
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-            h={["375px", "415px", "480px", "525px", "600px", "600px"]}
+            h={["375px", "410px", "480px", "525px", "600px", "600px"]}
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
@@ -96,8 +96,8 @@ const HomePage = () => {
               mt={"25px"}
             >
               <Text
-                w={["90%", "90%", "100%", "100%", "100%", "100%"]}
-                fontSize={["40px", "50px", "65px", "75px", "85px", "85px"]}
+                w={["90%", "95%", "100%", "100%", "100%", "100%"]}
+                fontSize={["42px", "60px", "65px", "75px", "85px", "85px"]}
                 fontWeight={500}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
