@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="RootLayout">
         <ChakraProvider>{children}</ChakraProvider>
+        <Analytics />
       </body>
     </html>
   );
