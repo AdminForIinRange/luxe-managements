@@ -94,7 +94,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-      px={["6%", "6%", "6%", "6%", "6%", "10%"]}
+        px={["6%", "6%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -109,7 +109,7 @@ const AboutPage = () => {
           gap={["5px", "5px", "5px", "5px", "0px", "5px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
-          <Box  w={["70%", "70%", "70%", "60%", "50%", "50%"]}>
+          <Box w={["70%", "70%", "70%", "60%", "50%", "50%"]}>
             <HStack
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
@@ -143,7 +143,7 @@ const AboutPage = () => {
               </HStack>
             </HStack>
             <Text
-            w={["80%", "80%", "80%", "80%", "80%", "80%"]}
+              w={["80%", "80%", "80%", "80%", "80%", "80%"]}
               data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
@@ -227,7 +227,7 @@ const AboutPage = () => {
               h={"100%"}
               p={"10px"}
               borderRadius={"30px"}
-            >                                                 
+            >
               <HStack
                 p={"5px"}
                 justify={"start"}
@@ -250,7 +250,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-          px={["6%", "6%", "6%", "6%", "6%", "10%"]}
+        px={["6%", "6%", "6%", "6%", "6%", "10%"]}
         justify={"center"}
         align={"center"}
         w={"100%"}
@@ -266,7 +266,7 @@ const AboutPage = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
-          display={["none", "none", "none", "block", "block", "block"]}
+            display={["none", "none", "none", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["600px", "600px", "600px", "600px", "600px", "600px"]}
@@ -347,7 +347,6 @@ const AboutPage = () => {
             >
               {topBoxIcons.map(({ title, icon, description }) => (
                 <VStack
-                
                   fontFamily={"Poppins"}
                   w={"100%"}
                   h={"100%"}
@@ -375,7 +374,6 @@ const AboutPage = () => {
                     fontWeight={300}
                     data-aos="fade-up"
                     fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
-                    
                   >
                     {description}
                   </Text>
