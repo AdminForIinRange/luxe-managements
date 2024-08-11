@@ -190,11 +190,7 @@ const AboutPage = () => {
               Airbnb management service.
             </Text>
 
-            <HStack
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={"center"}
-            >
+            <HStack w={["100%", "100%", "80%", "80%", "80%", "80%"]} justify={["center", "center", "start", "start", "start", "start"]} align={"center"}>
               <HStack
                 mt={["50px", "50px", "50px", "25px", "25px", "25px"]}
                 w={["200px", "200px", "170px", "170px", "170px", "170px"]}
@@ -234,7 +230,7 @@ const AboutPage = () => {
           </Box>
           {/* <Image src={collage} width={500} /> */}
           <Box
-            mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+          mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "none", "none", "none", "none"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
@@ -287,7 +283,14 @@ const AboutPage = () => {
         mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
       >
         <HStack
-          justify={"space-between"}
+           justify={[
+            "center",
+            "center",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+          ]}
           align={"start"}
           w={"100%"}
           h={"100%"}
@@ -356,19 +359,20 @@ const AboutPage = () => {
             <Text
               // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
+              fontSize={["28px", "28px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
               textAlign={["center", "center", "left", "left", "left", "left"]}
               color={"black"}
               bgGradient="linear(to-r, green, red)"
+             
             >
               Say Goodbye to Hosting Hassles
             </Text>
 
             <HStack
-              h={"100%"}
+                        h={"100%"}
               w={"100%"}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
@@ -412,7 +416,7 @@ const AboutPage = () => {
             </HStack>
 
             <HStack
-              h={"100%"}
+            h={"100%"}
               w={"100%"}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
@@ -421,12 +425,12 @@ const AboutPage = () => {
             >
               {bottomBoxIcons.map(({ title, icon, description }) => (
                 <VStack
-                  fontFamily={"Poppins"}
-                  w={"100%"}
-                  h={"100%"}
-                  justify={"start"}
-                  align={"left"}
-                  key={title}
+                fontFamily={"Poppins"}
+                w={"100%"}
+                h={"100%"}
+                justify={"start"}
+                align={"left"}
+                key={title}
                 >
                   <Text
                     // data-aos="fade-up"
