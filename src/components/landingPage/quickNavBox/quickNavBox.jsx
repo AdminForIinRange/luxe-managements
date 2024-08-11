@@ -70,17 +70,17 @@ const QuickNavBox = () => {
               borderLeft={"1px solid #A0AEC0"}
               borderRight={"1px solid #A0AEC0"}
               p={["2", "2", "2", "3", "4"]}
-              textShadow={"0px 0px 50px black"}
+              // textShadow={"0px 0px 50px black"}
             >
               <VStack
                 p={["2", "2", "2", "3", "4"]}
-                backgroundImage={`url(${img})`}
+                // backgroundImage={`url(${img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
                 align={"left"}
                 w={"100%"}
                 h={"100%"}
-                color={"white"}
+                color={"black"} // white
                 rounded={"18px"}
                 zIndex={3}
               >
@@ -88,7 +88,7 @@ const QuickNavBox = () => {
                   <Text
                     zIndex={3}
                     w={"70%"}
-                    fontSize={["12px", "12px", "12px", "22px", "28px", "28px"]}
+                    fontSize={["22px", "22px", "22px", "22px", "28px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >

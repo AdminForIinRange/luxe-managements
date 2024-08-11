@@ -324,7 +324,7 @@ const AboutPage = () => {
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
             <HStack
               w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
+              justify={["center", "center", "center", "start", "start", "start"]}
               align={"center"}
               h={"100%"}
               gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
@@ -363,7 +363,7 @@ const AboutPage = () => {
               fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
-              textAlign={["center", "center", "left", "left", "left", "left"]}
+              textAlign={["center", "center", "center", "left", "left", "left"]}
               color={"black"}
               bgGradient="linear(to-r, green, red)"
              

@@ -162,7 +162,7 @@ const Navbar = ({}) => {
                           ? "animate__animated animate__zoomIn"
                           : "animate__animated animate__zoomOut"
                       }
-                      display={yValue - 25 ? "none" : "block"}
+                      display={yValue - 25 ? "block" : "none"}
                       bgColor={"black"}
                       h={["80%", "80%", "80%", "80%", "90%", "90%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}
