@@ -71,11 +71,11 @@ const QuickNavBox = () => {
               rounded={"18px"}
               // borderLeft={"1px solid #A0AEC0"}
               // borderRight={"1px solid #A0AEC0"}
-              p={["2", "2", "2", "3", "4"]}
+              p={["2", "2", "2", "3", "4" , "4"]}
               // textShadow={"0px 0px 50px black"}
             >
               <VStack
-                p={["2", "2", "2", "3", "4"]}
+                p={["2", "2", "2", "3", "4", "4"]}
                 // backgroundImage={`url(${img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
@@ -90,7 +90,7 @@ const QuickNavBox = () => {
                   <Text
                     zIndex={3}
                     w={"70%"}
-                    fontSize={["22px", "22px", "22px", "22px", "28px", "28px"]}
+                    fontSize={["16px", "18px", "22px", "22px", "28px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >
@@ -100,7 +100,7 @@ const QuickNavBox = () => {
 
                 <HStack>
                   <Text
-                    fontSize={["12px", "12px", "14px", "14px", "16px", "16px"]}
+                    fontSize={["10px", "11px", "14px", "14px", "16px", "16px"]}
                     fontWeight={"400"}
                     textAlign={"left"}
                   >

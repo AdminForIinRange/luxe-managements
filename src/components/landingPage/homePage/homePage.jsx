@@ -13,7 +13,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { FaSearch } from "react-icons/fa";
+import { FaSearch,  FaFilter } from "react-icons/fa";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import AboutPage from "../aboutPage/aboutPage";
@@ -71,7 +71,7 @@ const HomePage = () => {
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-            h={["480px", "480px", "480px", "525px", "600px", "600px"]}
+            h={["435px", "435px", "480px", "525px", "600px", "600px"]}
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
@@ -85,9 +85,8 @@ const HomePage = () => {
               mt={"25px"}
             >
               <Text
-     
-              w={["90%", "80%", "100%", "100%", "100%", "100%"]}
-                fontSize={["65px", "60px", "65px", "75px", "85px", "85px"]}
+                w={["90%", "90%", "100%", "100%", "100%", "100%"]}
+                fontSize={["55px", "55px", "65px", "75px", "85px", "85px"]}
                 fontWeight={500}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
@@ -100,92 +99,26 @@ const HomePage = () => {
                 Luxe Managements{" "}
               </Text>
               <Text
-            
-                fontSize={["24px", "24px", "28px", "35px", "35px", "35px"]}
+                fontSize={["24px", "28px", "28px", "35px", "35px", "35px"]}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
                 color={"white"}
                 fontWeight={300}
                 mt={["0px", "0px", "15px", "15px", "15px", "15px"]}
-                w={["80%", "60%", "50%", "50%", "50%", "30%"]}
+                w={["80%", "80%", "50%", "50%", "50%", "30%"]}
                 h={"20%"}
                 className="animate__animated animate__fadeInDown"
                 textShadow={"0px 0px 5px gray"}
               >
                 Top Airbnb Management Company in Adelaide.
               </Text>
-
-              <HStack
-                mt={[
-                  "-200px",
-                  "-160px",
-                  "-200px",
-                  "-200px",
-                  "-100px",
-                  "-115px",
-                ]}
-                w={"100%"}
-                h={"100%"}
-                justify={"center"}
-                align={"center"}
-              >
-                <Box
-                  transition={"all 0.3s ease"}
-                  cursor={"pointer"}
-                  onClick={() => setFliter(false)}
-                  _hover={{ height: "70px" }}
-                  h={!fliter ? "70px" : "50px"}
-                  p={!fliter ? "5px" : "2.5px"}
-                  bgColor={"white"}
-                  rounded={"10px"}
-                  shadow={"lg"}
-                  w={["125px", "125px", "125px", "125px", "125px", "125px"]}
-                  mt={"100px"}
-                  fontSize={[
-                    "14px",
-                    "16px",
-                    "16px",
-                    "18px",
-                    "18px",
-                    "18px",
-                  ]}
-                  bg={!fliter ? "white" : "gray.200"}
-                >
-                  {" "}
-                  <Text textAlign={"center"}>Search</Text>
-                </Box>
-                <Box
-                  cursor={"pointer"}
-                  onClick={() => setFliter(true)}
-                  transition={"all 0.3s ease"}
-                  p={fliter ? "5px" : "2.5px"}
-                  bgColor={"white"}
-                  rounded={"10px"}
-                  shadow={"lg"}
-                  w={"125px"}
-                  _hover={{ height: "70px" }}
-                  h={fliter ? "70px" : "50px"}
-                  mt={"100px"}
-                  bg={fliter ? "white" : "gray.200"}
-                  fontSize={[
-                    "14px",
-                    "16px",
-                    "16px",
-                    "18px",
-                    "18px",
-                    "18px",
-                  ]}
-                >
-                  {" "}
-                  <Text textAlign={"center"}>fliter</Text>
-                </Box>
-              </HStack>
             </VStack>
           </Box>
         </HStack>
       </HStack>
 
-      <HStack
+      <VStack
+        gap={"0px"}
         fontFamily={"Poppins"}
         w={"100%"}
         h={"100%"}
@@ -193,7 +126,52 @@ const HomePage = () => {
         align={"center"}
         mt={["-105px", "-105px", "-105px", "-100px", "-100px", "-100px"]}
       >
-        {" "}
+        <HStack   
+          h={"100%"}
+          zIndex={2}
+          mt={"-100px"}
+          w={"100%"}
+          justify={"center"}
+          align={"end"}
+        >
+          <Box
+            borderBottomRadius={"0px"}
+            transition={"all 0.3s ease"}
+            cursor={"pointer"}
+            onClick={() => setFliter(false)}
+            _hover={{ height: "40px" }}
+            h={!fliter ? "40px" : "30px"}
+            p={!fliter ? "5px" : "2.5px"}
+            bgColor={"white"}
+            borderTopRadius={"10px"}
+            w={["125px", "125px", "125px", "125px", "125px", "125px"]}
+            mt={"100px"}
+            fontSize={["14px", "16px", "16px", "18px", "18px", "18px"]}
+            bg={!fliter ? "white" : "gray.200"}
+          >
+            {" "}
+            <Text textAlign={"center"}>Search</Text>
+          </Box>
+          <Box
+        
+            cursor={"pointer"}
+            onClick={() => setFliter(true)}
+            transition={"all 0.3s ease"}
+            p={fliter ? "5px" : "2.5px"}
+            bgColor={"white"}
+            borderBottomRadius={"0px"}
+            borderTopRadius={"10px"}
+            w={"125px"}
+            _hover={{ height: "40px" }}
+            h={fliter ? "40px" : "30px"}
+            mt={"100px"}
+            bg={fliter ? "white" : "gray.200"}
+            fontSize={["14px", "16px", "16px", "18px", "18px", "18px"]}
+          >
+            {" "}
+            <Text textAlign={"center"}>fliter</Text>
+          </Box>
+        </HStack>{" "}
         <Box
           w={["100%", "100%", "100%", "85%", "80%", "80%"]}
           h={["105px", "105px", "110px", "125px", "125px", "125px"]}
@@ -242,7 +220,16 @@ const HomePage = () => {
                       >
                         {title}
                       </Text>
-                      <Text fontSize={["20px", "20px", "20px", "25px", "25px", "25px"]}>
+                      <Text
+                        fontSize={[
+                          "20px",
+                          "20px",
+                          "20px",
+                          "25px",
+                          "25px",
+                          "25px",
+                        ]}
+                      >
                         <RiArrowDropDownLine />
                       </Text>
                     </HStack>
@@ -266,8 +253,6 @@ const HomePage = () => {
                   </VStack>
 
                   <Divider
-       
-   
                     orientation="vertical"
                     borderColor="gray.400"
                     h="100%"
@@ -293,6 +278,7 @@ const HomePage = () => {
                     fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
                     cursor={"pointer"}
                   >
+    
                     <FaSearch />
                   </Text>
                 </Box>
@@ -304,7 +290,6 @@ const HomePage = () => {
               h={"100%"}
               justify={"end"}
               align={"center"}
-   
               p={"10px"}
               px={"10px"}
             >
@@ -317,7 +302,7 @@ const HomePage = () => {
                 placeholder="Search a service you need..."
               />
 
-              <VStack
+              <HStack
                 transition={"all 0.3s ease"}
                 w={"10%"}
                 h={"100%"}
@@ -329,7 +314,9 @@ const HomePage = () => {
                 cursor={"pointer"}
                 rounded={"18px"}
               >
+
                 <Box>
+                  
                   <Text
                     fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
                     cursor={"pointer"}
@@ -337,11 +324,42 @@ const HomePage = () => {
                     <FaSearch />
                   </Text>
                 </Box>
-              </VStack>
+
+                
+              </HStack>
+
+
+
+
+              <HStack
+                transition={"all 0.3s ease"}
+                w={"10%"}
+                h={"100%"}
+                _hover={{ bg: "gray.300", color: "white" }}
+                color={"gray.300"}
+                bg={"white"}
+                align={"center"}
+                justify={"center"}
+                cursor={"pointer"}
+                rounded={"18px"}
+              >
+
+              
+
+                <Box>
+                  
+                  <Text
+                    fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
+                    cursor={"pointer"}
+                  >
+                    <FaFilter />
+                  </Text>
+                </Box>
+              </HStack>
             </HStack>
           )}
         </Box>
-      </HStack>
+      </VStack>
 
       <QuickNavBox />
       <AboutPage />

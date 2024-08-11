@@ -148,7 +148,7 @@ const AboutPage = () => {
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                     fontWeight={500}
                   >
                     Maximize Earnings
@@ -160,7 +160,7 @@ const AboutPage = () => {
               w={["100%", "100%", "80%", "80%", "80%", "80%"]}
               // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              fontSize={["25px", "25px", "25px", "35px", "35px", "40px"]}
+              fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
@@ -172,8 +172,9 @@ const AboutPage = () => {
             </Text>
             <Text
               // data-aos="fade-in"
-              fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
-              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+
+              fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
               fontFamily={"Poppins"}
               color={"black"}
@@ -190,10 +191,14 @@ const AboutPage = () => {
               Airbnb management service.
             </Text>
 
-            <HStack w={["100%", "100%", "80%", "80%", "80%", "80%"]} justify={["center", "center", "start", "start", "start", "start"]} align={"center"}>
+            <HStack
+              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
+              justify={["center", "center", "start", "start", "start", "start"]}
+              align={"center"}
+            >
               <HStack
-                mt={["50px", "50px", "50px", "25px", "25px", "25px"]}
-                w={["200px", "200px", "170px", "170px", "170px", "170px"]}
+                mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
+                w={["225px", "225px", "170px", "170px", "170px", "170px"]}
                 transition={"transform 0.3s ease"}
                 _hover={{
                   transform: "translateX(10px)",
@@ -216,7 +221,7 @@ const AboutPage = () => {
                 bgColor={"black"}
               >
                 <Text
-                  fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                           fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                   color={"white"}
                   px={"8px"}
                 >
@@ -230,7 +235,7 @@ const AboutPage = () => {
           </Box>
           {/* <Image src={collage} width={500} /> */}
           <Box
-          mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+            mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "none", "none", "none", "none"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
@@ -283,7 +288,7 @@ const AboutPage = () => {
         mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
       >
         <HStack
-           justify={[
+          justify={[
             "center",
             "center",
             "space-between",
@@ -324,7 +329,14 @@ const AboutPage = () => {
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
             <HStack
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
               align={"center"}
               h={"100%"}
               gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
@@ -347,7 +359,7 @@ const AboutPage = () => {
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                     fontWeight={500}
                   >
                     Feel at ease
@@ -359,20 +371,19 @@ const AboutPage = () => {
             <Text
               // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
-              fontSize={["28px", "28px", "35px", "35px", "35px", "40px"]}
+              fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
               textAlign={["center", "center", "center", "left", "left", "left"]}
               color={"black"}
               bgGradient="linear(to-r, green, red)"
-             
             >
               Say Goodbye to Hosting Hassles
             </Text>
 
             <HStack
-                        h={"100%"}
+              h={"100%"}
               w={"100%"}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
@@ -416,7 +427,7 @@ const AboutPage = () => {
             </HStack>
 
             <HStack
-            h={"100%"}
+              h={"100%"}
               w={"100%"}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               justify={"center"}
@@ -425,12 +436,12 @@ const AboutPage = () => {
             >
               {bottomBoxIcons.map(({ title, icon, description }) => (
                 <VStack
-                fontFamily={"Poppins"}
-                w={"100%"}
-                h={"100%"}
-                justify={"start"}
-                align={"left"}
-                key={title}
+                  fontFamily={"Poppins"}
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
                 >
                   <Text
                     // data-aos="fade-up"
