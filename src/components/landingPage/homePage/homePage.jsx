@@ -6,21 +6,32 @@ import {
   Text,
   Divider,
   Select,
+  useMediaQuery,
   Input,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { FaSearch,  FaFilter } from "react-icons/fa";
+import { FaSearch, FaFilter } from "react-icons/fa";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import AboutPage from "../aboutPage/aboutPage";
 import QuickNavBox from "../quickNavBox/quickNavBox";
 
 const HomePage = () => {
-  const [fliter, setFliter] = React.useState(true);
+  const [isTablet] = useMediaQuery("(max-width: 1024px)");
+  const [isMobile] = useMediaQuery("(max-width: 767px)");
+  const [isPhone] = useMediaQuery("(max-width: 480px)");
+  const [isVerySmall] = useMediaQuery("(max-width: 360px)");
+
+  const [fliter, setFliter] = useState(true);
+
+  useEffect(() => {
+    isMobile ? setFliter(false) : setFliter(true);
+  }, [isMobile]);
+
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -71,7 +82,7 @@ const HomePage = () => {
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-            h={["435px", "435px", "480px", "525px", "600px", "600px"]}
+            h={["375px", "415px", "480px", "525px", "600px", "600px"]}
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
@@ -86,7 +97,7 @@ const HomePage = () => {
             >
               <Text
                 w={["90%", "90%", "100%", "100%", "100%", "100%"]}
-                fontSize={["55px", "55px", "65px", "75px", "85px", "85px"]}
+                fontSize={["40px", "50px", "65px", "75px", "85px", "85px"]}
                 fontWeight={500}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
@@ -99,7 +110,7 @@ const HomePage = () => {
                 Luxe Managements{" "}
               </Text>
               <Text
-                fontSize={["24px", "28px", "28px", "35px", "35px", "35px"]}
+                fontSize={["20px", "24px", "28px", "35px", "35px", "35px"]}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
                 color={"white"}
@@ -126,7 +137,8 @@ const HomePage = () => {
         align={"center"}
         mt={["-105px", "-105px", "-105px", "-100px", "-100px", "-100px"]}
       >
-        <HStack   
+        <HStack
+          display={["none", "none", "flex", "flex", "flex", "flex"]}
           h={"100%"}
           zIndex={2}
           mt={"-100px"}
@@ -153,7 +165,6 @@ const HomePage = () => {
             <Text textAlign={"center"}>Search</Text>
           </Box>
           <Box
-        
             cursor={"pointer"}
             onClick={() => setFliter(true)}
             transition={"all 0.3s ease"}
@@ -173,8 +184,8 @@ const HomePage = () => {
           </Box>
         </HStack>{" "}
         <Box
-          w={["100%", "100%", "100%", "85%", "80%", "80%"]}
-          h={["105px", "105px", "110px", "125px", "125px", "125px"]}
+          w={["92%", "92%", "94%", "85%", "85%", "85%"]}
+          h={["85px", "95px", "110px", "125px", "125px", "125px"]}
           bgColor={"white"}
           shadow={"lg"}
           rounded={["10px", "20px", "20px", "10px", "10px", "10px"]}
@@ -278,7 +289,6 @@ const HomePage = () => {
                     fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
                     cursor={"pointer"}
                   >
-    
                     <FaSearch />
                   </Text>
                 </Box>
@@ -298,13 +308,13 @@ const HomePage = () => {
                 w={"100%"}
                 border={"none"}
                 variant="unstyled"
-                fontSize={["18px", "20px", "24px", "28px", "28px", "28px"]}
+                fontSize={["16px", "20px", "24px", "28px", "28px", "28px"]}
                 placeholder="Search a service you need..."
               />
 
               <HStack
                 transition={"all 0.3s ease"}
-                w={"10%"}
+                w={"15%"}
                 h={"100%"}
                 _hover={{ bg: "teal.300", color: "white" }}
                 color={"teal.300"}
@@ -314,26 +324,19 @@ const HomePage = () => {
                 cursor={"pointer"}
                 rounded={"18px"}
               >
-
                 <Box>
-                  
                   <Text
-                    fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
+                    fontSize={["16px", "24px", "24px", "32px", "32px", "32px"]}
                     cursor={"pointer"}
                   >
                     <FaSearch />
                   </Text>
                 </Box>
-
-                
               </HStack>
-
-
-
 
               <HStack
                 transition={"all 0.3s ease"}
-                w={"10%"}
+                w={"15%"}
                 h={"100%"}
                 _hover={{ bg: "gray.300", color: "white" }}
                 color={"gray.300"}
@@ -343,13 +346,9 @@ const HomePage = () => {
                 cursor={"pointer"}
                 rounded={"18px"}
               >
-
-              
-
                 <Box>
-                  
                   <Text
-                    fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
+                    fontSize={["16px", "24px", "24px", "32px", "32px", "32px"]}
                     cursor={"pointer"}
                   >
                     <FaFilter />

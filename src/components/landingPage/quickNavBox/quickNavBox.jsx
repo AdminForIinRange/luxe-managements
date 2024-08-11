@@ -47,6 +47,7 @@ const QuickNavBox = () => {
   return (
     <>
       <HStack
+   
         fontFamily={"poppins"}
         bg={"white"}
         w={"100%"}
@@ -55,8 +56,8 @@ const QuickNavBox = () => {
         align={"center"}
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
-        <HStack
-          w={["95%", "95%", "90%", "85%", "80%", "80%"]}
+        <HStack flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          w={["90%", "95%", "90%", "85%", "80%", "80%"]}
           h={"100%"}
           justify={"center"}
           align={"start"}
@@ -66,7 +67,7 @@ const QuickNavBox = () => {
             <Box
               key={index}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={["250px", "250px", "250px", "250px", "300px", "250px"]}
+              h={["180px", "150px", "250px", "250px", "300px", "250px"]}
               bg={"gray.100"}
               rounded={"18px"}
               // borderLeft={"1px solid #A0AEC0"}
@@ -90,7 +91,7 @@ const QuickNavBox = () => {
                   <Text
                     zIndex={3}
                     w={"70%"}
-                    fontSize={["16px", "18px", "22px", "22px", "28px", "28px"]}
+                    fontSize={["18px", "18px", "22px", "22px", "28px", "28px"]}
                     fontWeight={"700"}
                     textAlign={"left"}
                   >
@@ -100,7 +101,7 @@ const QuickNavBox = () => {
 
                 <HStack>
                   <Text
-                    fontSize={["10px", "11px", "14px", "14px", "16px", "16px"]}
+                    fontSize={["11px", "11px", "14px", "14px", "16px", "16px"]}
                     fontWeight={"400"}
                     textAlign={"left"}
                   >
