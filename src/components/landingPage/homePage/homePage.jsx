@@ -71,7 +71,7 @@ const HomePage = () => {
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-            h={["525px", "525px", "525px", "525px", "600px", "600px"]}
+            h={["480px", "480px", "480px", "525px", "600px", "600px"]}
             bgPos={"center 60%"}
             bgSize={"cover"}
             style={{ backgroundImage: `url(${skyRise2.src})` }}
@@ -82,10 +82,12 @@ const HomePage = () => {
               h={"100%"}
               align={"center"}
               justify={"top"}
-              mt={"70px"}
+              mt={"25px"}
             >
               <Text
-                fontSize={["65px", "65px", "65px", "75px", "85px", "85px"]}
+     
+              w={["90%", "80%", "100%", "100%", "100%", "100%"]}
+                fontSize={["65px", "60px", "65px", "75px", "85px", "85px"]}
                 fontWeight={500}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
@@ -98,7 +100,8 @@ const HomePage = () => {
                 Luxe Managements{" "}
               </Text>
               <Text
-                fontSize={["24px", "28px", "28px", "35px", "35px", "35px"]}
+            
+                fontSize={["24px", "24px", "28px", "35px", "35px", "35px"]}
                 textAlign={"center"}
                 fontFamily={"Poppins"}
                 color={"white"}
@@ -115,7 +118,7 @@ const HomePage = () => {
               <HStack
                 mt={[
                   "-200px",
-                  "-200px",
+                  "-160px",
                   "-200px",
                   "-200px",
                   "-100px",
@@ -138,7 +141,14 @@ const HomePage = () => {
                   shadow={"lg"}
                   w={["125px", "125px", "125px", "125px", "125px", "125px"]}
                   mt={"100px"}
-                  fontSize={"18px"}
+                  fontSize={[
+                    "14px",
+                    "16px",
+                    "16px",
+                    "18px",
+                    "18px",
+                    "18px",
+                  ]}
                   bg={!fliter ? "white" : "gray.200"}
                 >
                   {" "}
@@ -157,7 +167,14 @@ const HomePage = () => {
                   h={fliter ? "70px" : "50px"}
                   mt={"100px"}
                   bg={fliter ? "white" : "gray.200"}
-                  fontSize={"18px"}
+                  fontSize={[
+                    "14px",
+                    "16px",
+                    "16px",
+                    "18px",
+                    "18px",
+                    "18px",
+                  ]}
                 >
                   {" "}
                   <Text textAlign={"center"}>fliter</Text>
@@ -174,15 +191,15 @@ const HomePage = () => {
         h={"100%"}
         justify={"center"}
         align={"center"}
-        mt={["-115px", "-115px", "-115px", "-100px", "-100px", "-100px"]}
+        mt={["-105px", "-105px", "-105px", "-100px", "-100px", "-100px"]}
       >
         {" "}
         <Box
-          w={["90%", "90%", "90%", "85%", "80%", "80%"]}
-          h={"125px"}
+          w={["100%", "100%", "100%", "85%", "80%", "80%"]}
+          h={["105px", "105px", "110px", "125px", "125px", "125px"]}
           bgColor={"white"}
           shadow={"lg"}
-          rounded={"10px"}
+          rounded={["10px", "20px", "20px", "10px", "10px", "10px"]}
           zIndex={"1"}
         >
           {fliter ? (
@@ -206,14 +223,15 @@ const HomePage = () => {
                     justify={"center"}
                     cursor={"pointer"}
                     rounded={"18px"}
-                    px={"10px"}
+                    gap={"0px"}
+                    px={["6px", "6px", "6px", "10px", "10px", "20px"]}
                   >
                     <HStack>
                       <Text
                         fontSize={[
                           "10px",
                           "10px",
-                          "14px",
+                          "12px",
                           "14px",
                           "14px",
                           "14px",
@@ -224,7 +242,7 @@ const HomePage = () => {
                       >
                         {title}
                       </Text>
-                      <Text fontSize={"25px"}>
+                      <Text fontSize={["20px", "20px", "20px", "25px", "25px", "25px"]}>
                         <RiArrowDropDownLine />
                       </Text>
                     </HStack>
@@ -233,9 +251,9 @@ const HomePage = () => {
                       <Text
                         fontWeight={700}
                         fontSize={[
+                          "18px",
+                          "18px",
                           "20px",
-                          "20px",
-                          "24px",
                           "24px",
                           "28px",
                           "28px",
@@ -248,6 +266,8 @@ const HomePage = () => {
                   </VStack>
 
                   <Divider
+       
+   
                     orientation="vertical"
                     borderColor="gray.400"
                     h="100%"
@@ -257,7 +277,7 @@ const HomePage = () => {
 
               <VStack
                 transition={"all 0.3s ease"}
-                w={"30%"}
+                w={["30%", "30%", "30%", "30%", "30%", "30%"]}
                 h={"100%"}
                 _hover={{ bg: "teal.300", color: "white" }}
                 color={"teal.300"}
@@ -266,7 +286,7 @@ const HomePage = () => {
                 justify={"center"}
                 cursor={"pointer"}
                 rounded={"18px"}
-                px={"10px"}
+                px={["5px", "5px", "5px", "10px", "10px", "10px"]}
               >
                 <Box>
                   <Text
@@ -279,27 +299,45 @@ const HomePage = () => {
               </VStack>
             </HStack>
           ) : (
-            <HStack w={"100%"} h={"100%"} justify={"end"} px={"36px"}>
+            <HStack
+              w={"100%"}
+              h={"100%"}
+              justify={"end"}
+              align={"center"}
+   
+              p={"10px"}
+              px={"10px"}
+            >
               <Input
+                pl={"20px"}
                 w={"100%"}
                 border={"none"}
                 variant="unstyled"
-                fontSize={["18px", "24px", "24px", "28px", "28px", "28px"]}
+                fontSize={["18px", "20px", "24px", "28px", "28px", "28px"]}
                 placeholder="Search a service you need..."
               />
 
-              <Text
-                rounded={"15px"}
+              <VStack
                 transition={"all 0.3s ease"}
-                p={"25px"}
+                w={"10%"}
+                h={"100%"}
                 _hover={{ bg: "teal.300", color: "white" }}
                 color={"teal.300"}
                 bg={"white"}
-                fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
+                align={"center"}
+                justify={"center"}
                 cursor={"pointer"}
+                rounded={"18px"}
               >
-                <FaSearch />
-              </Text>
+                <Box>
+                  <Text
+                    fontSize={["20px", "24px", "24px", "32px", "32px", "32px"]}
+                    cursor={"pointer"}
+                  >
+                    <FaSearch />
+                  </Text>
+                </Box>
+              </VStack>
             </HStack>
           )}
         </Box>

@@ -65,6 +65,7 @@ const Navbar = ({}) => {
             h={"100%"}
             px={"5"}
             mt={"18px"}
+            mb={"18px"}
           >
             <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
               {" "}
@@ -159,8 +160,8 @@ const Navbar = ({}) => {
                     <Box
                       className={
                         yValue
-                          ? "animate__animated animate__zoomIn"
-                          : "animate__animated animate__zoomOut"
+                          ? "animate__animated animate__fadeInDown"
+                          : "animate__animated animate__fadeOutDown"
                       }
                       display={yValue - 25 ? "block" : "none"}
                       bgColor={"black"}
