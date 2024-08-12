@@ -22,7 +22,16 @@ import { IoGitBranch } from "react-icons/io5";
 import { FcCustomerSupport } from "react-icons/fc";
 import Image from "next/image";
 import collage from "../../../assets/img/collage.png";
+import skyRise3 from "../../../assets/img/skyRise3.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { MdHotel } from "react-icons/md";
+import { FaHandshake } from "react-icons/fa";
+import { FaBroom } from "react-icons/fa";
+import { FaLaptopHouse } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { FaHouseMedicalCircleCheck } from "react-icons/fa6";
+import { FaChartLine } from "react-icons/fa6";
+import { FaHouseCircleCheck } from "react-icons/fa6";
 const AboutPage = () => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -62,6 +71,74 @@ const AboutPage = () => {
         "Boost rental income by an average of 40% and improve occupancy rates with our seasoned Airbnb management team in Adelaide.",
     },
   ];
+
+
+
+
+  const top2BoxIcons = [
+    {
+      title: " Stress-Free Experience",
+      icon: <MdHotel />,
+      description:
+        "We provide a stress-free experience for our clients. Our team of experienced professionals is dedicated to delivering exceptional service.",
+    },
+    {
+      title: "All Basic Amenity Hire",
+      icon: <FaHandshake />,
+      description:
+        "From toiletries to kitchen essentials, we supply everything needed for a comfortable and convenient.",
+    },
+  ];
+
+  const bottom2BoxIcons = [
+    {
+      title: "Cleaning Management",
+      icon: <FaBroom />,
+      description:
+        "This includes full home detailing, ensuring every corner of your property is spotless for incoming guests.",
+    },
+    {
+      title: "Property Management",
+      icon: <FaLaptopHouse />,
+      description:
+        "Advertising, finances, insurance, bills, and guest management for seamless operation.",
+    },
+  ];
+
+
+
+
+  const top3BoxIcons = [
+    {
+      title: "24/7 Security Coverage",
+      icon: <FaEye />,
+      description:
+        "Around-the-clock security monitoring to keep your property safe and secure at all times.",
+    },
+    {
+      title: "24/7 Incidence Management",
+      icon: <FaHouseMedicalCircleCheck />,
+      description:
+        "Immediate response to any issues or emergencies.",
+    },
+  ];
+
+  const bottom3BoxIcons = [
+    {
+      title: "Professional Marketing",
+      icon: <FaChartLine />,
+      description:
+        "High-quality Marketing to showcase your property, enhancing its appeal and attracting more bookings.",
+    },
+    {
+      title: "Regular Property Inspections",
+      icon: <FaHouseCircleCheck />,
+      description:
+        "Routine checks to ensure the property is in excellent condition.",
+    },
+  ];
+
+
   return (
     <>
       <HStack
@@ -173,7 +250,7 @@ const AboutPage = () => {
             <Text
               // data-aos="fade-in"
 
-              fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+              fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
               fontFamily={"Poppins"}
@@ -221,7 +298,7 @@ const AboutPage = () => {
                 bgColor={"black"}
               >
                 <Text
-                           fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                  fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                   color={"white"}
                   px={"8px"}
                 >
@@ -272,7 +349,7 @@ const AboutPage = () => {
             display={["none", "none", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
 
-            w={["390px", "390px", "390px", "390px", "450px", "600px"]}
+            w={["390px", "390px", "550px", "550px", "550px", "550px"]}
           >
             <Image src={collage} />
           </Box>
@@ -389,11 +466,19 @@ const AboutPage = () => {
               justify={"center"}
               align={"start"}
               gap={"50px"}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
             >
               {topBoxIcons.map(({ title, icon, description }) => (
                 <VStack
                   fontFamily={"Poppins"}
-                  w={"100%"}
+                  w={["90%", "90%", "100%", "100%", "100%", "100%"]}
                   h={"100%"}
                   justify={"start"}
                   align={"left"}
@@ -433,11 +518,19 @@ const AboutPage = () => {
               justify={"center"}
               align={"start"}
               gap={["50px", "50px", "50px", "50px", "50px", "50px"]}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
             >
               {bottomBoxIcons.map(({ title, icon, description }) => (
                 <VStack
                   fontFamily={"Poppins"}
-                  w={"100%"}
+                  w={["90%", "90%", "100%", "100%", "100%", "100%"]}
                   h={"100%"}
                   justify={"start"}
                   align={"left"}
@@ -491,6 +584,535 @@ const AboutPage = () => {
           </Box>
         </HStack>
       </HStack>
+
+      <HStack
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        justify={"center"}
+        align={"center"}
+        w={"100%"}
+        h={"100%"}
+        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+      >
+        <Box
+          display={["block", "block", "block", "none", "none", "none"]}
+          // data-aos="fade-right" // chnage dir
+          border={"5px solid rgb(255, 255, 255,0.25)"}
+          h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+          w={["100%", "100%", "100%", "450px", "550px", "550px"]}
+          bg={"rgb(0,0,0,0.05)"}
+          backdropFilter="blur(1.5px)"
+          borderRadius={"30px"}
+          bgPos={"center"}
+          bgSize={"cover"}
+          p={"10px"}
+        >
+          <Box
+            style={{ backgroundImage: `url(${skyRise3.src})` }}
+            // data-aos="fade-right"
+            bgPos={"center"}
+            bgSize={"cover"}
+            w={"100%"}
+            h={"100%"}
+            p={"10px"}
+            borderRadius={"30px"}
+          >
+            <HStack
+              p={"5px"}
+              justify={"start"}
+              align={"start"}
+              w={"100%"}
+            ></HStack>
+          </Box>
+        </Box>
+      </HStack>
+
+      <HStack
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        justify={"center"}
+        align={"center"}
+        w={"100%"}
+        h={"100%"}
+        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+      >
+        <HStack
+          justify={[
+            "center",
+            "center",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+          ]}
+          align={"start"}
+          w={"100%"}
+          h={"100%"}
+          gap={["45px", "45px", "45px", "45px", "45px", "45px"]}
+          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        >
+          <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
+            <HStack
+              w={"100%"}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
+              align={"center"}
+              h={"100%"}
+              gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
+            >
+              <HStack
+                // data-aos="fade-in"
+                rounded={"100px"}
+                justify={"start"}
+                align={"center"}
+                h={"100%"}
+                border={"1px solid rgb(255, 255, 255,0.25)"}
+                py={[1, 1, 2, 2, 2, 2]}
+              >
+                <Box>
+                  <GoDotFill color="black" fontSize={"20px"} />
+                </Box>
+                <Box>
+                  <Text
+                    fontFamily={"Poppins"}
+                    h={"100%"}
+                    textAlign={"center"}
+                    color={"black"}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontWeight={500}
+                  >
+                    Professional management
+                  </Text>
+                </Box>
+              </HStack>
+            </HStack>
+
+            <Text
+              // data-aos="fade-in"
+              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
+              fontWeight={300}
+              fontFamily={"Poppins"}
+              bgClip="text"
+              textAlign={["center", "center", "center", "left", "left", "left"]}
+              color={"black"}
+              bgGradient="linear(to-r, green, red)"
+            >
+              Manage your rentals with Professionals
+            </Text>
+
+            <HStack
+              h={"100%"}
+              w={"100%"}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              justify={"center"}
+              align={"start"}
+              gap={"50px"}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
+            >
+              {top2BoxIcons.map(({ title, icon, description }) => (
+                <VStack
+                  fontFamily={"Poppins"}
+                  w={["90%", "90%", "100%", "100%", "100%", "100%"]}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
+                >
+                  <Text
+                    // data-aos="fade-up"
+                    textAlign={"left"}
+                    fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
+                  >
+                    {icon}
+                  </Text>
+
+                  <Text
+                    // data-aos="fade-up"
+                    fontWeight={500}
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                  >
+                    {title}
+                  </Text>
+                  <Text
+                    fontWeight={300}
+                    // data-aos="fade-up"
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
+                  >
+                    {description}
+                  </Text>
+                </VStack>
+              ))}
+            </HStack>
+
+            <HStack
+              h={"100%"}
+              w={"100%"}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              justify={"center"}
+              align={"start"}
+              gap={["50px", "50px", "50px", "50px", "50px", "50px"]}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
+            >
+              {bottom2BoxIcons.map(({ title, icon, description }) => (
+                <VStack
+                  fontFamily={"Poppins"}
+                  w={["90%", "90%", "100%", "100%", "100%", "100%"]}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
+                >
+                  <Text
+                    // data-aos="fade-up"
+                    textAlign={"left"}
+                    fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
+                  >
+                    {icon}
+                  </Text>
+
+                  <Text
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
+                    // data-aos="fade-up"
+                    fontWeight={500}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                  >
+                    {title}
+                  </Text>
+                  <Text
+                    // data-aos="fade-up"
+                    fontWeight={300}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
+                  >
+                    {description}
+                  </Text>
+                </VStack>
+              ))}
+            </HStack>
+          </Box>
+          <Box
+            display={["none", "none", "none", "block", "block", "block"]}
+            // data-aos="fade-right" // chnage dir
+            border={"5px solid rgb(255, 255, 255,0.25)"}
+            h={["600px", "600px", "600px", "600px", "600px", "600px"]}
+            w={["380px", "380px", "350px", "350px", "550px", "550px"]}
+            bg={"rgb(0,0,0,0.05)"}
+            backdropFilter="blur(1.5px)"
+            p={"10px"}
+            borderRadius={"30px"}
+            bgPos={"center"}
+            bgSize={"cover"}
+          >
+            <Box
+              style={{ backgroundImage: `url(${interior.src})` }}
+              // data-aos="fade-right"
+              bgPos={"center"}
+              bgSize={"cover"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+              borderRadius={"30px"}
+            ></Box>
+          </Box>
+        </HStack>
+      </HStack>
+
+      <HStack
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        justify={"center"}
+        align={"center"}
+        w={"100%"}
+        h={"100%"}
+        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+      >
+        <Box
+          display={["block", "block", "block", "none", "none", "none"]}
+          // data-aos="fade-right" // chnage dir
+          border={"5px solid rgb(255, 255, 255,0.25)"}
+          h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+          w={["100%", "100%", "100%", "450px", "550px", "550px"]}
+          bg={"rgb(0,0,0,0.05)"}
+          backdropFilter="blur(1.5px)"
+          borderRadius={"30px"}
+          bgPos={"center"}
+          bgSize={"cover"}
+          p={"10px"}
+        >
+          <Box
+            style={{ backgroundImage: `url(${skyRise3.src})` }}
+            // data-aos="fade-right"
+            bgPos={"center"}
+            bgSize={"cover"}
+            w={"100%"}
+            h={"100%"}
+            p={"10px"}
+            borderRadius={"30px"}
+          >
+            <HStack
+              p={"5px"}
+              justify={"start"}
+              align={"start"}
+              w={"100%"}
+            ></HStack>
+          </Box>
+        </Box>
+      </HStack>
+
+
+
+
+
+
+
+      <HStack
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        justify={"center"}
+        align={"center"}
+        w={"100%"}
+        h={"100%"}
+        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+      >
+        <HStack
+          justify={[
+            "center",
+            "center",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+          ]}
+          align={"start"}
+          w={"100%"}
+          h={"100%"}
+          gap={["45px", "45px", "45px", "45px", "45px", "45px"]}
+          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        >
+          <Box
+            display={["none", "none", "none", "block", "block", "block"]}
+            // data-aos="fade-right" // chnage dir
+            border={"5px solid rgb(255, 255, 255,0.25)"}
+            h={["600px", "600px", "600px", "600px", "600px", "600px"]}
+            w={["380px", "380px", "350px", "350px", "550px", "550px"]}
+            bg={"rgb(0,0,0,0.05)"}
+            backdropFilter="blur(1.5px)"
+            p={"10px"}
+            borderRadius={"30px"}
+            bgPos={"center"}
+            bgSize={"cover"}
+          >
+            <Box
+              style={{ backgroundImage: `url(${interior.src})` }}
+              // data-aos="fade-right"
+              bgPos={"center"}
+              bgSize={"cover"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+              borderRadius={"30px"}
+            ></Box>
+          </Box>
+          <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
+            <HStack
+              w={"100%"}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
+              align={"center"}
+              h={"100%"}
+              gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
+            >
+              <HStack
+                // data-aos="fade-in"
+                rounded={"100px"}
+                justify={"start"}
+                align={"center"}
+                h={"100%"}
+                border={"1px solid rgb(255, 255, 255,0.25)"}
+                py={[1, 1, 2, 2, 2, 2]}
+              >
+                <Box>
+                  <GoDotFill color="black" fontSize={"20px"} />
+                </Box>
+                <Box>
+                  <Text
+                    fontFamily={"Poppins"}
+                    h={"100%"}
+                    textAlign={"center"}
+                    color={"black"}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontWeight={500}
+                  >
+                    More Services
+                  </Text>
+                </Box>
+              </HStack>
+            </HStack>
+
+            <Text
+              // data-aos="fade-in"
+              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
+              fontWeight={300}
+              fontFamily={"Poppins"}
+              bgClip="text"
+              textAlign={["center", "center", "center", "left", "left", "left"]}
+              color={"black"}
+              bgGradient="linear(to-r, green, red)"
+            >
+              Enjoy our extensive services
+            </Text>
+
+            <HStack
+              h={"100%"}
+              w={"100%"}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              justify={"center"}
+              align={"start"}
+              gap={"50px"}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
+            >
+              {top3BoxIcons.map(({ title, icon, description }) => (
+                <VStack
+                  fontFamily={"Poppins"}
+                  w={["90%", "90%", "100%", "100%", "100%", "100%"]}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
+                >
+                  <Text
+                    // data-aos="fade-up"
+                    textAlign={"left"}
+                    fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
+                  >
+                    {icon}
+                  </Text>
+
+                  <Text
+                    // data-aos="fade-up"
+                    fontWeight={500}
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                  >
+                    {title}
+                  </Text>
+                  <Text
+                    fontWeight={300}
+                    // data-aos="fade-up"
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
+                  >
+                    {description}
+                  </Text>
+                </VStack>
+              ))}
+            </HStack>
+
+            <HStack
+              h={"100%"}
+              w={"100%"}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              justify={"center"}
+              align={"start"}
+              gap={["50px", "50px", "50px", "50px", "50px", "50px"]}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
+            >
+              {bottom3BoxIcons.map(({ title, icon, description }) => (
+                <VStack
+                  fontFamily={"Poppins"}
+                  w={["90%", "90%", "100%", "100%", "100%", "100%"]}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"left"}
+                  key={title}
+                >
+                  <Text
+                    // data-aos="fade-up"
+                    textAlign={"left"}
+                    fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
+                  >
+                    {icon}
+                  </Text>
+
+                  <Text
+                    mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
+                    // data-aos="fade-up"
+                    fontWeight={500}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                  >
+                    {title}
+                  </Text>
+                  <Text
+                    // data-aos="fade-up"
+                    fontWeight={300}
+                    fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
+                  >
+                    {description}
+                  </Text>
+                </VStack>
+              ))}
+            </HStack>
+            {/* <Text
+              // data-aos="fade-in"
+              fontSize={["12px", "12px", "12px", "14px", "14px", "16px"]}
+              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              textAlign={["center", "center", "left", "left", "left", "left"]}
+              fontFamily={"Poppins"}
+              color={"black"}
+              w={"100%"}
+              fontWeight={300}
+            >
+              Optimize your income and ease your mind with our experienced
+              Airbnb Management team in Adelaide.
+              <br />
+              <br />
+              We handle everything for you, from listing your property on
+              Airbnb, Booking.com, and more, to maximizing rental profits.
+              Experience hassle-free short-term rentals with Adelaide's leading
+              Airbnb management service.
+            </Text> */}
+          </Box>
+        </HStack>
+      </HStack>
+
+      
     </>
   );
 };
