@@ -198,7 +198,7 @@ const AboutPage = () => {
             >
               <HStack
                 mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
-                w={["225px", "225px", "170px", "170px", "170px", "170px"]}
+                w={["225px", "225px", "170px", "170px", "200px", "200px"]}
                 transition={"transform 0.3s ease"}
                 _hover={{
                   transform: "translateX(10px)",
