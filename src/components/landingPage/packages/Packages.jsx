@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   HStack,
@@ -16,6 +16,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Packages = () => {
+  const [currentTab, setCurrentTab] = useState("Linen/Amenity");
+
   useEffect(() => {
     Aos.init({
       duration: 500,
@@ -137,34 +139,102 @@ const Packages = () => {
               We offer a range of curated services designed to enhance and
               maximize the potential of your rental property,
             </Text>
+            <VStack w={"100%"} justify={"center"} align={"center"}>
+              <HStack
+                mt={["25px", "25px", "25px", "25px", "25px", "25px"]}
+                w={"100%"}
+                justify={"center"}
+                align={"center"}
+                gap={"25px"}
+              >
+                {tabs.map(({ title, desc, html }, index) => (
+                  <>
+                    <Box
+                      key={index}
+                      cursor={"pointer"}
+                      mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
+                      w={"100%"}
+                      transition={"transform 0.3s ease"}
+                      _hover={{
+                        transform: "scale(1.05)",
+                      }}
+                      borderRadius={"10px"}
+                      py={"5px"}
+                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                      bgColor={"white"}
+                    >
+                      <Text
+                        textAlign={"center"}
+                        fontSize={[
+                          "14px",
+                          "14px",
+                          "18px",
+                          "18px",
+                          "20px",
+                          "20px",
+                        ]}
+                        color={"black"}
+                      >
+                        {title}
+                      </Text>{" "}
+                    </Box>
+                  </>
+                ))}
+              </HStack>
 
-            <HStack mt={["25px", "25px", "25px", "25px", "25px","25px"]} w={"100%"} justify={"center"} align={"center"} gap={"25px"}>
-              {tabs.map(({title,desc,  html}, index) => (
-                <Box key={index}
-                  mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
+              <HStack
+                gap={"15px"}
+                mt={"25px"}
+                w={"100%"}
+                h={"100%"}
+                justify={"center"}
+                align={"start"}
+              >
+                <Box
+                  borderRadius={"15px"}
                   w={"100%"}
-                  transition={"transform 0.3s ease"}
-                  _hover={{
-                    transform: "scale(1.05)",
-                  }}
-              
-                  borderRadius={"10px"}
-              
-                  py={"5px"}
+                  h={"400px"}
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                  bgColor={"white"}
+                  p={"15px"}
                 >
-                  <Text
-                  textAlign={"center"}
-                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
-                    color={"black"}
+      
+                    <Text fontSize={"24px"} fontWeight={"500"}>
+                      {currentTab === "Linen/Amenity" ? tabs[0].title : null}
+                      {currentTab === "Cleaning" ? tabs[1].title : null}
+                      {currentTab === "Listing" ? tabs[2].title : null}
+                      {currentTab === "Management" ? tabs[3].title : null}
+                    </Text>
 
-                  >
-            {title}
-                  </Text>{" "}
+                    <Text fontSize={"18px"} fontWeight={"400"} mt={"15px"}>
+                      {currentTab === "Linen/Amenity" ? tabs[0].desc : null}
+                      {currentTab === "Cleaning" ? tabs[1].desc : null}
+                      {currentTab === "Listing" ? tabs[2].desc : null}
+                      {currentTab === "Management" ? tabs[3].desc : null}
+                    </Text>
+
+                   <Box mt={"15px"} >
+
+                      {currentTab === "Linen/Amenity" ? tabs[0].html : null}
+                      {currentTab === "Cleaning" ? tabs[1].html : null}
+                      {currentTab === "Listing" ? tabs[2].html : null}
+                      {currentTab === "Management" ? tabs[3].html : null}
+                   </Box>
+                  
+
                 </Box>
-              ))}
-            </HStack>
+                <Box
+                  p={"15px"}
+                  borderRadius={"15px"}
+                  w={"50%"}
+                  h={"400px"}
+                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                >
+                  <Text fontSize={"24px"} fontWeight={"500"}>
+                    Test
+                  </Text>
+                </Box>
+              </HStack>
+            </VStack>
           </Box>
           {/* <Image src={collage} width={500} /> */}
         </HStack>
