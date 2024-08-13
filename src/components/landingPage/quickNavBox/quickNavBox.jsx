@@ -65,13 +65,12 @@ const QuickNavBox = () => {
         >
           {box.map(({ name, desc, img }, index) => (
             <Box
-         
               key={index}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
               h={["175px", "185px", "250px", "250px", "300px", "300px"]}
               // bg={"gray.100"}
               // rounded={"18px"}
-            
+
               p={["2", "2", "2", "3", "3", "3"]}
               textShadow={"0px 0px 50px black"}
             >
@@ -120,8 +119,15 @@ const QuickNavBox = () => {
                   fontWeight={"500"}
                 >
                   <HStack
-                  justify={["center", "center", "center", "center", "center", "center"]}
-                  p={["5px", "5px", "5px", "1px", "1px", "1px"]}
+                    justify={[
+                      "center",
+                      "center",
+                      "center",
+                      "center",
+                      "center",
+                      "center",
+                    ]}
+                    p={["5px", "5px", "5px", "1px", "1px", "1px"]}
                     align={"center"}
                     borderRadius={"10px"}
                     px={"8px"}
@@ -130,21 +136,20 @@ const QuickNavBox = () => {
                     color={"black"}
                     w={["100%", "30%", "70%", "70%", "60%", "50%"]}
                   >
-                    <Text
-                      fontSize={"12px"}
-                      color={"black"}
-                    
-                    >
+                    <Text fontSize={"12px"} color={"black"}>
                       Learn more
                     </Text>{" "}
-                    <Text fontSize={"30px"}   display={[
+                    <Text
+                      fontSize={"30px"}
+                      display={[
                         "block",
                         "block",
                         "block",
                         "block",
                         "block",
                         "block",
-                      ]} >
+                      ]}
+                    >
                       <HiArrowLongRight color="black" />
                     </Text>
                   </HStack>

@@ -72,9 +72,6 @@ const AboutPage = () => {
     },
   ];
 
-
-
-
   const top2BoxIcons = [
     {
       title: " Stress-Free Experience",
@@ -105,9 +102,6 @@ const AboutPage = () => {
     },
   ];
 
-
-
-
   const top3BoxIcons = [
     {
       title: "24/7 Security Coverage",
@@ -118,8 +112,7 @@ const AboutPage = () => {
     {
       title: "24/7 Incidence Management",
       icon: <FaHouseMedicalCircleCheck />,
-      description:
-        "Immediate response to any issues or emergencies.",
+      description: "Immediate response to any issues or emergencies.",
     },
   ];
 
@@ -137,7 +130,6 @@ const AboutPage = () => {
         "Routine checks to ensure the property is in excellent condition.",
     },
   ];
-
 
   return (
     <>
@@ -877,12 +869,6 @@ const AboutPage = () => {
         </Box>
       </HStack>
 
-
-
-
-
-
-
       <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"}
@@ -1111,8 +1097,6 @@ const AboutPage = () => {
           </Box>
         </HStack>
       </HStack>
-
-      
     </>
   );
 };
