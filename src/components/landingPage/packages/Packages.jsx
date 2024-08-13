@@ -37,14 +37,13 @@ const Packages = () => {
       desc: "For non-management clients, we offer cleaning services priced based on the number of rooms",
       html: (
         <>
-          <Text>
-            <UnorderedList>
-              <ListItem>Lorem ipsum dolor sit amet</ListItem>
-              <ListItem>Consectetur adipiscing elit</ListItem>
-              <ListItem>Integer molestie lorem at massa</ListItem>
-              <ListItem>Facilisis in pretium nisl aliquet</ListItem>
-            </UnorderedList>
-          </Text>
+          <UnorderedList>
+            <ListItem>$15 per bedroom per booking</ListItem>
+            <ListItem>$5 per bathroom per booking</ListItem>
+            <ListItem>
+              Additional charges may apply for extra amenities or services
+            </ListItem>
+          </UnorderedList>
         </>
       ),
     },
@@ -53,7 +52,9 @@ const Packages = () => {
       desc: "Teest Cleaning",
       html: (
         <>
-          <Text>Test</Text>
+          <UnorderedList>
+            <ListItem>Test1 </ListItem>
+          </UnorderedList>
         </>
       ),
     },
@@ -62,7 +63,9 @@ const Packages = () => {
       desc: "Teest AirBnB Listing",
       html: (
         <>
-          <Text>Test</Text>
+          <UnorderedList>
+            <ListItem>Test2</ListItem>
+          </UnorderedList>
         </>
       ),
     },
@@ -71,7 +74,9 @@ const Packages = () => {
       desc: "Teest AirBnB Management",
       html: (
         <>
-          <Text>Test</Text>
+          <UnorderedList>
+            <ListItem>Test3 </ListItem>
+          </UnorderedList>
         </>
       ),
     },
@@ -95,7 +100,7 @@ const Packages = () => {
           gap={["5px", "5px", "5px", "5px", "5px", "5px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
-          <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
+          <Box w={["95%", "95%", "95%", "95%", "95%", "95%"]}>
             <HStack w={"100%"} justify={"center"} align={"center"} h={"100%"}>
               <HStack
                 // data-aos="fade-in"
@@ -151,7 +156,7 @@ const Packages = () => {
               We offer a range of curated services designed to enhance and
               maximize the potential of your rental property,
             </Text>
-            <VStack w={"100%"} justify={"center"} align={"center"}>
+            <VStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
               <HStack
                 mt={["25px", "25px", "25px", "25px", "25px", "25px"]}
                 w={"100%"}
@@ -162,6 +167,7 @@ const Packages = () => {
                 {tabs.map(({ title, desc, html }, index) => (
                   <>
                     <Box
+                      onClick={() => setCurrentTab(title)}
                       key={index}
                       cursor={"pointer"}
                       mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
@@ -195,7 +201,7 @@ const Packages = () => {
               </HStack>
 
               <HStack
-                gap={"15px"}
+                gap={"35px"}
                 mt={"25px"}
                 w={"100%"}
                 h={"100%"}
@@ -207,7 +213,7 @@ const Packages = () => {
                   w={"100%"}
                   h={"400px"}
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                  p={"15px"}
+                  p={"20px"}
                 >
                   <Text fontSize={"24px"} fontWeight={"500"}>
                     {currentTab === "Linen/Amenity" ? tabs[0].title : null}
@@ -229,6 +235,53 @@ const Packages = () => {
                     {currentTab === "Listing" ? tabs[2].html : null}
                     {currentTab === "Management" ? tabs[3].html : null}
                   </Box>
+
+                  <HStack
+                    mt={"25px"}
+                    w={["100%", "100%","60%","50%","40%","30%",]}
+                    h={"100%"}
+                    justify={"center"}
+                    align={"start"}
+                    gap={"15px"}
+                  >
+                    <Box
+                      borderRadius={"15px"}
+                    //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                      w={"100%"}
+                      h={"50px"}
+                      bg={"white"}
+               
+                      border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                    >
+                      {" "}
+                      <HStack
+                        justify={"center"}
+                        align={"center"}
+                        w={"100%"}
+                        h={"100%"}
+                      >
+                        <Text textAlign={"center"}>View More</Text>
+                      </HStack>
+                    </Box>
+
+                    <Box
+                      borderRadius={"15px"}
+                      w={"100%"}
+                      h={"50px"}
+                      bg={"white"}
+              
+                      border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                    >
+                      <HStack
+                        justify={"center"}
+                        align={"center"}
+                        w={"100%"}
+                        h={"100%"}
+                      >
+                        <Text textAlign={"center"}>View More</Text>
+                      </HStack>
+                    </Box>
+                  </HStack>
                 </Box>
                 <Box
                   p={"15px"}
