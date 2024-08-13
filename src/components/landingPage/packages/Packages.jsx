@@ -9,6 +9,11 @@ import {
   Divider,
   Select,
   Input,
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
 } from "@chakra-ui/react";
 import { GoDotFill } from "react-icons/go";
 
@@ -32,7 +37,14 @@ const Packages = () => {
       desc: "For non-management clients, we offer cleaning services priced based on the number of rooms",
       html: (
         <>
-          <Text>Test</Text>
+          <Text>
+            <UnorderedList>
+              <ListItem>Lorem ipsum dolor sit amet</ListItem>
+              <ListItem>Consectetur adipiscing elit</ListItem>
+              <ListItem>Integer molestie lorem at massa</ListItem>
+              <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+            </UnorderedList>
+          </Text>
         </>
       ),
     },
@@ -197,30 +209,26 @@ const Packages = () => {
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                   p={"15px"}
                 >
-      
-                    <Text fontSize={"24px"} fontWeight={"500"}>
-                      {currentTab === "Linen/Amenity" ? tabs[0].title : null}
-                      {currentTab === "Cleaning" ? tabs[1].title : null}
-                      {currentTab === "Listing" ? tabs[2].title : null}
-                      {currentTab === "Management" ? tabs[3].title : null}
-                    </Text>
+                  <Text fontSize={"24px"} fontWeight={"500"}>
+                    {currentTab === "Linen/Amenity" ? tabs[0].title : null}
+                    {currentTab === "Cleaning" ? tabs[1].title : null}
+                    {currentTab === "Listing" ? tabs[2].title : null}
+                    {currentTab === "Management" ? tabs[3].title : null}
+                  </Text>
 
-                    <Text fontSize={"18px"} fontWeight={"400"} mt={"15px"}>
-                      {currentTab === "Linen/Amenity" ? tabs[0].desc : null}
-                      {currentTab === "Cleaning" ? tabs[1].desc : null}
-                      {currentTab === "Listing" ? tabs[2].desc : null}
-                      {currentTab === "Management" ? tabs[3].desc : null}
-                    </Text>
+                  <Text fontSize={"18px"} fontWeight={"400"} mt={"15px"}>
+                    {currentTab === "Linen/Amenity" ? tabs[0].desc : null}
+                    {currentTab === "Cleaning" ? tabs[1].desc : null}
+                    {currentTab === "Listing" ? tabs[2].desc : null}
+                    {currentTab === "Management" ? tabs[3].desc : null}
+                  </Text>
 
-                   <Box mt={"15px"} >
-
-                      {currentTab === "Linen/Amenity" ? tabs[0].html : null}
-                      {currentTab === "Cleaning" ? tabs[1].html : null}
-                      {currentTab === "Listing" ? tabs[2].html : null}
-                      {currentTab === "Management" ? tabs[3].html : null}
-                   </Box>
-                  
-
+                  <Box mt={"15px"}>
+                    {currentTab === "Linen/Amenity" ? tabs[0].html : null}
+                    {currentTab === "Cleaning" ? tabs[1].html : null}
+                    {currentTab === "Listing" ? tabs[2].html : null}
+                    {currentTab === "Management" ? tabs[3].html : null}
+                  </Box>
                 </Box>
                 <Box
                   p={"15px"}
