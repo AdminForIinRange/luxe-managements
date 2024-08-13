@@ -24,6 +24,45 @@ const Packages = () => {
     }); // Initialize AOS with desired options
   }, []);
 
+  const tabs = [
+    {
+      title: "Linen/Amenity",
+      desc: "For non-management clients, we offer cleaning services priced based on the number of rooms",
+      html: (
+        <>
+          <Text>Test</Text>
+        </>
+      ),
+    },
+    {
+      title: "Cleaning",
+      desc: "Teest Cleaning",
+      html: (
+        <>
+          <Text>Test</Text>
+        </>
+      ),
+    },
+    {
+      title: "Listing",
+      desc: "Teest AirBnB Listing",
+      html: (
+        <>
+          <Text>Test</Text>
+        </>
+      ),
+    },
+    {
+      title: "Management",
+      desc: "Teest AirBnB Management",
+      html: (
+        <>
+          <Text>Test</Text>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <HStack
@@ -35,38 +74,19 @@ const Packages = () => {
         mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
       >
         <HStack
-          justify={[
-            "center",
-            "center",
-            "space-between",
-            "space-between",
-            "space-between",
-            "space-between",
-          ]}
-          align={["center", "center", "start", "start", "start", "start"]}
+          justify={"center"}
+          align={"center"}
           w={"100%"}
           h={"100%"}
           gap={["5px", "5px", "5px", "5px", "5px", "5px"]}
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
-            <HStack
-              w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={["center", "center", "start", "start", "start", "start"]}
-              h={"100%"}
-            >
+            <HStack w={"100%"} justify={"center"} align={"center"} h={"100%"}>
               <HStack
                 // data-aos="fade-in"
                 rounded={"100px"}
-                justify={[
-                  "center",
-                  "center",
-                  "start",
-                  "start",
-                  "start",
-                  "start",
-                ]}
+                justify={"center"}
                 align={"center"}
                 h={"100%"}
                 border={"1px solid rgb(255, 255, 255,0.25)"}
@@ -90,14 +110,14 @@ const Packages = () => {
               </HStack>
             </HStack>
             <Text
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
+              w={"100%"}
               // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
-              textAlign={["center", "center", "left", "left", "left", "left"]}
+              textAlign={"center"}
               color={"black"}
               bgGradient="linear(to-r, green, red)"
             >
@@ -108,54 +128,42 @@ const Packages = () => {
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
-              textAlign={["center", "center", "left", "left", "left", "left"]}
+              textAlign={"center"}
               fontFamily={"Poppins"}
               color={"black"}
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]} // !important
+              w={"100%"}
               fontWeight={300}
             >
               We offer a range of curated services designed to enhance and
               maximize the potential of your rental property,
             </Text>
 
-            <HStack
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={"center"}
-            >
-              <HStack
-                mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
-                w={["225px", "225px", "170px", "170px", "200px", "200px"]}
-                transition={"transform 0.3s ease"}
-                _hover={{
-                  transform: "translateX(10px)",
-                }}
-                justify={[
-                  "center",
-                  "center",
-                  "start",
-                  "start",
-                  "start",
-                  "start",
-                ]}
-                align={"center"}
-                borderRadius={"10px"}
-                px={"8px"}
-                py={"5px"}
-                mr={"5px"}
-                bg={"white"}
-                color={"black"}
-                bgColor={"black"}
-              >
-                <Text
-                  fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
-                  color={"white"}
-                  px={"8px"}
+            <HStack mt={["25px", "25px", "25px", "25px", "25px","25px"]} w={"100%"} justify={"center"} align={"center"} gap={"25px"}>
+              {tabs.map(({title,desc,  html}, index) => (
+                <Box key={index}
+                  mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
+                  w={"100%"}
+                  transition={"transform 0.3s ease"}
+                  _hover={{
+                    transform: "scale(1.05)",
+                  }}
+              
+                  borderRadius={"10px"}
+              
+                  py={"5px"}
+                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                  bgColor={"white"}
                 >
-                  Learn more
-                </Text>{" "}
-                <Text fontSize={"30px"}>fgwefwqf</Text>
-              </HStack>
+                  <Text
+                  textAlign={"center"}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    color={"black"}
+
+                  >
+            {title}
+                  </Text>{" "}
+                </Box>
+              ))}
             </HStack>
           </Box>
           {/* <Image src={collage} width={500} /> */}

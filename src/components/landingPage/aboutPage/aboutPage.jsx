@@ -353,7 +353,7 @@ const AboutPage = () => {
 
       <Section1 topBoxIcons={topBoxIcons} bottomBoxIcons={bottomBoxIcons} />
       <Section2 top2BoxIcons={top2BoxIcons} bottom2BoxIcons={bottom2BoxIcons} />
-      <Section3 top3BoxIcons={top2BoxIcons} bottom3BoxIcons={bottom2BoxIcons} />
+      <Section3 top3BoxIcons={top3BoxIcons} bottom3BoxIcons={bottom3BoxIcons} />
     </>
   );
 };
