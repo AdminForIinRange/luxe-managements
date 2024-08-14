@@ -201,93 +201,125 @@ const Packages = () => {
               </HStack>
 
               <HStack
-                gap={"35px"}
+                wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+                gap={["20px", "20px", "15px", "15px", "15px", "15px"]}
                 mt={"25px"}
                 w={"100%"}
                 h={"100%"}
                 justify={"center"}
                 align={"start"}
               >
-                <Box
-                  borderRadius={"15px"}
-                  w={"100%"}
-                  h={"400px"}
-                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                  p={"20px"}
-                >
-                  <Text fontSize={"24px"} fontWeight={"500"}>
-                    {currentTab === "Linen/Amenity" ? tabs[0].title : null}
-                    {currentTab === "Cleaning" ? tabs[1].title : null}
-                    {currentTab === "Listing" ? tabs[2].title : null}
-                    {currentTab === "Management" ? tabs[3].title : null}
-                  </Text>
-
-                  <Text fontSize={"18px"} fontWeight={"400"} mt={"15px"}>
-                    {currentTab === "Linen/Amenity" ? tabs[0].desc : null}
-                    {currentTab === "Cleaning" ? tabs[1].desc : null}
-                    {currentTab === "Listing" ? tabs[2].desc : null}
-                    {currentTab === "Management" ? tabs[3].desc : null}
-                  </Text>
-
-                  <Box mt={"15px"}>
-                    {currentTab === "Linen/Amenity" ? tabs[0].html : null}
-                    {currentTab === "Cleaning" ? tabs[1].html : null}
-                    {currentTab === "Listing" ? tabs[2].html : null}
-                    {currentTab === "Management" ? tabs[3].html : null}
-                  </Box>
-
-                  <HStack
-                    mt={"25px"}
-                    w={["100%", "100%","60%","50%","40%","30%",]}
-                    h={"100%"}
-                    justify={"center"}
-                    align={"start"}
-                    gap={"15px"}
+                  <Box
+                    borderRadius={"15px"}
+                    w={"100%"}
+                    h={["400px", "400px", "400px", "400px", "400px", "400px"]}
+                    boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                    p={"20px"}
                   >
-                    <Box
-                      borderRadius={"15px"}
-                    //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                      w={"100%"}
-                      h={"50px"}
-                      bg={"white"}
-               
-                      border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                <VStack w={"100%"} h={"100%"} justify={"start"} align={"start"}>
+                    <Text 
+                      fontSize={[
+                        "16px",
+                        "16px",
+                        "20px",
+                        "20px",
+                        "24px",
+                        "24px",
+                      ]}
+                      fontWeight={"500"}
                     >
-                      {" "}
-                      <HStack
-                        justify={"center"}
-                        align={"center"}
-                        w={"100%"}
-                        h={"100%"}
-                      >
-                        <Text textAlign={"center"}>View More</Text>
-                      </HStack>
-                    </Box>
+                      {currentTab === "Linen/Amenity" ? tabs[0].title : null}
+                      {currentTab === "Cleaning" ? tabs[1].title : null}
+                      {currentTab === "Listing" ? tabs[2].title : null}
+                      {currentTab === "Management" ? tabs[3].title : null}
+                    </Text>
+
+                    <Text
+                      fontSize={[
+                        "12px",
+                        "16px",
+                        "14px",
+                        "14px",
+                        "16px",
+                        "16px",
+                      ]}
+                      fontWeight={"400"}
+                      mt={"15px"}
+                    >
+                      {currentTab === "Linen/Amenity" ? tabs[0].desc : null}
+                      {currentTab === "Cleaning" ? tabs[1].desc : null}
+                      {currentTab === "Listing" ? tabs[2].desc : null}
+                      {currentTab === "Management" ? tabs[3].desc : null}
+                    </Text>
 
                     <Box
-                      borderRadius={"15px"}
-                      w={"100%"}
-                      h={"50px"}
-                      bg={"white"}
-              
-                      border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                      mt={"15px"}
+                      fontSize={[
+                        "12px",
+                        "16px",
+                        "14px",
+                        "14px",
+                        "16px",
+                        "16px",
+                      ]}
                     >
-                      <HStack
-                        justify={"center"}
-                        align={"center"}
-                        w={"100%"}
-                        h={"100%"}
-                      >
-                        <Text textAlign={"center"}>View More</Text>
-                      </HStack>
+                      {currentTab === "Linen/Amenity" ? tabs[0].html : null}
+                      {currentTab === "Cleaning" ? tabs[1].html : null}
+                      {currentTab === "Listing" ? tabs[2].html : null}
+                      {currentTab === "Management" ? tabs[3].html : null}
                     </Box>
-                  </HStack>
-                </Box>
+
+                    <HStack
+                      mt={"25px"}
+                      w={["100%", "100%", "60%", "50%", "40%", "30%"]}
+                   h={"100%"}
+                      justify={"end"}
+                      align={"end"}
+                      gap={"15px"}
+                    >
+                      <Box
+                        borderRadius={"15px"}
+                        //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                        w={"100%"}
+                        h={"50px"}
+                        bg={"white"}
+                        border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                      >
+                        {" "}
+                        <HStack
+                          justify={"center"}
+                          align={"center"}
+                          w={"100%"}
+                          h={"100%"}
+                        >
+                          <Text textAlign={"center"}>View More</Text>
+                        </HStack>
+                      </Box>
+
+                      <Box
+                        borderRadius={"15px"}
+                        w={"100%"}
+                        h={"50px"}
+                        bg={"white"}
+                        border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                      >
+                        <HStack
+                          justify={"center"}
+                          align={"center"}
+                          w={"100%"}
+                          h={"100%"}
+                        >
+                          <Text textAlign={"center"}>View More</Text>
+                        </HStack>
+                      </Box>
+                    </HStack>
+                </VStack>
+                  </Box>
                 <Box
+                  h={["200px", "200px", "400px", "400px", "400px", "400px"]}
                   p={"15px"}
                   borderRadius={"15px"}
-                  w={"50%"}
-                  h={"400px"}
+                  w={["100%", "100%", "50%", "50%", "50%", "50%"]}
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                 >
                   <Text fontSize={"24px"} fontWeight={"500"}>
