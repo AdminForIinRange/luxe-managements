@@ -14,9 +14,11 @@ import {
   ListIcon,
   OrderedList,
   UnorderedList,
+  Icon,
+  Stack,
 } from "@chakra-ui/react";
 import { GoDotFill } from "react-icons/go";
-
+import { TiTick } from "react-icons/ti";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -34,14 +36,20 @@ const Packages = () => {
   const tabs = [
     {
       title: "Linen/Amenity",
-      desc: "For non-management clients, we offer cleaning services priced based on the number of rooms",
+      desc: "For non-management clients, we offer cleaning services priced based on the number of rooms and amenities required.",
       html: (
         <>
           <UnorderedList>
             <ListItem>$15 per bedroom per booking</ListItem>
             <ListItem>$5 per bathroom per booking</ListItem>
             <ListItem>
-              Additional charges may apply for extra amenities or services
+              Additional charges may apply for extra amenities or services, such
+              as:
+              <UnorderedList>
+                <ListItem>Premium toiletries: $10 per booking</ListItem>
+                <ListItem>Extra towels and linens: $7 per booking</ListItem>
+                <ListItem>Kitchen cleaning: $20 per booking</ListItem>
+              </UnorderedList>
             </ListItem>
           </UnorderedList>
         </>
@@ -49,33 +57,63 @@ const Packages = () => {
     },
     {
       title: "Cleaning",
-      desc: "Teest Cleaning",
+      desc: "Our cleaning services ensure your property is spotless and welcoming for every guest.",
       html: (
         <>
           <UnorderedList>
-            <ListItem>Test1 </ListItem>
+            <ListItem>Standard cleaning: $50 per booking</ListItem>
+            <ListItem>Deep cleaning: $100 per booking</ListItem>
+            <ListItem>
+              Post-stay inspection and cleaning: $75 per booking
+            </ListItem>
+            <ListItem>
+              Additional services:
+              <UnorderedList>
+                <ListItem>Carpet cleaning: $25 per room</ListItem>
+                <ListItem>Window cleaning: $15 per window</ListItem>
+              </UnorderedList>
+            </ListItem>
           </UnorderedList>
         </>
       ),
     },
     {
       title: "Listing",
-      desc: "Teest AirBnB Listing",
+      desc: "We help create and manage your AirBnB listings to attract more guests and optimize bookings.",
       html: (
         <>
           <UnorderedList>
-            <ListItem>Test2</ListItem>
+            <ListItem>
+              Listing creation and optimization: $150 one-time fee
+            </ListItem>
+            <ListItem>Professional photography: $200 per session</ListItem>
+            <ListItem>Monthly listing management: $50 per month</ListItem>
+            <ListItem>Dynamic pricing setup: $30 per month</ListItem>
           </UnorderedList>
         </>
       ),
     },
     {
       title: "Management",
-      desc: "Teest AirBnB Management",
+      desc: "Comprehensive AirBnB property management services to maximize your rental income.",
       html: (
         <>
           <UnorderedList>
-            <ListItem>Test3 </ListItem>
+            <ListItem>
+              Full-service property management: 20% of booking revenue
+            </ListItem>
+            <ListItem>Guest communication and support: Included</ListItem>
+            <ListItem>Maintenance coordination: Included</ListItem>
+            <ListItem>Monthly performance reporting: Included</ListItem>
+            <ListItem>
+              Optional add-ons:
+              <UnorderedList>
+                <ListItem>
+                  Interior design consultation: $300 per session
+                </ListItem>
+                <ListItem>24/7 emergency support: $50 per month</ListItem>
+              </UnorderedList>
+            </ListItem>
           </UnorderedList>
         </>
       ),
@@ -201,7 +239,7 @@ const Packages = () => {
               </HStack>
 
               <HStack
-                wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+                wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
                 gap={["20px", "20px", "15px", "15px", "15px", "15px"]}
                 mt={"25px"}
                 w={"100%"}
@@ -209,70 +247,90 @@ const Packages = () => {
                 justify={"center"}
                 align={"start"}
               >
-                  <Box
-                    borderRadius={"15px"}
+                <Box
+                  borderRadius={"15px"}
+                  w={"100%"}
+                  h={["400px", "400px", "480px", "480px", "480px", "480px"]}
+                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                  p={"30px"}
+                >
+                  <VStack
                     w={"100%"}
-                    h={["400px", "400px", "400px", "400px", "400px", "400px"]}
-                    boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                    p={"20px"}
+                    h={"100%"}
+                    justify={"start"}
+                    align={"start"}
                   >
-                <VStack w={"100%"} h={"100%"} justify={"start"} align={"start"}>
-                    <Text 
+                    <Text
                       fontSize={[
-                        "16px",
-                        "16px",
                         "20px",
                         "20px",
                         "24px",
                         "24px",
+                        "28px",
+                        "28px",
                       ]}
                       fontWeight={"500"}
                     >
-                      {currentTab === "Linen/Amenity" ? tabs[0].title : null}
-                      {currentTab === "Cleaning" ? tabs[1].title : null}
-                      {currentTab === "Listing" ? tabs[2].title : null}
-                      {currentTab === "Management" ? tabs[3].title : null}
+                      {currentTab === "Linen/Amenity"
+                        ? tabs[0].title
+                        : currentTab === "Cleaning"
+                          ? tabs[1].title
+                          : currentTab === "Listing"
+                            ? tabs[2].title
+                            : currentTab === "Management"
+                              ? tabs[3].title
+                              : null}
                     </Text>
 
                     <Text
                       fontSize={[
-                        "12px",
-                        "16px",
                         "14px",
                         "14px",
                         "16px",
                         "16px",
+                        "18px",
+                        "18px",
                       ]}
                       fontWeight={"400"}
                       mt={"15px"}
                     >
-                      {currentTab === "Linen/Amenity" ? tabs[0].desc : null}
-                      {currentTab === "Cleaning" ? tabs[1].desc : null}
-                      {currentTab === "Listing" ? tabs[2].desc : null}
-                      {currentTab === "Management" ? tabs[3].desc : null}
+                      {currentTab === "Linen/Amenity"
+                        ? tabs[0].desc
+                        : currentTab === "Cleaning"
+                          ? tabs[1].desc
+                          : currentTab === "Listing"
+                            ? tabs[2].desc
+                            : currentTab === "Management"
+                              ? tabs[3].desc
+                              : null}
                     </Text>
 
                     <Box
                       mt={"15px"}
                       fontSize={[
-                        "12px",
-                        "16px",
                         "14px",
                         "14px",
                         "16px",
                         "16px",
+                        "18px",
+                        "18px",
                       ]}
                     >
-                      {currentTab === "Linen/Amenity" ? tabs[0].html : null}
-                      {currentTab === "Cleaning" ? tabs[1].html : null}
-                      {currentTab === "Listing" ? tabs[2].html : null}
-                      {currentTab === "Management" ? tabs[3].html : null}
+                      {currentTab === "Linen/Amenity"
+                        ? tabs[0].html
+                        : currentTab === "Cleaning"
+                          ? tabs[1].html
+                          : currentTab === "Listing"
+                            ? tabs[2].html
+                            : currentTab === "Management"
+                              ? tabs[3].html
+                              : null}
                     </Box>
 
                     <HStack
                       mt={"25px"}
                       w={["100%", "100%", "60%", "50%", "40%", "30%"]}
-                   h={"100%"}
+                      h={"100%"}
                       justify={"end"}
                       align={"end"}
                       gap={"15px"}
@@ -301,6 +359,7 @@ const Packages = () => {
                         w={"100%"}
                         h={"50px"}
                         bg={"white"}
+                        // _hover={}
                         border={"1.5px solid rgb(0, 0, 0,0.25)"}
                       >
                         <HStack
@@ -313,18 +372,40 @@ const Packages = () => {
                         </HStack>
                       </Box>
                     </HStack>
-                </VStack>
-                  </Box>
+                  </VStack>
+                </Box>
                 <Box
-                  h={["200px", "200px", "400px", "400px", "400px", "400px"]}
-                  p={"15px"}
+                  h={["100%", "100%", "100%", "400px", "400px", "400px"]}
+                  p={"30px"}
                   borderRadius={"15px"}
-                  w={["100%", "100%", "50%", "50%", "50%", "50%"]}
+                  w={["100%", "100%", "100%", "50%", "40%", "40%"]}
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                  fontSize={["14px", "14px", "16px", "16px", "18px", "18px"]}
                 >
-                  <Text fontSize={"24px"} fontWeight={"500"}>
-                    Test
-                  </Text>
+                  
+                  <Stack flexDir={["row", "row", "row", "column", "column", "column"]} flexWrap={"wrap"} gap={"15px"} justify={"start"} align={"start"}>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> High-quality bed linen
+                    </Text>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> General bedding
+                    </Text>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> Towels and hand towels
+                    </Text>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> One-time use toiletries
+                    </Text>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> Seasonal linen rotation
+                    </Text>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> Eco-friendly options
+                    </Text>
+                    <Text fontWeight={"500"}>
+                      <Icon as={TiTick} /> Linen inventory management
+                    </Text>
+                  </Stack>
                 </Box>
               </HStack>
             </VStack>
