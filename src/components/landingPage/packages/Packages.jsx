@@ -382,8 +382,20 @@ const Packages = () => {
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                   fontSize={["14px", "14px", "16px", "16px", "18px", "18px"]}
                 >
-                  
-                  <Stack flexDir={["row", "row", "row", "column", "column", "column"]} flexWrap={"wrap"} gap={"15px"} justify={"start"} align={"start"}>
+                  <Stack
+                    flexDir={[
+                      "row",
+                      "row",
+                      "row",
+                      "column",
+                      "column",
+                      "column",
+                    ]}
+                    flexWrap={"wrap"}
+                    gap={"15px"}
+                    justify={"start"}
+                    align={"start"}
+                  >
                     <Text fontWeight={"500"}>
                       <Icon as={TiTick} /> High-quality bed linen
                     </Text>

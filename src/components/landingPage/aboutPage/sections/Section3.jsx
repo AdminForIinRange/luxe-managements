@@ -1,13 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import {
-  Box,
-  HStack,
-  VStack,
-  Text,
-
-} from "@chakra-ui/react";
+import { Box, HStack, VStack, Text } from "@chakra-ui/react";
 import { GoDotFill } from "react-icons/go";
 import interior from "../../../../assets/img/interior.jpg";
 import Aos from "aos";
@@ -16,7 +10,6 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 import skyRise3 from "../../../../assets/img/skyRise3.jpg";
-
 
 const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
   const [fliter, setFliter] = React.useState(true);
@@ -30,9 +23,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
 
   return (
     <>
-     
-
-     <HStack
+      <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"}
         align={"center"}
@@ -111,7 +102,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
           >
             <Box
               style={{ backgroundImage: `url(${interior.src})` }}
-              // data-aos="fade-right"    
+              // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}
@@ -279,13 +270,11 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
                 </VStack>
               ))}
             </HStack>
-        
           </Box>
         </HStack>
-        </HStack>
-
+      </HStack>
     </>
   );
-}
+};
 
 export default Section3;

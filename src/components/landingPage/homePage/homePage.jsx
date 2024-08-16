@@ -361,7 +361,6 @@ const HomePage = () => {
       </VStack>
 
       <QuickNavBox />
-
     </>
   );
 };

@@ -1,13 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import {
-  Box,
-  HStack,
-  VStack,
-  Text,
-
-} from "@chakra-ui/react";
+import { Box, HStack, VStack, Text } from "@chakra-ui/react";
 import { GoDotFill } from "react-icons/go";
 import interior from "../../../../assets/img/interior.jpg";
 import Aos from "aos";
@@ -30,9 +24,7 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
 
   return (
     <>
-     
-
-     <HStack
+      <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"}
         align={"center"}
@@ -58,7 +50,6 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
             // data-aos="fade-right"
             bgPos={"center"}
             bgSize={"cover"}
-            
             w={"100%"}
             h={"100%"}
             p={"10px"}
@@ -283,7 +274,6 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
           </Box>
         </HStack>
       </HStack>
-
     </>
   );
 };

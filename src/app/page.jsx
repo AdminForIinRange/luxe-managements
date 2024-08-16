@@ -12,7 +12,7 @@ const Home = () => {
 
       <HomePage />
       <AboutPage />
-     <Packages />
+      <Packages />
     </>
   );
 };
