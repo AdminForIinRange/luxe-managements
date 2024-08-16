@@ -1,142 +1,16 @@
-"use client";
-
-import React, { useEffect } from "react";
-import {
-  Box,
-  HStack,
-  VStack,
-  Text,
-  Divider,
-  Select,
-  Input,
-} from "@chakra-ui/react";
+import {  Box,
+    HStack,
+    VStack,
+    Text,
+    Divider,
+    Select,
+    Input,} from "@chakra-ui/react";
+import React from "react";
 import { GoDotFill } from "react-icons/go";
-import interior from "../../../assets/img/interior.jpg";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-import { IoHappyOutline } from "react-icons/io5";
-import { FaListUl } from "react-icons/fa";
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { IoGitBranch } from "react-icons/io5";
-import { FcCustomerSupport } from "react-icons/fc";
-import Image from "next/image";
-import collage from "../../../assets/img/collage.png";
-import skyRise3 from "../../../assets/img/skyRise3.jpg";
-import { HiArrowLongRight } from "react-icons/hi2";
-import { MdHotel } from "react-icons/md";
-import { FaHandshake } from "react-icons/fa";
-import { FaBroom } from "react-icons/fa";
-import { FaLaptopHouse } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
-import { FaHouseMedicalCircleCheck } from "react-icons/fa6";
-import { FaChartLine } from "react-icons/fa6";
-import { FaHouseCircleCheck } from "react-icons/fa6";
-import Section1 from "./sections/Section1";
-import Section2 from "./sections/Section2";
-import Section3 from "./sections/Section3";
-const AboutPage = () => {
-  
-  useEffect(() => {
-    Aos.init({
-      duration: 500,
-      easing: "ease-in-out",
-      mirror: true,
-    }); // Initialize AOS with desired options
-  }, []);
-
-  const topBoxIcons = [
-    {
-      title: " Stress-Free Experience",
-      icon: <IoHappyOutline />,
-      description:
-        "We provide a stress-free experience for our clients. Our team of experienced professionals is dedicated to delivering exceptional service. ",
-    },
-    {
-      title: "  Versatile Platform Use",
-      icon: <IoGitBranch />,
-      description:
-        "Utilize platforms like Airbnb, Booking.com, and traditional rentals for maximum flexibility.",
-    },
-  ];
-
-  const bottomBoxIcons = [
-    {
-      title: "Comprehensive Services",
-      icon: <FaListUl />,
-      description:
-        "Benefit from meticulous maintenance, professional cleaning, and efficient tenant booking.",
-    },
-    {
-      title: "Increased Rental Income",
-      icon: <FaArrowTrendUp />,
-      description:
-        "Boost rental income by an average of 40% and improve occupancy rates with our seasoned Airbnb management team in Adelaide.",
-    },
-  ];
-
-  const top2BoxIcons = [
-    {
-      title: " Stress-Free Experience",
-      icon: <MdHotel />,
-      description:
-        "We provide a stress-free experience for our clients. Our team of experienced professionals is dedicated to delivering exceptional service.",
-    },
-    {
-      title: "All Basic Amenity Hire",
-      icon: <FaHandshake />,
-      description:
-        "From toiletries to kitchen essentials, we supply everything needed for a comfortable and convenient.",
-    },
-  ];
-
-  const bottom2BoxIcons = [
-    {
-      title: "Cleaning Management",
-      icon: <FaBroom />,
-      description:
-        "This includes full home detailing, ensuring every corner of your property is spotless for incoming guests.",
-    },
-    {
-      title: "Property Management",
-      icon: <FaLaptopHouse />,
-      description:
-        "Advertising, finances, insurance, bills, and guest management for seamless operation.",
-    },
-  ];
-
-  const top3BoxIcons = [
-    {
-      title: "24/7 Security Coverage",
-      icon: <FaEye />,
-      description:
-        "Around-the-clock security monitoring to keep your property safe and secure at all times.",
-    },
-    {
-      title: "24/7 Incidence Management",
-      icon: <FaHouseMedicalCircleCheck />,
-      description: "Immediate response to any issues or emergencies.",
-    },
-  ];
-
-  const bottom3BoxIcons = [
-    {
-      title: "Professional Marketing",
-      icon: <FaChartLine />,
-      description:
-        "High-quality Marketing to showcase your property, enhancing its appeal and attracting more bookings.",
-    },
-    {
-      title: "Regular Property Inspections",
-      icon: <FaHouseCircleCheck />,
-      description:
-        "Routine checks to ensure the property is in excellent condition.",
-    },
-  ];
-
+const GettingStarted = () => {
   return (
     <>
-      <HStack
+    <HStack
         justify={"center"}
         align={"start"}
         w={"100%"}
@@ -300,7 +174,7 @@ const AboutPage = () => {
                   Learn more
                 </Text>{" "}
                 <Text fontSize={"30px"}>
-                  <HiArrowLongRight color="white" />
+
                 </Text>
               </HStack>
             </HStack>
@@ -321,7 +195,7 @@ const AboutPage = () => {
             p={"10px"}
           >
             <Box
-              style={{ backgroundImage: `url(${interior.src})` }}
+            
               // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
@@ -346,16 +220,159 @@ const AboutPage = () => {
 
             w={["390px", "390px", "550px", "550px", "550px", "550px"]}
           >
-            <Image src={collage} />
+    
           </Box>
         </HStack>
       </HStack>
 
-      <Section1 topBoxIcons={topBoxIcons} bottomBoxIcons={bottomBoxIcons} />
-      <Section2 top2BoxIcons={top2BoxIcons} bottom2BoxIcons={bottom2BoxIcons} />
-      <Section3 top3BoxIcons={top3BoxIcons} bottom3BoxIcons={bottom3BoxIcons} />
+      <HStack
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        justify={"center"}
+        align={"center"}
+        w={"100%"}
+        h={"100%"}
+        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+      >
+        <HStack
+          justify={[
+            "center",
+            "center",
+            "space-between",
+            "space-between",
+            "space-between",
+            "space-between",
+          ]}
+          align={"start"}
+          w={"100%"}
+          h={"100%"}
+          gap={["45px", "45px", "45px", "45px", "45px", "45px"]}
+          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        >
+          <Box
+            display={["none", "none", "none", "block", "block", "block"]}
+            // data-aos="fade-right" // chnage dir
+            border={"5px solid rgb(255, 255, 255,0.25)"}
+            h={["600px", "600px", "600px", "600px", "600px", "600px"]}
+            w={["380px", "380px", "350px", "350px", "550px", "550px"]}
+            bg={"rgb(0,0,0,0.05)"}
+            backdropFilter="blur(1.5px)"
+            p={"10px"}
+            borderRadius={"30px"}
+            bgPos={"center"}
+            bgSize={"cover"}
+          >
+            <Box
+           
+              // data-aos="fade-right"
+              bgPos={"center"}
+              bgSize={"cover"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+              borderRadius={"30px"}
+            ></Box>
+          </Box>
+          <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
+            <HStack
+              w={"100%"}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
+              align={"center"}
+              h={"100%"}
+              gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
+            >
+              <HStack
+                // data-aos="fade-in"
+                rounded={"100px"}
+                justify={"start"}
+                align={"center"}
+                h={"100%"}
+                border={"1px solid rgb(255, 255, 255,0.25)"}
+                py={[1, 1, 2, 2, 2, 2]}
+              >
+                <Box>
+                  <GoDotFill color="black" fontSize={"20px"} />
+                </Box>
+                <Box>
+                  <Text
+                    fontFamily={"Poppins"}
+                    h={"100%"}
+                    textAlign={"center"}
+                    color={"black"}
+                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontWeight={500}
+                  >
+                    Feel at ease
+                  </Text>
+                </Box>
+              </HStack>
+            </HStack>
+
+            <Text
+              // data-aos="fade-in"
+              mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+              fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
+              fontWeight={300}
+              fontFamily={"Poppins"}
+              bgClip="text"
+              textAlign={["center", "center", "center", "left", "left", "left"]}
+              color={"black"}
+              bgGradient="linear(to-r, green, red)"
+            >
+              Say Goodbye to Hosting Hassles
+            </Text>
+
+            <HStack
+              h={"100%"}
+              w={"100%"}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              justify={"center"}
+              align={"start"}
+              gap={"50px"}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
+            >
+             
+            </HStack>
+
+            <HStack
+              h={"100%"}
+              w={"100%"}
+              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              justify={"center"}
+              align={"start"}
+              gap={["50px", "50px", "50px", "50px", "50px", "50px"]}
+              flexWrap={[
+                "wrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+                "nowrap",
+              ]}
+            >
+              
+            </HStack>
+          
+          </Box>
+        </HStack>
+      </HStack>
+
+     
     </>
   );
 };
 
-export default AboutPage;
+export default GettingStarted;

@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import HomePage from "@/components/landingPage/homePage/homePage";
 import AboutPage from "@/components/landingPage/aboutPage/aboutPage";
 import Packages from "@/components/landingPage/packages/Packages";
+import GettingStarted from "@/components/landingPage/gettingStarted/gettingStarted";
 const Home = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Home = () => {
       <HomePage />
       <AboutPage />
       <Packages />
+      <GettingStarted />
     </>
   );
 };
