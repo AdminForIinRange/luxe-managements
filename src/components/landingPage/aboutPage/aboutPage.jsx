@@ -246,7 +246,7 @@ const AboutPage = () => {
               // data-aos="fade-in"
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-         mt={["40px", "40px", "40px", "50px", "50px", "50px"]}
+              mt={["40px", "40px", "40px", "50px", "50px", "50px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
               fontFamily={"Poppins"}
               color={"black"}
@@ -293,7 +293,7 @@ const AboutPage = () => {
                 bgColor={"black"}
               >
                 <Text
-                  fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                   fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                   color={"white"}
                   px={"8px"}
                 >

@@ -11,6 +11,33 @@ import React from "react";
 import { GoDotFill } from "react-icons/go";
 import { HiArrowLongRight } from "react-icons/hi2";
 const GettingStarted = () => {
+  const GettingStartedSteps = [
+    {
+      id: 1,
+      title: "Get Started",
+      description:
+        'Click "Get In Touch" with our team to discuss your property.',
+    },
+    {
+      id: 2,
+      title: "Meet Your Local Hosting Partner",
+      description:
+        "Meet at your property for an inspection. We'll gather details and start our partnership.",
+    },
+    {
+      id: 3,
+      title: "Onboarding and Listing Creation",
+      description:
+        "We handle photos and listing creation. Your property will shine on Airbnb and Booking.com.",
+    },
+    {
+      id: 4,
+      title: "Enjoy Hassle-Free Management",
+      description:
+        "Relax while we manage everything. Bookings, pricing, guest management, and cleaning are all covered.",
+    },
+  ];
+
   return (
     <>
       {/* <HStack
@@ -130,14 +157,8 @@ const GettingStarted = () => {
               w={["100%", "100%", "80%", "80%", "80%", "80%"]} // !important
               fontWeight={300}
             >
-              Optimize your income and ease your mind with our experienced
-              Airbnb Management team in Adelaide.
-              <br />
-              <br />
-              We handle everything for you, from listing your property on
-              Airbnb, Booking.com, and more, to maximizing rental profits.
-              Experience hassle-free short-term rentals with Adelaide's leading
-              Airbnb management service.
+              Learn how we can help you get started with personalized guidance
+              and expert support every step of the way.
             </Text>
 
             <HStack
@@ -170,7 +191,7 @@ const GettingStarted = () => {
                 bgColor={"black"}
               >
                 <Text
-                  fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                  fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                   color={"white"}
                   px={"8px"}
                 >
@@ -183,45 +204,119 @@ const GettingStarted = () => {
             </HStack>
           </Box>
           {/* <Image src={collage} width={500} /> */}
+
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
-            display={["block", "block", "none", "none", "none", "none"]}
+            display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
-            border={"5px solid rgb(255, 255, 255,0.25)"}
+            // border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            w={["100%", "100%", "350px", "450px", "550px", "550px"]}
-            bg={"rgb(0,0,0,0.05)"}
+            w={["100%", "100%", "100%", "450px", "550px", "550px"]}
+          
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
             bgPos={"center"}
             bgSize={"cover"}
-            p={"10px"}
           >
-            <Box
-              // data-aos="fade-right"
-              bgPos={"center"}
-              bgSize={"cover"}
-              w={"100%"}
-              h={"100%"}
-              p={"10px"}
-              borderRadius={"30px"}
-            >
-              <HStack
-                p={"5px"}
-                justify={"start"}
-                align={"start"}
+            {" "}
+            {GettingStartedSteps.slice(0, 4).map(({ id, title, description }, index) => (
+              <VStack
+                key={id}
                 w={"100%"}
-              ></HStack>
-            </Box>
+                align={"center"}
+                justify={"start"}
+              
+              >
+                <HStack
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"start"}
+                  align={"start"}
+                  gap={2}
+                >
+                  <VStack justify={"center"} gap={0} >
+                
+                    <Box
+                      w={"50px"}
+                      h={"50px"}
+                      borderRadius={"15px"}
+                      bg={"white"}
+                      border={"2.5px solid #BFBFBF"}
+                    >
+                      <HStack
+                        w={"100%"}
+                        justify={"center"}
+                        h={"100%"}
+                        align={"center"}
+                      >
+                        <Text
+                          fontSize={[
+                            "14px",
+                            "18px",
+                            "16px",
+                            "16px",
+                            "18px",
+                            "18px",
+                          ]}
+                          fontWeight={500}
+                          fontFamily={"Poppins"}
+                          color={"black"}
+                        >
+                          {id}
+                        </Text>
+                      </HStack>
+                    </Box>
+                   { index < 3 && <Box
+                    zIndex={-1}
+                     
+                      w={"5px"}
+                      h={"70px"}
+                    
+                      bg={"#BFBFBF"}
+                    ></Box>}
+                  </VStack>
 
+                  <Box >
+                    <Text align={"start"}
+                      fontSize={[
+                        "12px",
+                        "16px",
+                        "14px",
+                        "14px",
+                        "16px",
+                        "16px",
+                      ]}
+                      fontWeight={500}
+                      textAlign={"left"}
+                      fontFamily={"Poppins"}
+                      color={"black"}
+                      w={"100%"} // !important
+                    >
+                      {title}
+                    </Text>
+                    <Text 
+                      fontSize={[
+                        "12px",
+                        "16px",
+                        "14px",
+                        "14px",
+                        "16px",
+                        "16px",
+                      ]}
+                      textAlign={"left"}
+                      fontFamily={"Poppins"}
+                      color={"black"}
+                      w={"100%"}
+                      fontWeight={300}
+                    >
+                      {description}
+                    </Text>
+                  </Box>
+                </HStack>
+              </VStack>
+            ))}
             {/* <Image src={collage} />   //!cool */}
           </Box>
-          <Box
-            display={["none", "none", "block", "block", "block", "block"]}
-            // data-aos="fade-right" // chnage dir
-
-            w={["390px", "390px", "550px", "550px", "550px", "550px"]}
-          ></Box>
         </HStack>
       </HStack>
     </>
