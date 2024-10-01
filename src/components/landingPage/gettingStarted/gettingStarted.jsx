@@ -1,16 +1,19 @@
-import {  Box,
-    HStack,
-    VStack,
-    Text,
-    Divider,
-    Select,
-    Input,} from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  VStack,
+  Text,
+  Divider,
+  Select,
+  Input,
+} from "@chakra-ui/react";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import { HiArrowLongRight } from "react-icons/hi2";
 const GettingStarted = () => {
   return (
     <>
-     <HStack
+      {/* <HStack
         justify={"center"}
         align={"start"}
         w={"100%"}
@@ -35,9 +38,9 @@ const GettingStarted = () => {
           color={"black"}
           bgGradient="linear(to-r, green, red)"
         >
-          Seamless Exceptional Management
+          Seamless Exceptional Managemen
         </Text>
-      </HStack>
+      </HStack> */}
 
       <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
@@ -97,7 +100,7 @@ const GettingStarted = () => {
                     fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                     fontWeight={500}
                   >
-                    Maximize Earnings
+                    Simple steps to getting Started
                   </Text>
                 </Box>
               </HStack>
@@ -114,13 +117,13 @@ const GettingStarted = () => {
               color={"black"}
               bgGradient="linear(to-r, green, red)"
             >
-              Maximize Your Rental Income
+              How we can get you get started
             </Text>
             <Text
               // data-aos="fade-in"
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-              mt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              mt={["40px", "40px", "40px", "50px", "50px", "50px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
               fontFamily={"Poppins"}
               color={"black"}
@@ -174,7 +177,7 @@ const GettingStarted = () => {
                   Learn more
                 </Text>{" "}
                 <Text fontSize={"30px"}>
- 
+                  <HiArrowLongRight color="white" />
                 </Text>
               </HStack>
             </HStack>
@@ -195,7 +198,6 @@ const GettingStarted = () => {
             p={"10px"}
           >
             <Box
-        
               // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
@@ -219,13 +221,9 @@ const GettingStarted = () => {
             // data-aos="fade-right" // chnage dir
 
             w={["390px", "390px", "550px", "550px", "550px", "550px"]}
-          >
-  
-          </Box>
+          ></Box>
         </HStack>
       </HStack>
-
-     
     </>
   );
 };
