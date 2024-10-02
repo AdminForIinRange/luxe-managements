@@ -128,7 +128,7 @@ const Packages = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+ mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
           justify={"center"}
@@ -161,7 +161,7 @@ const Packages = () => {
                     fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                     fontWeight={500}
                   >
-                    Maximize Earnings
+                    Our Specialities
                   </Text>
                 </Box>
               </HStack>

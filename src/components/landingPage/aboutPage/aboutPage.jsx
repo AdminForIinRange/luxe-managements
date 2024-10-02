@@ -170,16 +170,16 @@ const AboutPage = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+ mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-          justify={[
+            justify={[
             "center",
             "center",
-            "space-between",
-            "space-between",
-            "space-between",
-            "space-between",
+            "center",
+            "center",
+            "center",
+            "center",
           ]}
           align={["center", "center", "start", "start", "start", "start"]}
           w={"100%"}

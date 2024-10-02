@@ -20,31 +20,27 @@ import Image from "next/image";
 const Testimonials = () => {
   const [reviews, setReviews] = useState([
     {
-      id: 1,
       text: "I highly recommend. They was attentive to our needs and worked tirelessly to find us a client for our holiday house property. We couldn't be happier with our new place!",
 
       name: "Dan Abrahmov",
       src: "https://bit.ly/dan-abramov",
-      rating: 5,
+      rating: 6,
     },
     {
-      id: 2,
       text: "  Their professionalism and dedication were truly exceptional. They made the entire process seamless and stress-free. I will definitely be working with them again in the future!",
 
       name: "Kent Dodds",
       src: "https://bit.ly/kent-c-dodds",
-      rating: 5,
+      rating: 6,
     },
     {
-      id: 3,
       text: " Fantastic service! They took the time to understand exactly what I was looking for and found the perfect match. I couldn’t be happier!",
 
-      rating: 4,
+      rating: 6,
       name: "Segun Adebayo",
       src: "https://bit.ly/sage-adebayo",
     },
     {
-      id: 4,
       text: " Great experience from start to finish. They kept us informed and made sure we got the best deal possible. I would recommend them to anyone!",
 
       rating: 5,
@@ -52,16 +48,14 @@ const Testimonials = () => {
       src: "https://bit.ly/code-beast",
     },
     {
-      id: 5,
       text: " Very responsive and professional. They helped us find a great property in a short amount of time. Definitely recommend their services!",
       name: "Sophia M. Martinez",
-      rating: 5,
+      rating: 6,
     },
     {
-      id: 6,
       text: "  They were patient and helped us every step of the way. We appreciated their attention to detail and ability to handle any challenge that came up.",
       name: "Michael T. Garcia",
-      rating: 4,
+      rating: 5,
     },
   ]);
 
@@ -78,7 +72,7 @@ const Testimonials = () => {
   return (
     <>
       <HStack
-        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+        mt={["220px", "220px", "155px", "155px", "155px", "155px"]}
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
@@ -167,8 +161,9 @@ const Testimonials = () => {
               align={"center"}
             >
               <HStack
+                as={"button"}
                 mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
-                w={["225px", "225px", "170px", "170px", "200px", "80px"]}
+                w={["225px", "225px", "170px", "170px", "200px", "125px"]}
                 h={["50px", "50px", "50px", "50px", "50px", "50px"]}
                 transition={"transform 0.3s ease"}
                 _hover={{
@@ -181,6 +176,7 @@ const Testimonials = () => {
                 color={"black"}
               >
                 <Text
+                  cursor={"pointer"}
                   fontSize={"40px"}
                   onClick={() => {
                     prevSlide();
@@ -193,8 +189,10 @@ const Testimonials = () => {
                 </Text>
               </HStack>
               <HStack
+           
+                as={"button"}
                 mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
-                w={["225px", "225px", "170px", "170px", "200px", "80px"]}
+                w={["225px", "225px", "170px", "170px", "200px", "125px"]}
                 h={["50px", "50px", "50px", "50px", "50px", "50px"]}
                 transition={"transform 0.3s ease"}
                 _hover={{
@@ -208,6 +206,7 @@ const Testimonials = () => {
                 border={"1px solid black"}
               >
                 <Text
+                  cursor={"pointer"}
                   fontSize={"40px"}
                   onClick={() => {
                     nextSlide();

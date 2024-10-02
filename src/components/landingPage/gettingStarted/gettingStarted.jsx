@@ -40,34 +40,7 @@ const GettingStarted = () => {
 
   return (
     <>
-      {/* <HStack
-        justify={"center"}
-        align={"start"}
-        w={"100%"}
-        h={"100%"}
-        wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-        mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
-      >
-        <Text
-          w={["95%", "95%", "70%", "70%", "90%", "100%"]}
-          fontSize={["45px", "45px", "45px", "45px", "85px", "65px"]}
-          fontWeight={300}
-          fontFamily={"Poppins"}
-          bgClip="text"
-          textAlign={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
-          color={"black"}
-          bgGradient="linear(to-r, green, red)"
-        >
-          Seamless Exceptional Managemen
-        </Text>
-      </HStack> */}
+     
 
       <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
@@ -75,16 +48,16 @@ const GettingStarted = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
+ mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-          justify={[
+            justify={[
             "center",
             "center",
-            "space-between",
-            "space-between",
-            "space-between",
-            "space-between",
+            "center",
+            "center",
+            "center",
+            "center",
           ]}
           align={["center", "center", "start", "start", "start", "start"]}
           w={"100%"}
