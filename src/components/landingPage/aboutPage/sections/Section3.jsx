@@ -170,7 +170,8 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
             <HStack
               h={"100%"}
               w={"100%"}
-              mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
+              mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+
               justify={"center"}
               align={"start"}
               gap={"50px"}
@@ -222,7 +223,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
             <HStack
               h={"100%"}
               w={"100%"}
-              mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
+              mt={["50px", "50px", "50px", "20px", "20px", "20px"]}
               justify={"center"}
               align={"start"}
               gap={["50px", "50px", "50px", "50px", "50px", "50px"]}

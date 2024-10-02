@@ -30,17 +30,10 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
         align={"center"}
         w={"100%"}
         h={"100%"}
- mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-            justify={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center", "center"]}
           align={"start"}
           w={"100%"}
           h={"100%"}
@@ -130,7 +123,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
             <HStack
               h={"100%"}
               w={"100%"}
-              mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
+              mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
               justify={"center"}
               align={"start"}
               gap={"50px"}
@@ -182,7 +175,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
             <HStack
               h={"100%"}
               w={"100%"}
-              mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
+              mt={["50px", "50px", "50px", "20px", "20px", "20px"]}
               justify={"center"}
               align={"start"}
               gap={["50px", "50px", "50px", "50px", "50px", "50px"]}

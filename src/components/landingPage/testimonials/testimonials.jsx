@@ -247,9 +247,10 @@ const Testimonials = () => {
               textAlign={["left", "left", "left", "left", "left", "left"]}
             >
               <Text
+         fontWeight={300}
                 h={["100px", "100px", "150px", "150px", "150px", "120px"]}
                 w={"100%"}
-                fontSize={["16px", "18px", "16px", "18px", "20px", "20px"]}
+                fontSize={["16px", "16px", "16px", "18px", "20px", "20px"]}
               >
                 {reviews[currentSlide].text}
               </Text>
