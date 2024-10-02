@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 import skyRise3 from "../../../../assets/img/skyRise3.jpg";
-
+import interior4 from '../../../../assets/img/interior4.jpg';
 const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -101,7 +101,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
             bgSize={"cover"}
           >
             <Box
-              style={{ backgroundImage: `url(${interior.src})` }}
+              style={{ backgroundImage: `url(${interior4.src})` }}
               // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
