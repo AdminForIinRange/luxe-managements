@@ -11,7 +11,7 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { GoDotFill } from "react-icons/go";
-import interior from "../../../assets/img/interior.jpg";
+import interior6 from "../../../assets/img/interior6.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -307,7 +307,7 @@ const AboutPage = () => {
           {/* <Image src={collage} width={500} /> */}
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
-            display={["block", "block", "none", "none", "none", "none"]}
+            display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
@@ -320,7 +320,7 @@ const AboutPage = () => {
             p={"10px"}
           >
             <Box
-              style={{ backgroundImage: `url(${interior.src})` }}
+              style={{ backgroundImage: `url(${interior6.src})` }}
               // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
@@ -337,16 +337,17 @@ const AboutPage = () => {
               ></HStack>
             </Box>
 
-            {/* <Image src={collage} />   //!cool */}
-          </Box>
-          <Box
+
+          </Box> 
+          {/* the collage  down here */}
+          {/* <Box
             display={["none", "none", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
 
             w={["390px", "390px", "550px", "550px", "550px", "550px"]}
           >
             <Image src={collage} />
-          </Box>
+          </Box> */}
         </HStack>
       </HStack>
 

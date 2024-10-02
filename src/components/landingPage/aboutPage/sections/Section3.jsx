@@ -45,7 +45,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
           p={"10px"}
         >
           <Box
-            style={{ backgroundImage: `url(${skyRise3.src})` }}
+            style={{ backgroundImage: `url(${interior4.src})` }}
             // data-aos="fade-right"
             bgPos={"center"}
             bgSize={"cover"}
