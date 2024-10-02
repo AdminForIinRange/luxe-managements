@@ -22,7 +22,7 @@ const Testimonials = () => {
     {
       id: 1,
       text: "I highly recommend. They was attentive to our needs and worked tirelessly to find us a client for our holiday house property. We couldn't be happier with our new place!",
-    
+
       name: "Dan Abrahmov",
       src: "https://bit.ly/dan-abramov",
       rating: 5,
@@ -30,7 +30,7 @@ const Testimonials = () => {
     {
       id: 2,
       text: "  Their professionalism and dedication were truly exceptional. They made the entire process seamless and stress-free. I will definitely be working with them again in the future!",
-     
+
       name: "Kent Dodds",
       src: "https://bit.ly/kent-c-dodds",
       rating: 5,
@@ -38,7 +38,7 @@ const Testimonials = () => {
     {
       id: 3,
       text: " Fantastic service! They took the time to understand exactly what I was looking for and found the perfect match. I couldn’t be happier!",
-    
+
       rating: 4,
       name: "Segun Adebayo",
       src: "https://bit.ly/sage-adebayo",
@@ -46,7 +46,7 @@ const Testimonials = () => {
     {
       id: 4,
       text: " Great experience from start to finish. They kept us informed and made sure we got the best deal possible. I would recommend them to anyone!",
-     
+
       rating: 5,
       name: "Christian Nwamba",
       src: "https://bit.ly/code-beast",
@@ -78,12 +78,12 @@ const Testimonials = () => {
   return (
     <>
       <HStack
+        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["105px", "105px", "105px", "105px", "155px", "155px"]}
       >
         <HStack
           justify={["center", "center", "center", "center", "center", "center"]}
@@ -270,9 +270,8 @@ const Testimonials = () => {
                   src={reviews[currentSlide].src}
                   w={["50px", "50px", "50px", "50px", "50px", "50px"]}
                   h={["50px", "50px", "50px", "50px", "50px", "50px"]}
-                 
                   borderRadius={"100px"}
-bg={"gray"}
+                  bg={"gray"}
                 ></Avatar>
                 <Text
                   fontSize={["16px", "16px", "16px", "16px", "16px", "16px"]}

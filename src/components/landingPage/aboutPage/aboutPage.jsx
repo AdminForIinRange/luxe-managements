@@ -36,7 +36,6 @@ import Section1 from "./sections/Section1";
 import Section2 from "./sections/Section2";
 import Section3 from "./sections/Section3";
 const AboutPage = () => {
-  
   useEffect(() => {
     Aos.init({
       duration: 500,
@@ -246,7 +245,7 @@ const AboutPage = () => {
               // data-aos="fade-in"
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-             mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
+              mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
               fontFamily={"Poppins"}
               color={"black"}
@@ -293,7 +292,7 @@ const AboutPage = () => {
                 bgColor={"black"}
               >
                 <Text
-                   fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
+                  fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                   color={"white"}
                   px={"8px"}
                 >

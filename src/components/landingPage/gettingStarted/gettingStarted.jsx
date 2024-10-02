@@ -212,109 +212,104 @@ const GettingStarted = () => {
             // border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
             w={["100%", "100%", "100%", "450px", "550px", "550px"]}
-          
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
             bgPos={"center"}
             bgSize={"cover"}
           >
             {" "}
-            {GettingStartedSteps.slice(0, 4).map(({ id, title, description }, index) => (
-              <VStack
-                key={id}
-                w={"100%"}
-                align={"center"}
-                justify={"start"}
-              
-              >
-                <HStack
-                  w={"100%"}
-                  h={"100%"}
-                  justify={"start"}
-                  align={"start"}
-                  gap={2}
-                >
-                  <VStack justify={"center"} gap={0} >
-                
-                    <Box
-                      w={"50px"}
-                      h={"50px"}
-                      borderRadius={"15px"}
-                      bg={"white"}
-                      border={"2.5px solid #BFBFBF"}
-                    >
-                      <HStack
-                        w={"100%"}
-                        justify={"center"}
-                        h={"100%"}
-                        align={"center"}
+            {GettingStartedSteps.slice(0, 4).map(
+              ({ id, title, description }, index) => (
+                <VStack key={id} w={"100%"} align={"center"} justify={"start"}>
+                  <HStack
+                    w={"100%"}
+                    h={"100%"}
+                    justify={"start"}
+                    align={"start"}
+                    gap={2}
+                  >
+                    <VStack justify={"center"} gap={0}>
+                      <Box
+                        w={"50px"}
+                        h={"50px"}
+                        borderRadius={"15px"}
+                        bg={"white"}
+                        border={"2.5px solid #BFBFBF"}
                       >
-                        <Text
-                          fontSize={[
-                            "14px",
-                            "18px",
-                            "16px",
-                            "16px",
-                            "18px",
-                            "18px",
-                          ]}
-                          fontWeight={500}
-                          fontFamily={"Poppins"}
-                          color={"black"}
+                        <HStack
+                          w={"100%"}
+                          justify={"center"}
+                          h={"100%"}
+                          align={"center"}
                         >
-                          {id}
-                        </Text>
-                      </HStack>
-                    </Box>
-                   { index < 3 && <Box
-                    zIndex={-1}
-                     
-                      w={"5px"}
-                      h={"70px"}
-                    
-                      bg={"#BFBFBF"}
-                    ></Box>}
-                  </VStack>
+                          <Text
+                            fontSize={[
+                              "14px",
+                              "18px",
+                              "16px",
+                              "16px",
+                              "18px",
+                              "18px",
+                            ]}
+                            fontWeight={500}
+                            fontFamily={"Poppins"}
+                            color={"black"}
+                          >
+                            {id}
+                          </Text>
+                        </HStack>
+                      </Box>
+                      {index < 3 && (
+                        <Box
+                          zIndex={-1}
+                          w={"5px"}
+                          h={"70px"}
+                          bg={"#BFBFBF"}
+                        ></Box>
+                      )}
+                    </VStack>
 
-                  <Box >
-                    <Text align={"start"}
-                      fontSize={[
-                        "12px",
-                        "16px",
-                        "14px",
-                        "14px",
-                        "16px",
-                        "16px",
-                      ]}
-                      fontWeight={500}
-                      textAlign={"left"}
-                      fontFamily={"Poppins"}
-                      color={"black"}
-                      w={"100%"} // !important
-                    >
-                      {title}
-                    </Text>
-                    <Text 
-                      fontSize={[
-                        "12px",
-                        "16px",
-                        "14px",
-                        "14px",
-                        "16px",
-                        "16px",
-                      ]}
-                      textAlign={"left"}
-                      fontFamily={"Poppins"}
-                      color={"black"}
-                      w={"100%"}
-                      fontWeight={300}
-                    >
-                      {description}
-                    </Text>
-                  </Box>
-                </HStack>
-              </VStack>
-            ))}
+                    <Box>
+                      <Text
+                        align={"start"}
+                        fontSize={[
+                          "12px",
+                          "16px",
+                          "14px",
+                          "14px",
+                          "16px",
+                          "16px",
+                        ]}
+                        fontWeight={500}
+                        textAlign={"left"}
+                        fontFamily={"Poppins"}
+                        color={"black"}
+                        w={"100%"} // !important
+                      >
+                        {title}
+                      </Text>
+                      <Text
+                        fontSize={[
+                          "12px",
+                          "16px",
+                          "14px",
+                          "14px",
+                          "16px",
+                          "16px",
+                        ]}
+                        textAlign={"left"}
+                        fontFamily={"Poppins"}
+                        color={"black"}
+                        w={"100%"}
+                        fontWeight={300}
+                      >
+                        {description}
+                      </Text>
+                    </Box>
+                  </HStack>
+                </VStack>
+              ),
+            )}
             {/* <Image src={collage} />   //!cool */}
           </Box>
         </HStack>
