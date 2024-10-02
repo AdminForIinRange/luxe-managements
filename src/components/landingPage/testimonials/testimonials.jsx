@@ -8,37 +8,48 @@ import {
   Select,
   Input,
   Spacer,
+  Avatar,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
+import Quote from "../../../assets/img/QuotesMark.png";
+import Image from "next/image";
 
 const Testimonials = () => {
   const [reviews, setReviews] = useState([
     {
       id: 1,
       text: "I highly recommend. They was attentive to our needs and worked tirelessly to find us a client for our holiday house property. We couldn't be happier with our new place!",
-      name: "Barbara D. Smith",
+    
+      name: "Dan Abrahmov",
+      src: "https://bit.ly/dan-abramov",
       rating: 5,
     },
     {
       id: 2,
       text: "  Their professionalism and dedication were truly exceptional. They made the entire process seamless and stress-free. I will definitely be working with them again in the future!",
-      name: "John K. Miller",
+     
+      name: "Kent Dodds",
+      src: "https://bit.ly/kent-c-dodds",
       rating: 5,
     },
     {
       id: 3,
       text: " Fantastic service! They took the time to understand exactly what I was looking for and found the perfect match. I couldn’t be happier!",
-      name: "Emily R. Thompson",
+    
       rating: 4,
+      name: "Segun Adebayo",
+      src: "https://bit.ly/sage-adebayo",
     },
     {
       id: 4,
       text: " Great experience from start to finish. They kept us informed and made sure we got the best deal possible. I would recommend them to anyone!",
-      name: "David P. Johnson",
+     
       rating: 5,
+      name: "Christian Nwamba",
+      src: "https://bit.ly/code-beast",
     },
     {
       id: 5,
@@ -210,12 +221,12 @@ const Testimonials = () => {
           {/* <Image src={collage} width={500} /> */}
 
           <Box
-            mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+            mt={["80px", "80px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
             // border={"5px solid rgb(255, 255, 255,0.25)"}
-            h={["350px", "350px", "350px", "400px", "400px", "80%"]}
-            w={["100%", "100%", "100%", "450px", "650px", "650px"]}
+            h={["80%", "80%", "80%", "80%", "80%", "80%"]}
+            w={["100%", "100%", "650px", "650px", "650px", "650px"]}
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
             bgPos={"center"}
@@ -229,15 +240,19 @@ const Testimonials = () => {
               h={"100%"}
               justify={"start"}
               align={"center"}
-              pt={"60px"}
-              pb={"20px"}
-              px={"50px"}
+              pt={["40px", "40px", "40px", "60px", "60px", "60px"]}
+              pb={["10px", "10px", "10px", "20px", "20px", "20px"]}
+              px={["40px", "40px", "20px", "50px", "50px", "50px"]}
               fontFamily={"Poppins"}
               color={"black"}
-              textAlign={["center", "center", "left", "left", "left", "left"]}
+              textAlign={["left", "left", "left", "left", "left", "left"]}
             >
-              <Text fontSize={["30px", "30px", "20px", "20px", "20px", "20px"]}>
-               {reviews[currentSlide].text}
+              <Text
+                h={["100px", "100px", "150px", "150px", "150px", "120px"]}
+                w={"100%"}
+                fontSize={["16px", "18px", "16px", "18px", "20px", "20px"]}
+              >
+                {reviews[currentSlide].text}
               </Text>
 
               <HStack
@@ -248,36 +263,74 @@ const Testimonials = () => {
                 justify={"left"}
                 align={"center"}
               >
-                <Box
-                  p={"25px"}
-                  borderRight={"1px solid black"}
+                <Avatar
+                  //  style={{ backgroundImage: `url(${reviews[currentSlide].src})` }}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  src={reviews[currentSlide].src}
+                  w={["50px", "50px", "50px", "50px", "50px", "50px"]}
+                  h={["50px", "50px", "50px", "50px", "50px", "50px"]}
+                 
                   borderRadius={"100px"}
-                  bg={"red"}
-                ></Box>
+bg={"gray"}
+                ></Avatar>
                 <Text
                   fontSize={["16px", "16px", "16px", "16px", "16px", "16px"]}
                 >
-                      {reviews[currentSlide].name}
+                  {reviews[currentSlide].name}
                 </Text>
 
                 <Spacer />
-               
+
                 <Text fontSize={"25px"}>
-                  <FaStar  color={reviews[currentSlide].rating > 0 ? "#FFC700" : "#D4D4D4  "}  />
+                  <FaStar
+                    color={
+                      reviews[currentSlide].rating > 0 ? "#FFC700" : "#D4D4D4  "
+                    }
+                  />
                 </Text>
                 <Text fontSize={"25px"}>
-                  <FaStar  color={reviews[currentSlide].rating > 2 ? "#FFC700" : "#D4D4D4  "}  />
+                  <FaStar
+                    color={
+                      reviews[currentSlide].rating > 2 ? "#FFC700" : "#D4D4D4  "
+                    }
+                  />
                 </Text>
                 <Text fontSize={"25px"}>
-                  <FaStar  color={reviews[currentSlide].rating > 3 ? "#FFC700" : "#D4D4D4  "}  />
+                  <FaStar
+                    color={
+                      reviews[currentSlide].rating > 3 ? "#FFC700" : "#D4D4D4  "
+                    }
+                  />
                 </Text>
                 <Text fontSize={"25px"}>
-                  <FaStar  color={reviews[currentSlide].rating > 4 ? "#FFC700" : "#D4D4D4  "}  />
+                  <FaStar
+                    color={
+                      reviews[currentSlide].rating > 4 ? "#FFC700" : "#D4D4D4  "
+                    }
+                  />
                 </Text>
                 <Text fontSize={"25px"}>
-                  <FaStar  color={reviews[currentSlide].rating > 5 ? "#FFC700" : "#D4D4D4  "}  />
+                  <FaStar
+                    color={
+                      reviews[currentSlide].rating > 5 ? "#FFC700" : "#D4D4D4  "
+                    }
+                  />
                 </Text>
-                
+                <HStack
+                  position="absolute"
+                  bottom={["200", "200", "250", "250", "250", "250"]}
+                  right="0"
+                  left="0"
+                >
+                  {/* Image positioned absolutely */}
+                  <Image
+                    width={180}
+                    style={{ rotate: "" }}
+                    src={Quote}
+                    alt="Quotation mark"
+                  />
+                </HStack>
               </HStack>
             </VStack>{" "}
             {/* <Image src={collage} />   //!cool */}
