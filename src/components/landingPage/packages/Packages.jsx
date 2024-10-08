@@ -21,6 +21,12 @@ import { GoDotFill } from "react-icons/go";
 import { TiTick } from "react-icons/ti";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import lien from "../../../assets/img/Linen.jpg";
+import lien2 from "../../../assets/img/Linen2.jpg";
+import listing from "../../../assets/img/listing.jpg";
+import clean from "../../../assets/img/clean.jpg";
+
+import managment from "../../../assets/img/managment.jpg";
 
 const Packages = () => {
   const [currentTab, setCurrentTab] = useState("Linen/Amenity");
@@ -53,6 +59,7 @@ const Packages = () => {
           </UnorderedList>
         </>
       ),
+      img: lien,
     },
     {
       title: "Cleaning",
@@ -75,6 +82,7 @@ const Packages = () => {
           </UnorderedList>
         </>
       ),
+      img: clean,
     },
   ];
 
@@ -92,6 +100,7 @@ const Packages = () => {
           </UnorderedList>
         </>
       ),
+      img: listing,
     },
     {
       title: "Management",
@@ -119,6 +128,7 @@ const Packages = () => {
           </UnorderedList>
         </>
       ),
+      img: managment,
     },
   ];
 
@@ -198,7 +208,7 @@ const Packages = () => {
             </Text>
             <VStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
               <HStack
-                mt={["25px", "25px", "25px", "25px", "25px", "25px"]}
+                mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
                 w={"100%"}
                 justify={"center"}
                 align={"center"}
@@ -210,7 +220,7 @@ const Packages = () => {
                       onClick={() => setCurrentTab(title)}
                       key={index}
                       cursor={"pointer"}
-                      mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
+                      mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
                       w={"100%"}
                       transition={"transform 0.3s ease"}
                       _hover={{
@@ -241,6 +251,7 @@ const Packages = () => {
                 ))}
               </HStack>
               <HStack
+           
                 w={"100%"}
                 justify={"center"}
                 align={"center"}
@@ -249,6 +260,7 @@ const Packages = () => {
                 {tabsTwo.map(({ title, desc, html }, index) => (
                   <>
                     <Box
+               
                       onClick={() => setCurrentTab(title)}
                       key={index}
                       cursor={"pointer"}
@@ -295,131 +307,148 @@ const Packages = () => {
                 <Box
                   borderRadius={"15px"}
                   w={"100%"}
-                  h={["400px", "400px", "480px", "480px", "480px", "480px"]}
+                  h={["400px", "400px", "600px", "480px", "480px", "480px"]}
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                   p={"30px"}
                 >
-                  <VStack
+                  <HStack
                     w={"100%"}
                     h={"100%"}
                     justify={"start"}
                     align={"start"}
+                    gap={"25px"}
                   >
-                    <Text
-                      fontSize={[
-                        "20px",
-                        "20px",
-                        "24px",
-                        "24px",
-                        "28px",
-                        "28px",
-                      ]}
-                      fontWeight={"500"}
+                    <VStack
+                      w={"100%"}
+                      h={"100%"}
+                      justify={"start"}
+                      align={"start"}
                     >
-                      {currentTab === "Linen/Amenity"
-                        ? tabs[0].title
-                        : currentTab === "Cleaning"
-                          ? tabs[1].title
-                          : currentTab === "Listing"
-                            ? tabsTwo[0].title
-                            : currentTab === "Management"
-                              ? tabsTwo[1].title
-                              : null}
-                    </Text>
+                      <Text
+                        fontSize={[
+                          "20px",
+                          "20px",
+                          "24px",
+                          "24px",
+                          "28px",
+                          "28px",
+                        ]}
+                        fontWeight={"500"}
+                      >
+                        {currentTab === "Linen/Amenity"
+                          ? tabs[0].title
+                          : currentTab === "Cleaning"
+                            ? tabs[1].title
+                            : currentTab === "Listing"
+                              ? tabsTwo[0].title
+                              : currentTab === "Management"
+                                ? tabsTwo[1].title
+                                : null}
+                      </Text>
 
-                    <Text
-                      fontSize={[
-                        "14px",
-                        "14px",
-                        "16px",
-                        "16px",
-                        "18px",
-                        "18px",
-                      ]}
-                      fontWeight={"400"}
-                      color={"gray"}
-                    >
-                      {currentTab === "Linen/Amenity"
-                        ? tabs[0].desc
-                        : currentTab === "Cleaning"
-                          ? tabs[1].desc
-                          : currentTab === "Listing"
-                            ? tabsTwo[0].desc
-                            : currentTab === "Management"
-                              ? tabsTwo[1].desc
-                              : null}
-                    </Text>
+                      <Text
+                        fontSize={[
+                          "14px",
+                          "14px",
+                          "16px",
+                          "16px",
+                          "18px",
+                          "18px",
+                        ]}
+                        fontWeight={"400"}
+                        color={"gray"}
+                      >
+                        {currentTab === "Linen/Amenity"
+                          ? tabs[0].desc
+                          : currentTab === "Cleaning"
+                            ? tabs[1].desc
+                            : currentTab === "Listing"
+                              ? tabsTwo[0].desc
+                              : currentTab === "Management"
+                                ? tabsTwo[1].desc
+                                : null}
+                      </Text>
+
+                      <Box
+                        mt={"15px"}
+                        fontSize={[
+                          "14px",
+                          "14px",
+                          "16px",
+                          "16px",
+                          "18px",
+                          "18px",
+                        ]}
+                      >
+                        {currentTab === "Linen/Amenity"
+                          ? tabs[0].html
+                          : currentTab === "Cleaning"
+                            ? tabs[1].html
+                            : currentTab === "Listing"
+                              ? tabsTwo[0].html
+                              : currentTab === "Management"
+                                ? tabsTwo[1].html
+                                : null}
+                      </Box>
+
+                      <HStack
+                        mt={"25px"}
+                        w={["100%", "100%", "60%", "50%", "40%", "30%"]}
+                        h={"100%"}
+                        justify={"end"}
+                        align={"end"}
+                        gap={"15px"}
+                      >
+                        <Box
+                          transition={"all 0.3s ease"}
+                       _hover={{
+                        bg: "black",
+                        color: "white",
+                       }}
+                          cursor={"pointer"}
+                          borderRadius={"15px"}
+                          //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                          w={"100%"}
+                          h={"50px"}
+                          bg={"white"}
+                          border={"1.5px solid rgb(0, 0, 0,0.25)"}
+                        >
+                          {" "}
+                          <HStack
+                            justify={"center"}
+                            align={"center"}
+                            w={"100%"}
+                            h={"100%"}
+                          >
+                            <Text textAlign={"center"}>View More</Text>
+                          </HStack>
+                        </Box>
+                      </HStack>
+                    </VStack>
 
                     <Box
-                      mt={"15px"}
-                      fontSize={[
-                        "14px",
-                        "14px",
-                        "16px",
-                        "16px",
-                        "18px",
-                        "18px",
-                      ]}
-                    >
-                      {currentTab === "Linen/Amenity"
-                        ? tabs[0].html
-                        : currentTab === "Cleaning"
-                          ? tabs[1].html
-                          : currentTab === "Listing"
-                            ? tabsTwo[0].html
-                            : currentTab === "Management"
-                              ? tabsTwo[1].html
-                              : null}
-                    </Box>
-
-                    {/* <HStack
-                      mt={"25px"}
-                      w={["100%", "100%", "60%", "50%", "40%", "30%"]}
+                    display={["none", "none", "block", "block", "block", "block"]}
+                      w={"100%"}
                       h={"100%"}
-                      justify={"end"}
-                      align={"end"}
-                      gap={"15px"}
-                    >
-                      <Box
-                        borderRadius={"15px"}
-                        //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                        w={"100%"}
-                        h={"50px"}
-                        bg={"white"}
-                        border={"1.5px solid rgb(0, 0, 0,0.25)"}
-                      >
-                        {" "}
-                        <HStack
-                          justify={"center"}
-                          align={"center"}
-                          w={"100%"}
-                          h={"100%"}
-                        >
-                          <Text textAlign={"center"}>View More</Text>
-                        </HStack>
-                      </Box>
+                      borderRadius={"15px"}
+                      bgImage={
+                        currentTab === "Linen/Amenity"
+                          ? tabs[0].img.src
+                          : currentTab === "Cleaning"
+                            ? tabs[1].img.src
+                            : currentTab === "Listing"
+                              ? tabsTwo[0].img.src
+                              : currentTab === "Management"
+                                ? tabsTwo[1].img.src
+                                : null
+                      }
+                      bgSize={"cover"}
+                      bgPosition={"center"}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                  </HStack>
 
-                      <Box
-                        borderRadius={"15px"}
-                        w={"100%"}
-                        h={"50px"}
-                        bg={"white"}
-                        // _hover={}
-                        border={"1.5px solid rgb(0, 0, 0,0.25)"}
-                      >
-                        <HStack
-                          justify={"center"}
-                          align={"center"}
-                          w={"100%"}
-                          h={"100%"}
-                        >
-                          <Text textAlign={"center"}>View More</Text>
-                        </HStack>
-                      </Box>
-                    </HStack> */}
-                  </VStack>
-                </Box>
-                {/* <Box
+                  {/* <Box
                   h={["100%", "100%", "100%", "400px", "400px", "400px"]}
                   p={"30px"}
                   borderRadius={"15px"}
@@ -464,6 +493,7 @@ const Packages = () => {
                     </Text>
                   </Stack>
                 </Box> */}
+                </Box>
               </HStack>
             </VStack>
           </Box>
