@@ -14,7 +14,7 @@ import { GoDotFill } from "react-icons/go";
 import interior6 from "../../../assets/img/interior6.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import { GoTriangleRight } from "react-icons/go";
 import { IoHappyOutline } from "react-icons/io5";
 import { FaListUl } from "react-icons/fa";
 import { FaArrowTrendUp } from "react-icons/fa6";
@@ -170,17 +170,10 @@ const AboutPage = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
- mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-            justify={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center", "center"]}
           align={["center", "center", "center", "start", "start", "start"]}
           w={"100%"}
           h={"100%"}
@@ -189,37 +182,36 @@ const AboutPage = () => {
         >
           <Box w={["95%", "95%", "95%", "60%", "50%", "50%"]}>
             <HStack
+              //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
-              align={["center", "center", "center", "start", "start", "start"]}
+              justify={["center", "center", "start", "start", "start", "start"]}
+              align={"center"}
               h={"100%"}
             >
+              {" "}
               <HStack
-                // data-aos="fade-in"
+                data-aos="fade-up"
                 rounded={"100px"}
-                justify={[
-                  "center",
-                  "center",
-                  "center",
-                  "start",
-                  "start",
-                  "start",
-                ]}
+                justify={"start"}
                 align={"center"}
                 h={"100%"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
+                bg={"white"}
+                border={"1px solid rgb(0, 0, 0,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+                px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
               >
                 <Box>
-                  <GoDotFill color="black" fontSize={"20px"} />
+                  <GoTriangleRight color="black" fontSize={"20px"} />
                 </Box>
                 <Box>
                   <Text
+                    textShadow={"0px 0px 100px black"}
                     w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
                     Maximize Earnings
@@ -262,7 +254,7 @@ const AboutPage = () => {
               Airbnb management service.
             </Text>
 
-            <HStack
+            {/* <HStack
               w={["100%", "100%", "100%", "80%", "80%", "80%"]}
               justify={["center", "center", "center", "start", "start", "start"]}
               align={"center"}
@@ -302,7 +294,7 @@ const AboutPage = () => {
                   <HiArrowLongRight color="white" />
                 </Text>
               </HStack>
-            </HStack>
+            </HStack> */}
           </Box>
           {/* <Image src={collage} width={500} /> */}
           <Box
@@ -336,9 +328,7 @@ const AboutPage = () => {
                 w={"100%"}
               ></HStack>
             </Box>
-
-
-          </Box> 
+          </Box>
           {/* the collage  down here */}
           {/* <Box
             display={["none", "none", "block", "block", "block", "block"]}

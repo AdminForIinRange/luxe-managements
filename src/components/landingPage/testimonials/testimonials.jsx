@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { GoDotFill } from "react-icons/go";
+import { GoTriangleRight } from "react-icons/go";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
 import Quote from "../../../assets/img/QuotesMark.png";
@@ -88,41 +89,40 @@ const Testimonials = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
-            <HStack
+          <HStack
+              //   data-aos="fade-up"
               w={"100%"}
               justify={["center", "center", "start", "start", "start", "start"]}
-              align={["center", "center", "start", "start", "start", "start"]}
+              align={"center"}
               h={"100%"}
             >
+              {" "}
               <HStack
-                // data-aos="fade-in"
+                data-aos="fade-up"
                 rounded={"100px"}
-                justify={[
-                  "center",
-                  "center",
-                  "start",
-                  "start",
-                  "start",
-                  "start",
-                ]}
+                justify={"start"}
                 align={"center"}
                 h={"100%"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
+                bg={"white"}
+                border={"1px solid rgb(0, 0, 0,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+                px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
               >
                 <Box>
-                  <GoDotFill color="black" fontSize={"20px"} />
+                  <GoTriangleRight color="black" fontSize={"20px"} />
                 </Box>
                 <Box>
                   <Text
+                    textShadow={"0px 0px 100px black"}
                     w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-                    Simple steps to getting Started
+         Amazing Reviews
                   </Text>
                 </Box>
               </HStack>
@@ -178,11 +178,7 @@ const Testimonials = () => {
                   prevSlide();
                 }}
               >
-                <Text
-                  cursor={"pointer"}
-                  fontSize={"40px"}
-                 
-                >
+                <Text cursor={"pointer"} fontSize={"40px"}>
                   <FaAngleRight
                     style={{ transform: "rotate(180deg)" }}
                     color="black"
@@ -208,11 +204,7 @@ const Testimonials = () => {
                   nextSlide();
                 }}
               >
-                <Text
-                  cursor={"pointer"}
-                  fontSize={"40px"}
-                 
-                >
+                <Text cursor={"pointer"} fontSize={"40px"}>
                   <FaAngleRight color="black" />
                 </Text>
               </HStack>

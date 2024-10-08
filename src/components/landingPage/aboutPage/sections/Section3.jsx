@@ -6,7 +6,7 @@ import { GoDotFill } from "react-icons/go";
 import interior from "../../../../assets/img/interior.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import { GoTriangleRight } from "react-icons/go";
 import Image from "next/image";
 
 import skyRise3 from "../../../../assets/img/skyRise3.jpg";
@@ -106,46 +106,43 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
           </Box>
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
             <HStack
+              //   data-aos="fade-up"
               w={"100%"}
-              justify={[
-                "center",
-                "center",
-                "center",
-                "start",
-                "start",
-                "start",
-              ]}
+              justify={["center", "center", "start", "start", "start", "start"]}
               align={"center"}
               h={"100%"}
-              gap={["15px", "25px", "35px", "45px", "55px", "100px"]}
             >
+              {" "}
               <HStack
-                // data-aos="fade-in"
+                data-aos="fade-up"
                 rounded={"100px"}
                 justify={"start"}
                 align={"center"}
                 h={"100%"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
+                bg={"white"}
+                border={"1px solid rgb(0, 0, 0,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+                px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
               >
                 <Box>
-                  <GoDotFill color="black" fontSize={"20px"} />
+                  <GoTriangleRight color="black" fontSize={"20px"} />
                 </Box>
                 <Box>
                   <Text
-                    fontFamily={"Poppins"}
+                    textShadow={"0px 0px 100px black"}
+                    w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-                    More Services
+           Client in Mind
                   </Text>
                 </Box>
               </HStack>
             </HStack>
-
             <Text
               // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}

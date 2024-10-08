@@ -63,7 +63,6 @@ const HomePage = () => {
     // add some functional content at the end of the banner
     <>
       <HStack
-      
         w={"100%"}
         h={"100%"}
         justify={"center"}

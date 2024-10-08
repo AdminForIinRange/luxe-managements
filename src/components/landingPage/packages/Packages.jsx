@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import { GoDotFill } from "react-icons/go";
 import { TiTick } from "react-icons/ti";
+import { GoTriangleRight } from "react-icons/go";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import lien from "../../../assets/img/Linen.jpg";
@@ -151,29 +152,40 @@ const Packages = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "95%", "95%", "95%", "95%"]}>
-            <HStack w={"100%"} justify={"center"} align={"center"} h={"100%"}>
+          <HStack
+              //   data-aos="fade-up"
+              w={"100%"}
+              justify={["center", "center", "center", "center", "center", "center"]}
+              align={"center"}
+              h={"100%"}
+            >
+              {" "}
               <HStack
-                // data-aos="fade-in"
+                data-aos="fade-up"
                 rounded={"100px"}
-                justify={"center"}
+                justify={"start"}
                 align={"center"}
                 h={"100%"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
+                bg={"white"}
+                border={"1px solid rgb(0, 0, 0,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+                px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
               >
                 <Box>
-                  <GoDotFill color="black" fontSize={"20px"} />
+                  <GoTriangleRight color="black" fontSize={"20px"} />
                 </Box>
                 <Box>
                   <Text
+                    textShadow={"0px 0px 100px black"}
                     w={"100%"}
                     h={"100%"}
                     textAlign={"center"}
                     color={"black"}
-                    fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
+                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-                    Our Specialities
+                   Our Specialities
                   </Text>
                 </Box>
               </HStack>
@@ -251,7 +263,6 @@ const Packages = () => {
                 ))}
               </HStack>
               <HStack
-           
                 w={"100%"}
                 justify={"center"}
                 align={"center"}
@@ -260,7 +271,6 @@ const Packages = () => {
                 {tabsTwo.map(({ title, desc, html }, index) => (
                   <>
                     <Box
-               
                       onClick={() => setCurrentTab(title)}
                       key={index}
                       cursor={"pointer"}
@@ -316,7 +326,6 @@ const Packages = () => {
                     h={"100%"}
                     justify={"start"}
                     align={"start"}
-                 
                   >
                     <VStack
                       w={"100%"}
@@ -369,15 +378,9 @@ const Packages = () => {
                                 : null}
                       </Text>
 
-
-                      <Divider
-                        mt={"15px"}
-                        w={"100%"}
-                        h={"2px"}
-  
-                      />
+                      <Divider mt={"15px"} w={"100%"} h={"2px"} />
                       <Box
-                 lineHeight={"25px"}
+                        lineHeight={"25px"}
                         mt={"15px"}
                         fontSize={[
                           "14px",
@@ -409,10 +412,10 @@ const Packages = () => {
                       >
                         <Box
                           transition={"all 0.3s ease"}
-                       _hover={{
-                        bg: "black",
-                        color: "white",
-                       }}
+                          _hover={{
+                            bg: "black",
+                            color: "white",
+                          }}
                           cursor={"pointer"}
                           borderRadius={"15px"}
                           //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
@@ -434,17 +437,31 @@ const Packages = () => {
                       </HStack>
                     </VStack>
 
-                      <Divider 
-                      display={["none", "none", "block", "block", "block", "block"]}
+                    <Divider
+                      display={[
+                        "none",
+                        "none",
+                        "block",
+                        "block",
+                        "block",
+                        "block",
+                      ]}
                       mx={"15px"}
-                        mt={"15px"}
-                        w={"2px"}
-                        h={"100%"}
-                        orientation="vertical"
-                      />
+                      mt={"15px"}
+                      w={"2px"}
+                      h={"100%"}
+                      orientation="vertical"
+                    />
 
                     <Box
-                    display={["none", "none", "block", "block", "block", "block"]}
+                      display={[
+                        "none",
+                        "none",
+                        "block",
+                        "block",
+                        "block",
+                        "block",
+                      ]}
                       w={"100%"}
                       h={"100%"}
                       borderRadius={"15px"}
