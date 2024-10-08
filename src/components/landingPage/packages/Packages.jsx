@@ -36,19 +36,18 @@ const Packages = () => {
   const tabs = [
     {
       title: "Linen/Amenity",
-      desc: "For non-management clients, we offer cleaning services priced based on the number of rooms and amenities required.",
+      desc: "We provide premium linen and amenity services tailored to your property's needs.",
       html: (
         <>
           <UnorderedList>
-            <ListItem>$15 per bedroom per booking</ListItem>
-            <ListItem>$5 per bathroom per booking</ListItem>
+            <ListItem>High-quality bed linen for a comfortable stay</ListItem>
+            <ListItem>Bathroom service available per booking</ListItem>
             <ListItem>
-              Additional charges may apply for extra amenities or services, such
-              as:
+              Additional amenities can be arranged, including:
               <UnorderedList>
-                <ListItem>Premium toiletries: $10 per booking</ListItem>
-                <ListItem>Extra towels and linens: $7 per booking</ListItem>
-                <ListItem>Kitchen cleaning: $20 per booking</ListItem>
+                <ListItem>Luxury toiletries for an extra touch</ListItem>
+                <ListItem>Extra towels and linens for added comfort</ListItem>
+                <ListItem>Comprehensive kitchen cleaning services</ListItem>
               </UnorderedList>
             </ListItem>
           </UnorderedList>
@@ -57,61 +56,64 @@ const Packages = () => {
     },
     {
       title: "Cleaning",
-      desc: "Our cleaning services ensure your property is spotless and welcoming for every guest.",
+      desc: "Keep your property spotless with our flexible cleaning options, ensuring a welcoming environment for every guest.",
       html: (
         <>
           <UnorderedList>
-            <ListItem>Standard cleaning: $50 per booking</ListItem>
-            <ListItem>Deep cleaning: $100 per booking</ListItem>
             <ListItem>
-              Post-stay inspection and cleaning: $75 per booking
+              Standard cleaning to maintain a clean and inviting space
             </ListItem>
+            <ListItem>Deep cleaning for a more thorough service</ListItem>
+            <ListItem>Post-stay inspection and final cleaning</ListItem>
             <ListItem>
-              Additional services:
+              Additional services available upon request:
               <UnorderedList>
-                <ListItem>Carpet cleaning: $25 per room</ListItem>
-                <ListItem>Window cleaning: $15 per window</ListItem>
+                <ListItem>Carpet cleaning to refresh every room</ListItem>
+                <ListItem>Window cleaning for spotless views</ListItem>
               </UnorderedList>
             </ListItem>
           </UnorderedList>
         </>
       ),
     },
+  ];
+
+  const tabsTwo = [
     {
       title: "Listing",
-      desc: "We help create and manage your AirBnB listings to attract more guests and optimize bookings.",
+      desc: "Boost your property’s visibility with our expert AirBnB listing services.",
       html: (
         <>
           <UnorderedList>
-            <ListItem>
-              Listing creation and optimization: $150 one-time fee
-            </ListItem>
-            <ListItem>Professional photography: $200 per session</ListItem>
-            <ListItem>Monthly listing management: $50 per month</ListItem>
-            <ListItem>Dynamic pricing setup: $30 per month</ListItem>
+            <ListItem>Professional listing creation and optimization</ListItem>
+            <ListItem>High-quality photography for your property</ListItem>
+            <ListItem>Ongoing listing management to enhance bookings</ListItem>
+            <ListItem>Dynamic pricing setup to maximize revenue</ListItem>
           </UnorderedList>
         </>
       ),
     },
     {
       title: "Management",
-      desc: "Comprehensive AirBnB property management services to maximize your rental income.",
+      desc: "Enjoy hassle-free property management with our all-inclusive services.",
       html: (
         <>
           <UnorderedList>
             <ListItem>
-              Full-service property management: 20% of booking revenue
+              Complete property management to handle all aspects
             </ListItem>
-            <ListItem>Guest communication and support: Included</ListItem>
-            <ListItem>Maintenance coordination: Included</ListItem>
-            <ListItem>Monthly performance reporting: Included</ListItem>
             <ListItem>
-              Optional add-ons:
+              Guest communication and support throughout the stay
+            </ListItem>
+            <ListItem>Maintenance coordination for any issues</ListItem>
+            <ListItem>Monthly performance reporting to track success</ListItem>
+            <ListItem>
+              Optional services include:
               <UnorderedList>
                 <ListItem>
-                  Interior design consultation: $300 per session
+                  Interior design consultation for a fresh look
                 </ListItem>
-                <ListItem>24/7 emergency support: $50 per month</ListItem>
+                <ListItem>24/7 emergency support for urgent needs</ListItem>
               </UnorderedList>
             </ListItem>
           </UnorderedList>
@@ -216,7 +218,50 @@ const Packages = () => {
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
-                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                      p={"10px"}
+                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
+                      bgColor={"white"}
+                    >
+                      <Text
+                        textAlign={"center"}
+                        fontSize={[
+                          "14px",
+                          "14px",
+                          "18px",
+                          "18px",
+                          "20px",
+                          "20px",
+                        ]}
+                        color={"black"}
+                      >
+                        {title}
+                      </Text>{" "}
+                    </Box>
+                  </>
+                ))}
+              </HStack>
+              <HStack
+                w={"100%"}
+                justify={"center"}
+                align={"center"}
+                gap={"25px"}
+              >
+                {tabsTwo.map(({ title, desc, html }, index) => (
+                  <>
+                    <Box
+                      onClick={() => setCurrentTab(title)}
+                      key={index}
+                      cursor={"pointer"}
+                      mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
+                      w={"100%"}
+                      transition={"transform 0.3s ease"}
+                      _hover={{
+                        transform: "scale(1.05)",
+                      }}
+                      borderRadius={"10px"}
+                      py={"5px"}
+                      p={"10px"}
+                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                       bgColor={"white"}
                     >
                       <Text
@@ -251,7 +296,7 @@ const Packages = () => {
                   borderRadius={"15px"}
                   w={"100%"}
                   h={["400px", "400px", "480px", "480px", "480px", "480px"]}
-                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                   p={"30px"}
                 >
                   <VStack
@@ -276,9 +321,9 @@ const Packages = () => {
                         : currentTab === "Cleaning"
                           ? tabs[1].title
                           : currentTab === "Listing"
-                            ? tabs[2].title
+                            ? tabsTwo[0].title
                             : currentTab === "Management"
-                              ? tabs[3].title
+                              ? tabsTwo[1].title
                               : null}
                     </Text>
 
@@ -292,16 +337,16 @@ const Packages = () => {
                         "18px",
                       ]}
                       fontWeight={"400"}
-                      mt={"15px"}
+                      color={"gray"}
                     >
                       {currentTab === "Linen/Amenity"
                         ? tabs[0].desc
                         : currentTab === "Cleaning"
                           ? tabs[1].desc
                           : currentTab === "Listing"
-                            ? tabs[2].desc
+                            ? tabsTwo[0].desc
                             : currentTab === "Management"
-                              ? tabs[3].desc
+                              ? tabsTwo[1].desc
                               : null}
                     </Text>
 
@@ -321,13 +366,13 @@ const Packages = () => {
                         : currentTab === "Cleaning"
                           ? tabs[1].html
                           : currentTab === "Listing"
-                            ? tabs[2].html
+                            ? tabsTwo[0].html
                             : currentTab === "Management"
-                              ? tabs[3].html
+                              ? tabsTwo[1].html
                               : null}
                     </Box>
 
-                    <HStack
+                    {/* <HStack
                       mt={"25px"}
                       w={["100%", "100%", "60%", "50%", "40%", "30%"]}
                       h={"100%"}
@@ -371,10 +416,10 @@ const Packages = () => {
                           <Text textAlign={"center"}>View More</Text>
                         </HStack>
                       </Box>
-                    </HStack>
+                    </HStack> */}
                   </VStack>
                 </Box>
-                <Box
+                {/* <Box
                   h={["100%", "100%", "100%", "400px", "400px", "400px"]}
                   p={"30px"}
                   borderRadius={"15px"}
@@ -418,7 +463,7 @@ const Packages = () => {
                       <Icon as={TiTick} /> Linen inventory management
                     </Text>
                   </Stack>
-                </Box>
+                </Box> */}
               </HStack>
             </VStack>
           </Box>
