@@ -93,7 +93,7 @@ const HomePage = () => {
               h={"100%"}
               align={"center"}
               justify={"top"}
-              mt={["100px", "100px", "100px", "90px", "90px", "90px"]}
+              mt={["100px", "100px", "100px", "120px", "120px", "120px"]}
             >
               <Text
                 w={["90%", "95%", "100%", "100%", "100%", "100%"]}
@@ -147,6 +147,7 @@ const HomePage = () => {
           align={"end"}
         >
           <Box
+          
             borderBottomRadius={"0px"}
             transition={"all 0.3s ease"}
             cursor={"pointer"}
@@ -164,7 +165,8 @@ const HomePage = () => {
             {" "}
             <Text textAlign={"center"}>Search</Text>
           </Box>
-          <Box
+          <Box 
+          
             cursor={"pointer"}
             onClick={() => setFliter(true)}
             transition={"all 0.3s ease"}
@@ -189,11 +191,12 @@ const HomePage = () => {
           bgColor={"white"}
           boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
           
+       border={"1px solid rgb(0, 0,0,0.25)"}
           rounded={["10px", "20px", "20px", "10px", "10px", "10px"]}
           zIndex={"1"}
         >
           {fliter ? (
-            <HStack
+            <HStack 
               w={"100%"}
               h={"100%"}
               justify={"space-between"}

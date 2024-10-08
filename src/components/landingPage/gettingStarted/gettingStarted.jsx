@@ -73,7 +73,7 @@ const GettingStarted = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                border={"1px solid rgb(0, 0, 0,0.25)"}
+             border={"1px solid rgb(0, 0,0,0.25)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -173,7 +173,7 @@ const GettingStarted = () => {
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
-            // border={"5px solid rgb(255, 255, 255,0.25)"}
+            // border={"1px solid rgb(0, 0, 0,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
             w={["100%", "100%", "100%", "450px", "550px", "550px"]}
             backdropFilter="blur(1.5px)"
@@ -198,7 +198,7 @@ const GettingStarted = () => {
                         h={"50px"}
                         borderRadius={"15px"}
                         bg={"white"}
-                        border={"2.5px solid #BFBFBF"}
+                     border={"1px solid rgb(0, 0,0,0.25)"}
                       >
                         <HStack
                           w={"100%"}

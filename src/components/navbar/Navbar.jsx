@@ -86,8 +86,7 @@ const Navbar = ({}) => {
             >
               <Box
                 backdropFilter="blur(2.5px)"
-                bg={"white"}
-                border={"1px solid rgb(255, 255, 255,0.25)"}
+                bg={"white"}   border={"1px solid rgb(0, 0, 0,0.25)"}
                 boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
                 rounded={"15px"}
                 w={"35px"}

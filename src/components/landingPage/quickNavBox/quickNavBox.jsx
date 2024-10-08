@@ -61,101 +61,84 @@ const QuickNavBox = () => {
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={["5px", "0px", "15px", "25px", "80px", "80px"]}
+          gap={["5px", "0px", "15px", "25px", "50px", "50px"]}
         >
           {box.map(({ name, desc, img }, index) => (
-            <Box
-              key={index}
+            <VStack
+       
+             border={"1px solid rgb(0, 0,0,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+              textAlign={"left"}
+              p={["2", "2", "5", "5", "5", "5"]}
+              rounded={"18px"}
+              bg={"white"}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={["175px", "185px", "250px", "250px", "300px", "300px"]}
-              // bg={"gray.100"}
-              // rounded={"18px"}
-
-              p={["2", "2", "2", "3", "3", "3"]}
-              textShadow={"0px 0px 50px black"}
+              h={"100%"}
+              key={index}
+              color={"black"} // white
             >
-              <VStack
-                p={["3", "3", "3", "3", "4", "4"]}
+              <Text
+                zIndex={3}
+                w={"100%"}
+                fontSize={["20px", "22px", "22px", "22px", "28px", "28px"]}
+                fontWeight={"700"}
+                textAlign={"left"}
+              >
+                {name}
+              </Text>
+              <Text
+                fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
+                fontWeight={"400"}
+                textAlign={"left"}
+                h={"60px"}
+              >
+                {desc}
+              </Text>
+
+              <Box
                 backgroundImage={`url(${img})`}
                 bgPos={"center"}
                 bgSize={"cover"}
                 align={"left"}
                 w={"100%"}
-                h={"100%"}
+                h={"250px"}
                 color={"white"} // white
                 rounded={"18px"}
                 zIndex={3}
+              ></Box>
+              <HStack
+                mt={"5px"}
+                w={["100%", "100%", "100%", "100%", "100%", "100%"]}
+                justify={"end"}
+                align={"end"}
+                gap={"15px"}
               >
-                <HStack zIndex={3}>
-                  <Text
-                    zIndex={3}
-                    w={"70%"}
-                    fontSize={["20px", "22px", "22px", "22px", "28px", "28px"]}
-                    fontWeight={"700"}
-                    textAlign={"left"}
-                  >
-                    {name}
-                  </Text>
-                </HStack>
-
-                <HStack>
-                  <Text
-                    fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-                    fontWeight={"400"}
-                    textAlign={"left"}
-                  >
-                    {desc}
-                  </Text>
-                </HStack>
-                <HStack
-                  transition={"transform 0.3s ease"}
+                <Box
+                  transition={"all 0.3s ease"}
                   _hover={{
-                    transform: "translateX(10px)",
+                    bg: "black",
+                    color: "white",
                   }}
                   cursor={"pointer"}
-                  h={"100%"}
-                  justify={"left"}
-                  align={"end"}
-                  fontWeight={"500"}
+                  borderRadius={"15px"}
+                  //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                  w={"100%"}
+                  h={"50px"}
+                  bg={"white"}
+               border={"1px solid rgb(0, 0,0,0.25)"}
                 >
+                  {" "}
                   <HStack
-                    justify={[
-                      "center",
-                      "center",
-                      "center",
-                      "center",
-                      "center",
-                      "center",
-                    ]}
-                    p={["5px", "5px", "5px", "1px", "1px", "1px"]}
+                    justify={"center"}
                     align={"center"}
-                    borderRadius={"10px"}
-                    px={"8px"}
-                    mr={"5px"}
-                    bg={"white"}
-                    color={"black"}
-                    w={["100%", "30%", "70%", "70%", "60%", "50%"]}
+                    w={"100%"}
+                    h={"100%"}
                   >
-                    <Text fontSize={"12px"} color={"black"}>
-                      Learn more
-                    </Text>{" "}
-                    <Text
-                      fontSize={"30px"}
-                      display={[
-                        "block",
-                        "block",
-                        "block",
-                        "block",
-                        "block",
-                        "block",
-                      ]}
-                    >
-                      <HiArrowLongRight color="black" />
-                    </Text>
+                    <Text textAlign={"center"}>View More</Text>
                   </HStack>
-                </HStack>
-              </VStack>
-            </Box>
+                </Box>
+              </HStack>
+            </VStack>
           ))}
         </HStack>
       </HStack>
