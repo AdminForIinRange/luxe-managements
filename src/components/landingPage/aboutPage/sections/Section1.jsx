@@ -66,7 +66,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
             ></Box>
           </Box>
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
-            <HStack
+             <HStack
               //   data-aos="fade-up"
               w={"100%"}
               justify={[
@@ -233,14 +233,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
         </HStack>
       </HStack>
 
-      <HStack
-        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
-        justify={"center"}
-        align={"center"}
-        w={"100%"}
-        h={"100%"}
-        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
-      ></HStack>
+      
     </>
   );
 };

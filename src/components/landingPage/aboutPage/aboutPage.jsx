@@ -6,6 +6,7 @@ import {
   HStack,
   VStack,
   Text,
+  Center,
   Divider,
   Select,
   Input,
@@ -181,7 +182,7 @@ const AboutPage = () => {
           wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "95%", "60%", "50%", "50%"]}>
-            <HStack
+             <HStack
               //   data-aos="fade-up"
               w={"100%"}
               justify={[
@@ -347,10 +348,14 @@ const AboutPage = () => {
           </Box> */}
         </HStack>
       </HStack>
-
+       
       <Section1 topBoxIcons={topBoxIcons} bottomBoxIcons={bottomBoxIcons} />
+       
       <Section2 top2BoxIcons={top2BoxIcons} bottom2BoxIcons={bottom2BoxIcons} />
+       
       <Section3 top3BoxIcons={top3BoxIcons} bottom3BoxIcons={bottom3BoxIcons} />
+
+       
     </>
   );
 };

@@ -4,6 +4,7 @@ import {
   HStack,
   VStack,
   Text,
+  Center,
   Divider,
   Select,
   Input,
@@ -95,7 +96,7 @@ const Testimonials = () => {
               justify={[
                 "center",
                 "center",
-                "center",
+                "start",
                 "start",
                 "start",
                 "start",
@@ -337,6 +338,8 @@ const Testimonials = () => {
           </Box>
         </HStack>
       </HStack>
+
+       
     </>
   );
 };

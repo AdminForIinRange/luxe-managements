@@ -5,6 +5,7 @@ import {
   Text,
   Divider,
   Select,
+  Center,
   Input,
 } from "@chakra-ui/react";
 import React from "react";
@@ -58,13 +59,13 @@ const GettingStarted = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
-            <HStack
+             <HStack
               //   data-aos="fade-up"
               w={"100%"}
               justify={[
                 "center",
                 "center",
-                "center",
+                "start",
                 "start",
                 "start",
                 "start",
@@ -181,7 +182,7 @@ const GettingStarted = () => {
             display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
             // border={"1px solid rgb(0, 0, 0,0.25)"}
-            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+            h={["500px", "500px", "500px", "500px", "500px", "500px"]}
             w={["100%", "100%", "100%", "450px", "550px", "550px"]}
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
@@ -285,6 +286,7 @@ const GettingStarted = () => {
           </Box>
         </HStack>
       </HStack>
+       
     </>
   );
 };

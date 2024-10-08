@@ -11,6 +11,7 @@ import Image from "next/image";
 
 import skyRise3 from "../../../../assets/img/skyRise3.jpg";
 import interior4 from "../../../../assets/img/interior4.jpg";
+import interior7 from "../../../../assets/img/interior7.jpg";
 const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -32,7 +33,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
         <Box
-          display={["block", "block", "block", "none", "none", "none"]}
+           display={["block", "block", "block", "none", "none", "none"]}
           // data-aos="fade-right" // chnage dir
           border={"1px solid rgb(0, 0,0,0.05)"}
           h={["350px", "350px", "350px", "400px", "400px", "600px"]}
@@ -78,7 +79,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
           w={"100%"}
           h={"100%"}
           gap={["45px", "45px", "45px", "45px", "45px", "45px"]}
-          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box
             display={["none", "none", "none", "block", "block", "block"]}
@@ -94,7 +95,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
             bgSize={"cover"}
           >
             <Box
-              style={{ backgroundImage: `url(${interior4.src})` }}
+              style={{ backgroundImage: `url(${interior7.src})` }}
               // data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
@@ -105,7 +106,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
             ></Box>
           </Box>
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
-            <HStack
+             <HStack
               //   data-aos="fade-up"
               w={"100%"}
               justify={[
@@ -267,6 +268,30 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
                 </VStack>
               ))}
             </HStack>
+          </Box>
+           <Box
+                display={["block", "block", "block", "none", "none", "none"]}
+                // data-aos="fade-right" // chnage dir
+                border={"1px solid rgb(0, 0,0,0.05)"}
+                h={["350px", "350px", "350px", "400px", "400px", "600px"]}
+                w={["100%", "100%", "100%", "450px", "550px", "550px"]}
+                bg={"rgb(0,0,0,0.05)"}
+                backdropFilter="blur(1.5px)"
+                borderRadius={"30px"}
+                bgPos={"center"}
+                bgSize={"cover"}
+                p={"10px"}
+          >
+            <Box
+              style={{ backgroundImage: `url(${interior7.src})` }}
+              // data-aos="fade-right"
+              bgPos={"center"}
+              bgSize={"cover"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+              borderRadius={"30px"}
+            ></Box>
           </Box>
         </HStack>
       </HStack>

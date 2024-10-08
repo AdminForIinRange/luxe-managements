@@ -8,6 +8,7 @@ import {
   Text,
   Divider,
   Select,
+  Center,
   Input,
   List,
   ListItem,
@@ -248,7 +249,7 @@ const Packages = () => {
                       borderRadius={"10px"}
                       py={"5px"}
                       p={"10px"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                      border={"1px solid rgb(0, 0,0,0.25)"}
                       boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                       bgColor={"white"}
                     >
@@ -263,6 +264,7 @@ const Packages = () => {
                           "20px",
                         ]}
                         color={"black"}
+                        
                       >
                         {title}
                       </Text>{" "}
@@ -291,7 +293,7 @@ const Packages = () => {
                       borderRadius={"10px"}
                       py={"5px"}
                       p={"10px"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                      border={"1px solid rgb(0, 0,0,0.25)"}
                       boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                       bgColor={"white"}
                     >
@@ -324,6 +326,7 @@ const Packages = () => {
                 align={"start"}
               >
                 <Box
+                           border={"1px solid rgb(0, 0,0,0.25)"}
                   borderRadius={"15px"}
                   w={"100%"}
                   h={["400px", "400px", "600px", "480px", "480px", "480px"]}
@@ -366,12 +369,12 @@ const Packages = () => {
 
                       <Text
                         fontSize={[
-                          "14px",
-                          "14px",
-                          "16px",
-                          "16px",
                           "18px",
                           "18px",
+                          "19px",
+                          "19px",
+                          "20px",
+                          "20px",
                         ]}
                         fontWeight={"400"}
                         color={"gray"}
@@ -543,6 +546,7 @@ const Packages = () => {
           {/* <Image src={collage} width={500} /> */}
         </HStack>
       </HStack>
+       
     </>
   );
 };
