@@ -187,7 +187,8 @@ const HomePage = () => {
           w={["92%", "92%", "94%", "85%", "85%", "85%"]}
           h={["85px", "95px", "110px", "125px", "125px", "125px"]}
           bgColor={"white"}
-          shadow={"lg"}
+          boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+          
           rounded={["10px", "20px", "20px", "10px", "10px", "10px"]}
           zIndex={"1"}
         >

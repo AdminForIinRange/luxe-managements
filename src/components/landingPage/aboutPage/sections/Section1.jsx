@@ -69,7 +69,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
           <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
+              justify={["center", "center", "center", "start", "start", "start"]}
               align={"center"}
               h={"100%"}
             >
@@ -174,7 +174,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
             <HStack
               h={"100%"}
               w={"100%"}
-              mt={["50px", "50px", "50px", "20px", "20px", "20px"]}
+              mt={["50px", "50px", "50px", "30px", "30px", "30px"]}
               justify={"center"}
               align={"start"}
               gap={["50px", "50px", "50px", "50px", "50px", "50px"]}

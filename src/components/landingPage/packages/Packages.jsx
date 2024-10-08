@@ -236,7 +236,7 @@ const Packages = () => {
                       w={"100%"}
                       transition={"transform 0.3s ease"}
                       _hover={{
-                        transform: "scale(1.025)",
+                        transform: "scale(1.01)",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -278,7 +278,7 @@ const Packages = () => {
                       w={"100%"}
                       transition={"transform 0.3s ease"}
                       _hover={{
-                        transform: "scale(1.025)",
+                        transform: "scale(1.01)",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}

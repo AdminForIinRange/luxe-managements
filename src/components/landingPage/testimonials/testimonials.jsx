@@ -92,7 +92,7 @@ const Testimonials = () => {
           <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
+              justify={["center", "center", "center", "start", "start", "start"]}
               align={"center"}
               h={"100%"}
             >
@@ -226,7 +226,7 @@ const Testimonials = () => {
           >
             <VStack
               gap={["20px", "20px", "20px", "20px", "20px", "30px"]}
-              boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+              boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
               borderRadius={"30px"}
               w={"100%"}
               h={"100%"}

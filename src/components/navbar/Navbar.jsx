@@ -47,11 +47,11 @@ const Navbar = ({}) => {
   }, [yValue]);
 
   const links = [
-    { name: "About", link: "#aboutUs" },
-    { name: "Properties  ", link: "#properties" },
-    { name: "Services", link: "#services" },
-    { name: "Blog", link: "#blog" },
-    { name: "FAQ", link: "#faq" },
+    { name: "test", link: "#aboutUs" },
+    { name: "test  ", link: "#properties" },
+    { name: "test", link: "#services" },
+    { name: "test", link: "#blog" },
+    { name: "test", link: "#faq" },
   ];
 
   return (

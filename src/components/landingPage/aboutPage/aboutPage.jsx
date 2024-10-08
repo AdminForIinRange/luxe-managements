@@ -165,7 +165,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["4%", "4%", "4%", "6%", "6%", "10%"]}
+ px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -177,14 +177,14 @@ const AboutPage = () => {
           align={["center", "center", "center", "start", "start", "start"]}
           w={"100%"}
           h={"100%"}
-          gap={["5px", "5px", "5px", "5px", "5px", "5px"]}
+          gap={["50px", "50px", "50px", "50px", "50px", "50px"]}
           wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "95%", "60%", "50%", "50%"]}>
             <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
+              justify={["center", "center", "center", "start", "start", "start"]}
               align={"center"}
               h={"100%"}
             >
@@ -302,8 +302,8 @@ const AboutPage = () => {
             display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
-            h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            w={["100%", "100%", "100%", "450px", "550px", "550px"]}
+            h={["350px", "350px", "350px", "600px", "600px", "600px"]}
+            w={["100%", "100%", "100%", "350px", "550px", "550px"]}
             bg={"rgb(0,0,0,0.05)"}
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
