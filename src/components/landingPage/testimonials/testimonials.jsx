@@ -189,7 +189,6 @@ const Testimonials = () => {
                 </Text>
               </HStack>
               <HStack
-           
                 as={"button"}
                 mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
                 w={["225px", "225px", "170px", "170px", "200px", "125px"]}
@@ -247,7 +246,7 @@ const Testimonials = () => {
               textAlign={["left", "left", "left", "left", "left", "left"]}
             >
               <Text
-         fontWeight={300}
+                fontWeight={300}
                 h={["100px", "100px", "150px", "150px", "150px", "120px"]}
                 w={"100%"}
                 fontSize={["16px", "16px", "16px", "18px", "20px", "20px"]}

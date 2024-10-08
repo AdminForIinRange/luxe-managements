@@ -71,17 +71,10 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
         align={"center"}
         w={"100%"}
         h={"100%"}
- mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-            justify={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center", "center"]}
           align={"start"}
           w={"100%"}
           h={"100%"}

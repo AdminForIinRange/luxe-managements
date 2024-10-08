@@ -40,25 +40,16 @@ const GettingStarted = () => {
 
   return (
     <>
-     
-
       <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
         h={"100%"}
- mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-            justify={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center", "center"]}
           align={["center", "center", "start", "start", "start", "start"]}
           w={"100%"}
           h={"100%"}

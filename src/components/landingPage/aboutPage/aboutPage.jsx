@@ -170,17 +170,10 @@ const AboutPage = () => {
         align={"center"}
         w={"100%"}
         h={"100%"}
- mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-            justify={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center", "center"]}
           align={["center", "center", "start", "start", "start", "start"]}
           w={"100%"}
           h={"100%"}
@@ -336,9 +329,7 @@ const AboutPage = () => {
                 w={"100%"}
               ></HStack>
             </Box>
-
-
-          </Box> 
+          </Box>
           {/* the collage  down here */}
           {/* <Box
             display={["none", "none", "block", "block", "block", "block"]}

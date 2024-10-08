@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 import skyRise3 from "../../../../assets/img/skyRise3.jpg";
-import interior4 from '../../../../assets/img/interior4.jpg';
+import interior4 from "../../../../assets/img/interior4.jpg";
 const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
   const [fliter, setFliter] = React.useState(true);
   useEffect(() => {
@@ -70,17 +70,10 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
         align={"center"}
         w={"100%"}
         h={"100%"}
- mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-            justify={[
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-            "center",
-          ]}
+          justify={["center", "center", "center", "center", "center", "center"]}
           align={"start"}
           w={"100%"}
           h={"100%"}
@@ -171,7 +164,6 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
               h={"100%"}
               w={"100%"}
               mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
-
               justify={"center"}
               align={"start"}
               gap={"50px"}

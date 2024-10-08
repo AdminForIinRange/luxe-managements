@@ -107,7 +107,7 @@ const HomePage = () => {
                 bgGradient="linear(to-r, green, red)"
                 textShadow={"0px 0px 5px gray"}
               >
-              Under Development{" "}
+                Under Development{" "}
               </Text>
               <Text
                 fontSize={["20px", "24px", "28px", "35px", "35px", "35px"]}
@@ -121,7 +121,7 @@ const HomePage = () => {
                 className="animate__animated animate__fadeInDown"
                 textShadow={"0px 0px 5px gray"}
               >
-               Under Development Under Development
+                Under Development Under Development
               </Text>
             </VStack>
           </Box>

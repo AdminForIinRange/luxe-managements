@@ -6,7 +6,7 @@ import { GoDotFill } from "react-icons/go";
 import interior from "../../../../assets/img/interior.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import interior2 from '../../../../assets/img/interior2.jpg';
+import interior2 from "../../../../assets/img/interior2.jpg";
 import Image from "next/image";
 import collage from "../../../../assets/img/collage.png";
 import skyRise3 from "../../../../assets/img/skyRise3.jpg";
