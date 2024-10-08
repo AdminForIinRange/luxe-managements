@@ -111,7 +111,7 @@ const Testimonials = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.25)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -179,7 +179,7 @@ const Testimonials = () => {
                 justify={"center"}
                 align={"center"}
                 borderRadius={"100px"}
-                border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.25)"}
                 color={"black"}
                 onClick={() => {
                   prevSlide();
@@ -206,7 +206,7 @@ const Testimonials = () => {
                 borderRadius={"100px"}
                 bg={"white"}
                 color={"black"}
-                border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.25)"}
                 onClick={() => {
                   nextSlide();
                 }}
@@ -220,6 +220,7 @@ const Testimonials = () => {
           {/* <Image src={collage} width={500} /> */}
 
           <Box
+            border={"1px solid rgb(0, 0,0,0.25)"}
             mt={["80px", "80px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir

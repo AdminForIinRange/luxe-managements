@@ -124,7 +124,7 @@ const QuickNavBox = () => {
                   w={"100%"}
                   h={"50px"}
                   bg={"white"}
-                  border={"1px solid rgb(0, 0,0,0.05)"}
+                  border={"1px solid rgb(0, 0,0,0.25)"}
                 >
                   {" "}
                   <HStack

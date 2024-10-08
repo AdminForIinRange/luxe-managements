@@ -127,7 +127,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.25)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
