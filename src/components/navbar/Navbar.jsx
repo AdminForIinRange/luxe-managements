@@ -60,12 +60,13 @@ const Navbar = ({}) => {
       {isTablet ? (
         <Box>
           <HStack
+            bg={"white"}
+            zIndex={"5"}
+            position={"fixed"}
             justify={"space-between"}
             w={"100%"}
-            h={"100%"}
+            py={"3"}
             px={"5"}
-            mt={"18px"}
-            mb={"18px"}
           >
             <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
               {" "}
@@ -76,11 +77,16 @@ const Navbar = ({}) => {
                 </a>
               </Box>{" "}
             </HStack>
-            <HStack zIndex={"5"} w={"100%"} justify={"right"} align={"start"}>
+            <HStack
+              h={"100%"}
+              zIndex={"5"}
+              w={"100%"}
+              justify={"right"}
+              align={"start"}
+            >
               <Box
                 backdropFilter="blur(2.5px)"
-                transition={"all 0.3s ease-in-out"}
-                bg={"rgb(255, 255, 255,0.05)"}
+                bg={"white"}
                 border={"1px solid rgb(255, 255, 255,0.25)"}
                 boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
                 rounded={"15px"}
@@ -103,16 +109,13 @@ const Navbar = ({}) => {
       ) : (
         <Box>
           <HStack
-            transition={"all 0.3s ease-in-out"}
             w={"100%"}
             zIndex={"5"}
             position={"fixed"}
             justify={"center"}
             align={"center"}
-            mt={"15px"}
           >
             <HStack
-              transition={"all 0.3s ease-in-out"}
               w={"100%"}
               h={"100%"}
               justify={"center"}
@@ -120,14 +123,16 @@ const Navbar = ({}) => {
               mb={"16.5px"}
             >
               <Box
-                borderRadius={"18px"}
-                backdropFilter={"blur(2.5px)"}
-                transition={"all 0.3s ease-in-out"}
-                w={"95%"}
-                h={"50px"}
+                transition={"all 0.5s ease-in-out"}
+                w={"100%"}
+                _hover={{
+                  h: "65",
+                }}
+                h={"60px"}
+                bg={"white"}
+                boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
               >
                 <HStack
-                  transition={"all 0.3s ease-in-out"}
                   w={"100%"}
                   h={"100%"}
                   justify={"center"}
@@ -137,7 +142,7 @@ const Navbar = ({}) => {
                   px={["2", "2", "5", "5", "5"]}
                 >
                   <Box
-                    w={["500px", "500px", "400px", "400px", "400px", "400px"]}
+                    w={["500px", "500px", "400px", "400px", "400px", "250px"]}
                   >
                     <a href="/">
                       {" "}
@@ -151,29 +156,18 @@ const Navbar = ({}) => {
                   </Box>
 
                   <HStack
-                    transition={"all 0.3s ease-in-out"}
                     w={"100%"}
                     h={"100%"}
                     justify={"center"}
                     align={"center"}
                   >
                     <Box
-                      className={
-                        yValue
-                          ? "animate__animated animate__fadeInDown"
-                          : "animate__animated animate__fadeOutDown"
-                      }
-                      display={yValue - 25 ? "block" : "none"}
                       bgColor={"black"}
-                      h={["80%", "80%", "80%", "80%", "90%", "90%"]}
+                      h={["80%", "80%", "80%", "80%", "80%", "80%"]}
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}
                       bg={"rgb(255, 255, 255,1)"}
                       borderRadius={"15px"}
-                      _hover={{
-                        boxShadow: "0 0 25px rgba(0,0,0,0.3)",
-                      }}
-                      transition={"all 0.3s ease-in-out"}
-                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                     >
                       <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
                         <Input

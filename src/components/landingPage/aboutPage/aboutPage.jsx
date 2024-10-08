@@ -140,11 +140,11 @@ const AboutPage = () => {
         align={"start"}
         w={"100%"}
         h={"100%"}
-        wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
       >
         <Text
-          w={["95%", "95%", "70%", "70%", "90%", "100%"]}
+          w={["95%", "95%", "95%", "70%", "90%", "100%"]}
           fontSize={["45px", "45px", "45px", "45px", "85px", "65px"]}
           fontWeight={300}
           fontFamily={"Poppins"}
@@ -165,26 +165,33 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
-        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        px={["4%", "4%", "4%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
         h={"100%"}
-        mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
+ mt={["155px", "155px", "155px", "155px", "155px", "155px"]}
       >
         <HStack
-          justify={["center", "center", "center", "center", "center", "center"]}
-          align={["center", "center", "start", "start", "start", "start"]}
+            justify={[
+            "center",
+            "center",
+            "center",
+            "center",
+            "center",
+            "center",
+          ]}
+          align={["center", "center", "center", "start", "start", "start"]}
           w={"100%"}
           h={"100%"}
           gap={["5px", "5px", "5px", "5px", "5px", "5px"]}
-          wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         >
-          <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
+          <Box w={["95%", "95%", "95%", "60%", "50%", "50%"]}>
             <HStack
               w={"100%"}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={["center", "center", "start", "start", "start", "start"]}
+              justify={["center", "center", "center", "start", "start", "start"]}
+              align={["center", "center", "center", "start", "start", "start"]}
               h={"100%"}
             >
               <HStack
@@ -193,7 +200,7 @@ const AboutPage = () => {
                 justify={[
                   "center",
                   "center",
-                  "start",
+                  "center",
                   "start",
                   "start",
                   "start",
@@ -221,14 +228,14 @@ const AboutPage = () => {
               </HStack>
             </HStack>
             <Text
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
+              w={["100%", "100%", "100%", "80%", "80%", "80%"]}
               // data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
               fontFamily={"Poppins"}
               bgClip="text"
-              textAlign={["center", "center", "left", "left", "left", "left"]}
+              textAlign={["center", "center", "center", "left", "left", "left"]}
               color={"black"}
               bgGradient="linear(to-r, green, red)"
             >
@@ -239,10 +246,10 @@ const AboutPage = () => {
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
-              textAlign={["center", "center", "left", "left", "left", "left"]}
+              textAlign={["center", "center", "center", "left", "left", "left"]}
               fontFamily={"Poppins"}
               color={"black"}
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]} // !important
+              w={["100%", "100%", "100%", "80%", "80%", "80%"]} // !important
               fontWeight={300}
             >
               Optimize your income and ease your mind with our experienced
@@ -256,8 +263,8 @@ const AboutPage = () => {
             </Text>
 
             <HStack
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
-              justify={["center", "center", "start", "start", "start", "start"]}
+              w={["100%", "100%", "100%", "80%", "80%", "80%"]}
+              justify={["center", "center", "center", "start", "start", "start"]}
               align={"center"}
             >
               <HStack
@@ -270,7 +277,7 @@ const AboutPage = () => {
                 justify={[
                   "center",
                   "center",
-                  "start",
+                  "center",
                   "start",
                   "start",
                   "start",
@@ -304,7 +311,7 @@ const AboutPage = () => {
             // data-aos="fade-right" // chnage dir
             border={"5px solid rgb(255, 255, 255,0.25)"}
             h={["350px", "350px", "350px", "400px", "400px", "600px"]}
-            w={["100%", "100%", "350px", "450px", "550px", "550px"]}
+            w={["100%", "100%", "100%", "450px", "550px", "550px"]}
             bg={"rgb(0,0,0,0.05)"}
             backdropFilter="blur(1.5px)"
             borderRadius={"30px"}
@@ -329,7 +336,9 @@ const AboutPage = () => {
                 w={"100%"}
               ></HStack>
             </Box>
-          </Box>
+
+
+          </Box> 
           {/* the collage  down here */}
           {/* <Box
             display={["none", "none", "block", "block", "block", "block"]}

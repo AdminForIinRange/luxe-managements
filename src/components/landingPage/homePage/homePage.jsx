@@ -63,6 +63,7 @@ const HomePage = () => {
     // add some functional content at the end of the banner
     <>
       <HStack
+      
         w={"100%"}
         h={"100%"}
         justify={"center"}
@@ -93,7 +94,7 @@ const HomePage = () => {
               h={"100%"}
               align={"center"}
               justify={"top"}
-              mt={["10px", "10px", "50px", "60px", "70px", "70px"]}
+              mt={["100px", "100px", "100px", "90px", "90px", "90px"]}
             >
               <Text
                 w={["90%", "95%", "100%", "100%", "100%", "100%"]}

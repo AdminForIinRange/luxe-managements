@@ -174,13 +174,14 @@ const Testimonials = () => {
                 borderRadius={"100px"}
                 border={"1px solid black"}
                 color={"black"}
+                onClick={() => {
+                  prevSlide();
+                }}
               >
                 <Text
                   cursor={"pointer"}
                   fontSize={"40px"}
-                  onClick={() => {
-                    prevSlide();
-                  }}
+                 
                 >
                   <FaAngleRight
                     style={{ transform: "rotate(180deg)" }}
@@ -203,13 +204,14 @@ const Testimonials = () => {
                 bg={"white"}
                 color={"black"}
                 border={"1px solid black"}
+                onClick={() => {
+                  nextSlide();
+                }}
               >
                 <Text
                   cursor={"pointer"}
                   fontSize={"40px"}
-                  onClick={() => {
-                    nextSlide();
-                  }}
+                 
                 >
                   <FaAngleRight color="black" />
                 </Text>

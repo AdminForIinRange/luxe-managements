@@ -224,7 +224,7 @@ const Packages = () => {
                       w={"100%"}
                       transition={"transform 0.3s ease"}
                       _hover={{
-                        transform: "scale(1.05)",
+                        transform: "scale(1.025)",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -268,7 +268,7 @@ const Packages = () => {
                       w={"100%"}
                       transition={"transform 0.3s ease"}
                       _hover={{
-                        transform: "scale(1.05)",
+                        transform: "scale(1.025)",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -316,7 +316,7 @@ const Packages = () => {
                     h={"100%"}
                     justify={"start"}
                     align={"start"}
-                    gap={"25px"}
+                 
                   >
                     <VStack
                       w={"100%"}
@@ -326,10 +326,10 @@ const Packages = () => {
                     >
                       <Text
                         fontSize={[
-                          "20px",
-                          "20px",
                           "24px",
                           "24px",
+                          "28px",
+                          "28px",
                           "28px",
                           "28px",
                         ]}
@@ -369,7 +369,15 @@ const Packages = () => {
                                 : null}
                       </Text>
 
+
+                      <Divider
+                        mt={"15px"}
+                        w={"100%"}
+                        h={"2px"}
+  
+                      />
                       <Box
+                 lineHeight={"25px"}
                         mt={"15px"}
                         fontSize={[
                           "14px",
@@ -425,6 +433,15 @@ const Packages = () => {
                         </Box>
                       </HStack>
                     </VStack>
+
+                      <Divider 
+                      display={["none", "none", "block", "block", "block", "block"]}
+                      mx={"15px"}
+                        mt={"15px"}
+                        w={"2px"}
+                        h={"100%"}
+                        orientation="vertical"
+                      />
 
                     <Box
                     display={["none", "none", "block", "block", "block", "block"]}
