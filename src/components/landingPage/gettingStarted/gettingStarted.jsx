@@ -73,7 +73,7 @@ const GettingStarted = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-             border={"1px solid rgb(0, 0,0,0.25)"}
+                      border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -198,7 +198,7 @@ const GettingStarted = () => {
                         h={"50px"}
                         borderRadius={"15px"}
                         bg={"white"}
-                     border={"1px solid rgb(0, 0,0,0.25)"}
+                              border={"1px solid rgb(0, 0,0,0.05)"}
                       >
                         <HStack
                           w={"100%"}

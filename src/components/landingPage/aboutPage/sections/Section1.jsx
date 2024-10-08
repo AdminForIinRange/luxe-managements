@@ -44,7 +44,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
           <Box
             display={["none", "none", "none", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
-         border={"1px solid rgb(0, 0,0,0.25)"}
+         border={"1px solid rgb(0, 0,0,0.05)"}
             h={["600px", "600px", "600px", "600px", "600px", "600px"]}
             w={["380px", "380px", "350px", "350px", "550px", "550px"]}
             bg={"rgb(0,0,0,0.05)"}
@@ -81,7 +81,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-             border={"1px solid rgb(0, 0,0,0.25)"}
+                      border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}

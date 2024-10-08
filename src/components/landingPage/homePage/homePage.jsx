@@ -191,7 +191,7 @@ const HomePage = () => {
           bgColor={"white"}
           boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
           
-       border={"1px solid rgb(0, 0,0,0.25)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
           rounded={["10px", "20px", "20px", "10px", "10px", "10px"]}
           zIndex={"1"}
         >

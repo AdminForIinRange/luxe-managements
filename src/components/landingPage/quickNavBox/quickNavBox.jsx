@@ -66,7 +66,7 @@ const QuickNavBox = () => {
           {box.map(({ name, desc, img }, index) => (
             <VStack
        
-             border={"1px solid rgb(0, 0,0,0.25)"}
+                      border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
               textAlign={"left"}
               p={["2", "2", "5", "5", "5", "5"]}
@@ -125,7 +125,7 @@ const QuickNavBox = () => {
                   w={"100%"}
                   h={"50px"}
                   bg={"white"}
-               border={"1px solid rgb(0, 0,0,0.25)"}
+                        border={"1px solid rgb(0, 0,0,0.05)"}
                 >
                   {" "}
                   <HStack

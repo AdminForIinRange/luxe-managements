@@ -167,7 +167,7 @@ const Packages = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-             border={"1px solid rgb(0, 0,0,0.25)"}
+                      border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -241,7 +241,7 @@ const Packages = () => {
                       borderRadius={"10px"}
                       py={"5px"}
                       p={"10px"}
-                   border={"1px solid rgb(0, 0,0,0.25)"}
+                               border={"1px solid rgb(0, 0,0,0.05)"}
                       boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                       bgColor={"white"}
                     >
@@ -284,7 +284,7 @@ const Packages = () => {
                       borderRadius={"10px"}
                       py={"5px"}
                       p={"10px"}
-                   border={"1px solid rgb(0, 0,0,0.25)"}
+                            border={"1px solid rgb(0, 0,0,0.05)"}
                       boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                       bgColor={"white"}
                     >
@@ -320,7 +320,7 @@ const Packages = () => {
                   borderRadius={"15px"}
                   w={"100%"}
                   h={["400px", "400px", "600px", "480px", "480px", "480px"]}
-               border={"1px solid rgb(0, 0,0,0.25)"}
+           
                   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
                   p={"30px"}
                 >
@@ -425,7 +425,7 @@ const Packages = () => {
                           w={"100%"}
                           h={"50px"}
                           bg={"white"}
-                       border={"1px solid rgb(0, 0,0,0.25)"}
+                                border={"1px solid rgb(0, 0,0,0.05)"}
                         >
                           {" "}
                           <HStack
