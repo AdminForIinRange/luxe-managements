@@ -61,14 +61,15 @@ const QuickNavBox = () => {
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={["5px", "0px", "15px", "25px", "50px", "50px"]}
+          gap={["15px", "15px", "15px", "25px", "50px", "50px"]}
         >
           {box.map(({ name, desc, img }, index) => (
             <VStack
+         
               border={"1px solid rgb(0, 0,0,0.05)"}
               boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
               textAlign={"left"}
-              p={["2", "2", "5", "5", "5", "5"]}
+              p={["4", "4", "4.5", "5", "5", "5"]}
               rounded={"18px"}
               bg={"white"}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
@@ -89,7 +90,7 @@ const QuickNavBox = () => {
                 fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                 fontWeight={"400"}
                 textAlign={"left"}
-                h={"60px"}
+                h={["40px", "50px", "50px", "60px", "60px", "60px"]}
               >
                 {desc}
               </Text>
@@ -100,7 +101,7 @@ const QuickNavBox = () => {
                 bgSize={"cover"}
                 align={"left"}
                 w={"100%"}
-                h={"250px"}
+                h={["150px", "150px", "200px", "250px", "250px", "250px"]}
                 color={"white"} // white
                 rounded={"18px"}
                 zIndex={3}
