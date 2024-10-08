@@ -44,7 +44,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
           <Box
             display={["none", "none", "none", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
-         border={"1px solid rgb(0, 0,0,0.05)"}
+            border={"1px solid rgb(0, 0,0,0.05)"}
             h={["600px", "600px", "600px", "600px", "600px", "600px"]}
             w={["380px", "380px", "350px", "350px", "550px", "550px"]}
             bg={"rgb(0,0,0,0.05)"}
@@ -66,10 +66,17 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
             ></Box>
           </Box>
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
-          <HStack
+            <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
               align={"center"}
               h={"100%"}
             >
@@ -81,7 +88,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -99,7 +106,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                     fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-                   Feel At Ease
+                    Feel At Ease
                   </Text>
                 </Box>
               </HStack>

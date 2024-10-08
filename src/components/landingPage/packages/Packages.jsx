@@ -152,10 +152,17 @@ const Packages = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "95%", "95%", "95%", "95%"]}>
-          <HStack
+            <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "center", "center", "center"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "center",
+                "center",
+                "center",
+              ]}
               align={"center"}
               h={"100%"}
             >
@@ -167,7 +174,7 @@ const Packages = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -185,7 +192,7 @@ const Packages = () => {
                     fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-                   Our Specialities
+                    Our Specialities
                   </Text>
                 </Box>
               </HStack>
@@ -241,8 +248,8 @@ const Packages = () => {
                       borderRadius={"10px"}
                       py={"5px"}
                       p={"10px"}
-                               border={"1px solid rgb(0, 0,0,0.05)"}
-                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
+                      border={"1px solid rgb(0, 0,0,0.05)"}
+                      boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                       bgColor={"white"}
                     >
                       <Text
@@ -284,8 +291,8 @@ const Packages = () => {
                       borderRadius={"10px"}
                       py={"5px"}
                       p={"10px"}
-                            border={"1px solid rgb(0, 0,0,0.05)"}
-                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
+                      border={"1px solid rgb(0, 0,0,0.05)"}
+                      boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                       bgColor={"white"}
                     >
                       <Text
@@ -320,8 +327,7 @@ const Packages = () => {
                   borderRadius={"15px"}
                   w={"100%"}
                   h={["400px", "400px", "600px", "480px", "480px", "480px"]}
-           
-                  boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
+                  boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                   p={"30px"}
                 >
                   <HStack
@@ -425,7 +431,7 @@ const Packages = () => {
                           w={"100%"}
                           h={"50px"}
                           bg={"white"}
-                                border={"1px solid rgb(0, 0,0,0.05)"}
+                          border={"1px solid rgb(0, 0,0,0.05)"}
                         >
                           {" "}
                           <HStack

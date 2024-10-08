@@ -82,10 +82,17 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
-          <HStack
+            <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
               align={"center"}
               h={"100%"}
             >
@@ -97,7 +104,7 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -115,7 +122,7 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
                     fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-                 Professional Management
+                    Professional Management
                   </Text>
                 </Box>
               </HStack>
@@ -205,7 +212,6 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
             >
               {bottom2BoxIcons.map(({ title, icon, description }) => (
                 <VStack
-                
                   fontFamily={"Poppins"}
                   w={["90%", "90%", "100%", "100%", "100%", "100%"]}
                   h={"100%"}

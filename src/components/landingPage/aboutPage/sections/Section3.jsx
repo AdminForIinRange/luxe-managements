@@ -108,7 +108,14 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
             <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
               align={"center"}
               h={"100%"}
             >
@@ -120,7 +127,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -138,7 +145,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
                     fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-           Client in Mind
+                    Client in Mind
                   </Text>
                 </Box>
               </HStack>

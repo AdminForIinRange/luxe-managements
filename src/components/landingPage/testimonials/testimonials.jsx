@@ -89,10 +89,17 @@ const Testimonials = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "70%", "60%", "50%", "50%"]}>
-          <HStack
+            <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
               align={"center"}
               h={"100%"}
             >
@@ -104,7 +111,7 @@ const Testimonials = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -122,7 +129,7 @@ const Testimonials = () => {
                     fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
                     fontWeight={500}
                   >
-         Amazing Reviews
+                    Amazing Reviews
                   </Text>
                 </Box>
               </HStack>
@@ -172,7 +179,7 @@ const Testimonials = () => {
                 justify={"center"}
                 align={"center"}
                 borderRadius={"100px"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 color={"black"}
                 onClick={() => {
                   prevSlide();
@@ -199,7 +206,7 @@ const Testimonials = () => {
                 borderRadius={"100px"}
                 bg={"white"}
                 color={"black"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 onClick={() => {
                   nextSlide();
                 }}
@@ -226,7 +233,7 @@ const Testimonials = () => {
           >
             <VStack
               gap={["20px", "20px", "20px", "20px", "20px", "30px"]}
-              boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
+              boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
               borderRadius={"30px"}
               w={"100%"}
               h={"100%"}

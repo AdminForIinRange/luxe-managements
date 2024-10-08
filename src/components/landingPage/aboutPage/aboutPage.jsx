@@ -165,7 +165,7 @@ const AboutPage = () => {
       </HStack>
 
       <HStack
- px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
         align={"center"}
         w={"100%"}
@@ -184,7 +184,14 @@ const AboutPage = () => {
             <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={["center", "center", "center", "start", "start", "start"]}
+              justify={[
+                "center",
+                "center",
+                "center",
+                "start",
+                "start",
+                "start",
+              ]}
               align={"center"}
               h={"100%"}
             >
@@ -196,7 +203,7 @@ const AboutPage = () => {
                 align={"center"}
                 h={"100%"}
                 bg={"white"}
-                      border={"1px solid rgb(0, 0,0,0.05)"}
+                border={"1px solid rgb(0, 0,0,0.05)"}
                 boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 px={[5, 5, 5, 5, 5, 5]}
                 py={[1, 1, 2, 2, 2, 2]}
@@ -301,7 +308,7 @@ const AboutPage = () => {
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
             // data-aos="fade-right" // chnage dir
-                  border={"1px solid rgb(0, 0,0,0.05)"}
+            border={"1px solid rgb(0, 0,0,0.05)"}
             h={["350px", "350px", "350px", "600px", "600px", "600px"]}
             w={["100%", "100%", "100%", "350px", "550px", "550px"]}
             bg={"rgb(0,0,0,0.05)"}

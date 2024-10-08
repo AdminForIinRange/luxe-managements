@@ -86,8 +86,9 @@ const Navbar = ({}) => {
             >
               <Box
                 backdropFilter="blur(2.5px)"
-                bg={"white"}   border={"1px solid rgb(0, 0, 0,0.25)"}
-                boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
+                bg={"white"}
+                border={"1px solid rgb(0, 0, 0,0.25)"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                 rounded={"15px"}
                 w={"35px"}
                 h={"30px"}
@@ -129,7 +130,7 @@ const Navbar = ({}) => {
                 }}
                 h={"60px"}
                 bg={"white"}
-                boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 10px"}
+                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
               >
                 <HStack
                   w={"100%"}
@@ -166,7 +167,7 @@ const Navbar = ({}) => {
                       w={["90%", "90%", "90%", "90%", "70%", "70%"]}
                       bg={"rgb(255, 255, 255,1)"}
                       borderRadius={"15px"}
-                      boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 5px"}
+                      boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                     >
                       <HStack w={"100%"} h={"100%"} justify={"end"} px={"15px"}>
                         <Input
