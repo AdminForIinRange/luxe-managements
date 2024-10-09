@@ -116,7 +116,7 @@ const Faq = () => {
       >
         <Text
           w={"100%"}
-          // data-aos="fade-in"
+          data-aos="fade-in"
           mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
           fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
           fontWeight={300}
@@ -129,7 +129,7 @@ const Faq = () => {
           Frequently Asked Questions
         </Text>
         <Text
-          // data-aos="fade-in"
+          data-aos="fade-in"
 
           fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
           mt={["20px", "20px", "20px", "20px", "20px", "20px"]}

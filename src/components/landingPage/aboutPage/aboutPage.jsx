@@ -278,7 +278,7 @@ const AboutPage = () => {
             </HStack>
             <Text
               w={["100%", "100%", "100%", "80%", "80%", "80%"]}
-              // data-aos="fade-in"
+              data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -291,7 +291,7 @@ const AboutPage = () => {
               Maximize Your Rental Income
             </Text>
             <Text
-              // data-aos="fade-in"
+              data-aos="fade-in"
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
@@ -395,7 +395,7 @@ const AboutPage = () => {
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
-            // data-aos="fade-right" // chnage dir
+           data-aos="fade-right" // chnage dir
             border={"1px solid rgb(0, 0,0,0.05)"}
             h={["350px", "350px", "350px", "600px", "600px", "600px"]}
             w={["100%", "100%", "100%", "350px", "550px", "550px"]}
@@ -408,7 +408,7 @@ const AboutPage = () => {
           >
             <Box
               style={{ backgroundImage: `url(${interior6.src})` }}
-              // data-aos="fade-right"
+             data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}
@@ -427,7 +427,7 @@ const AboutPage = () => {
           {/* the collage  down here */}
           {/* <Box
             display={["none", "none", "block", "block", "block", "block"]}
-            // data-aos="fade-right" // chnage dir
+           data-aos="fade-right" // chnage dir
 
             w={["390px", "390px", "550px", "550px", "550px", "550px"]}
           >

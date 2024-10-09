@@ -99,7 +99,7 @@ const GettingStarted = () => {
             </HStack>
             <Text
               w={["100%", "100%", "80%", "80%", "80%", "80%"]}
-              // data-aos="fade-in"
+              data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -112,7 +112,7 @@ const GettingStarted = () => {
               How we can get you get started
             </Text>
             <Text
-              // data-aos="fade-in"
+              data-aos="fade-in"
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
@@ -211,7 +211,7 @@ const GettingStarted = () => {
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
-            // data-aos="fade-right" // chnage dir
+           data-aos="fade-right" // chnage dir
             // border={"1px solid rgb(0, 0, 0,0.25)"}
             h={["500px", "500px", "500px", "500px", "500px", "500px"]}
             w={["100%", "100%", "100%", "450px", "550px", "550px"]}

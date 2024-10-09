@@ -43,7 +43,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
         >
           <Box
             display={["none", "none", "none", "block", "block", "block"]}
-            // data-aos="fade-right" // chnage dir
+           data-aos="fade-right" // chnage dir
             border={"1px solid rgb(0, 0,0,0.05)"}
             h={["600px", "600px", "600px", "600px", "600px", "600px"]}
             w={["380px", "380px", "350px", "350px", "550px", "550px"]}
@@ -56,7 +56,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
           >
             <Box
               style={{ backgroundImage: `url(${interior2.src})` }}
-              // data-aos="fade-right"
+             data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}
@@ -113,7 +113,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
             </HStack>
 
             <Text
-              // data-aos="fade-in"
+              data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -152,7 +152,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                   key={title}
                 >
                   <Text
-                    // data-aos="fade-up"
+                   data-aos="fade-up"
                     textAlign={"left"}
                     fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
                   >
@@ -160,7 +160,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                   </Text>
 
                   <Text
-                    // data-aos="fade-up"
+                   data-aos="fade-up"
                     fontWeight={500}
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
                     fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
@@ -169,7 +169,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                   </Text>
                   <Text
                     fontWeight={300}
-                    // data-aos="fade-up"
+                   data-aos="fade-up"
                     fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
                   >
                     {description}
@@ -204,7 +204,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
                   key={title}
                 >
                   <Text
-                    // data-aos="fade-up"
+                   data-aos="fade-up"
                     textAlign={"left"}
                     fontSize={["20px", "20px", "24px", "24px", "30px", "30px"]}
                   >
@@ -213,14 +213,14 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
 
                   <Text
                     mt={["10px", "10px", "10px", "10px", "10px", "10px"]}
-                    // data-aos="fade-up"
+                   data-aos="fade-up"
                     fontWeight={500}
                     fontSize={["14px", "14px", "18px", "18px", "20px", "20px"]}
                   >
                     {title}
                   </Text>
                   <Text
-                    // data-aos="fade-up"
+                   data-aos="fade-up"
                     fontWeight={300}
                     fontSize={["12px", "12px", "12px", "12px", "14px", "15px"]}
                   >

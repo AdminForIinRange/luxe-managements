@@ -130,7 +130,7 @@ const Testimonials = () => {
             </HStack>
             <Text
               w={["100%", "100%", "80%", "80%", "80%", "80%"]}
-              // data-aos="fade-in"
+              data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
               fontSize={["30px", "30px", "35px", "35px", "35px", "40px"]}
               fontWeight={300}
@@ -143,7 +143,7 @@ const Testimonials = () => {
               Look What Our Customers Say!
             </Text>
             <Text
-              // data-aos="fade-in"
+              data-aos="fade-in"
 
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
@@ -217,7 +217,7 @@ const Testimonials = () => {
             border={"1px solid rgb(0, 0,0,0.25)"}
             mt={["80px", "80px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
-            // data-aos="fade-right" // chnage dir
+           data-aos="fade-right" // chnage dir
             // border={"1px solid rgb(0, 0, 0,0.25)"}
             h={["80%", "80%", "80%", "80%", "80%", "80%"]}
             w={["100%", "100%", "650px", "650px", "650px", "650px"]}
