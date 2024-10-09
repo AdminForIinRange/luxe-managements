@@ -160,7 +160,7 @@ const Packages = () => {
             bg={"white"}
             border={"1px solid rgb(0, 0,0,0.25)"}
             boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
-            px={[5, 5, 5, 5, 5, 10]}
+            px={[5, 5, 5, 5, 5, 5]}
             py={[1, 1, 2, 2, 2, 2]}
           >
             <Box>
@@ -362,7 +362,7 @@ const Packages = () => {
                   border={"1px solid rgb(0, 0,0,0.25)"}
                   borderRadius={"15px"}
                   w={"100%"}
-                  h={["400px", "400px", "600px", "480px", "480px", "480px"]}
+                  h={["100%", "100%", "680px", "650px", "650px", "480px"]}
                   boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
                   p={"30px"}
                 >
