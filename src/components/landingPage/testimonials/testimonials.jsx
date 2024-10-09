@@ -144,7 +144,6 @@ const Testimonials = () => {
             </Text>
             <Text
               data-aos="fade-in"
-
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
@@ -217,7 +216,7 @@ const Testimonials = () => {
             border={"1px solid rgb(0, 0,0,0.25)"}
             mt={["80px", "80px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
-           data-aos="fade-right" // chnage dir
+            data-aos="fade-right" // chnage dir
             // border={"1px solid rgb(0, 0, 0,0.25)"}
             h={["80%", "80%", "80%", "80%", "80%", "80%"]}
             w={["100%", "100%", "650px", "650px", "650px", "650px"]}

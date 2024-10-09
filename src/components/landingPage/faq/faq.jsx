@@ -130,7 +130,6 @@ const Faq = () => {
         </Text>
         <Text
           data-aos="fade-in"
-
           fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
           mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
           textAlign={"center"}

@@ -292,7 +292,6 @@ const AboutPage = () => {
             </Text>
             <Text
               data-aos="fade-in"
-
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
               textAlign={["center", "center", "center", "left", "left", "left"]}
@@ -395,7 +394,7 @@ const AboutPage = () => {
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
-           data-aos="fade-right" // chnage dir
+            data-aos="fade-right" // chnage dir
             border={"1px solid rgb(0, 0,0,0.05)"}
             h={["350px", "350px", "350px", "600px", "600px", "600px"]}
             w={["100%", "100%", "100%", "350px", "550px", "550px"]}
@@ -408,7 +407,7 @@ const AboutPage = () => {
           >
             <Box
               style={{ backgroundImage: `url(${interior6.src})` }}
-             data-aos="fade-right"
+              data-aos="fade-right"
               bgPos={"center"}
               bgSize={"cover"}
               w={"100%"}

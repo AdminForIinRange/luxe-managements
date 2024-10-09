@@ -113,7 +113,6 @@ const GettingStarted = () => {
             </Text>
             <Text
               data-aos="fade-in"
-
               fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
               mt={["20px", "20px", "20px", "20px", "20px", "20px"]}
               textAlign={["center", "center", "left", "left", "left", "left"]}
@@ -211,7 +210,7 @@ const GettingStarted = () => {
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
-           data-aos="fade-right" // chnage dir
+            data-aos="fade-right" // chnage dir
             // border={"1px solid rgb(0, 0, 0,0.25)"}
             h={["500px", "500px", "500px", "500px", "500px", "500px"]}
             w={["100%", "100%", "100%", "450px", "550px", "550px"]}

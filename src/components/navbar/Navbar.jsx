@@ -116,38 +116,37 @@ const Navbar = ({}) => {
             align={"center"}
           >
             <HStack
-
-            transition={"all 0.3s ease-in-out"}
-           
-              w={!yValue ?[ "95%", "95%", "95%", "90%", "90%", "90%"] : ["90%", "90%", "90%", "80%", "80%", "80%"]}
+              transition={"all 0.3s ease-in-out"}
+              w={
+                !yValue
+                  ? ["95%", "95%", "95%", "90%", "90%", "90%"]
+                  : ["90%", "90%", "90%", "80%", "80%", "80%"]
+              }
               h={"100%"}
               justify={"center"}
               align={"center"}
               mt={"16.5px"}
               mb={"16.5px"}
               _hover={{
-                w: [ "95%", "95%", "95%", "90%", "90%", "90%"]
-           
+                w: ["95%", "95%", "95%", "90%", "90%", "90%"],
               }}
             >
-              <Box rounded={"15px"}
+              <Box
+                rounded={"15px"}
                 transition={"all 0.5s ease-in-out"}
                 w={"100%"}
                 _hover={{
                   h: "65",
-             
                 }}
                 h={"60px"}
                 bg={"white"}
-                
-                boxShadow={"rgba(0, 0, 0, 0.1) 0px 0px 10px"} // the only one that has 0.1 
+                boxShadow={"rgba(0, 0, 0, 0.1) 0px 0px 10px"} // the only one that has 0.1
               >
                 <HStack
                   w={"100%"}
                   h={"100%"}
                   justify={"center"}
                   align={"center"}
-                
                   fontFamily={"Poppins"}
                   px={["2", "2", "5", "5", "5"]}
                 >
@@ -230,7 +229,7 @@ const Navbar = ({}) => {
                         align={"end"}
                       >
                         <Text
-                        whiteSpace={"nowrap"}
+                          whiteSpace={"nowrap"}
                           fontSize={[
                             "12px",
                             "12px",
