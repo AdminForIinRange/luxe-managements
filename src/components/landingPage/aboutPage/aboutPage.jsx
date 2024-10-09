@@ -314,6 +314,39 @@ const AboutPage = () => {
               Experience hassle-free short-term rentals with Adelaide's leading
               Airbnb management service.
             </Text>
+            <HStack
+                        mt={"25px"}
+                        w={["100%", "100%", "60%", "50%", "40%", "30%"]}
+                        h={"100%"}
+                        justify={"end"}
+                        align={"end"}
+                        gap={"15px"}
+                      >
+                        <Box
+                          transition={"all 0.3s ease"}
+                          _hover={{
+                            bg: "black",
+                            color: "white",
+                          }}
+                          cursor={"pointer"}
+                          borderRadius={"15px"}
+                          //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                          w={"100%"}
+                          h={"50px"}
+                          bg={"white"}
+                          border={"1px solid rgb(0, 0,0,0.25)"}
+                        >
+                          {" "}
+                          <HStack
+                            justify={"center"}
+                            align={"center"}
+                            w={"100%"}
+                            h={"100%"}
+                          >
+                            <Text    fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]} textAlign={"center"}>Get In Touch</Text>
+                          </HStack>
+                        </Box>
+                      </HStack>
 
             {/* <HStack
               w={["100%", "100%", "100%", "80%", "80%", "80%"]}

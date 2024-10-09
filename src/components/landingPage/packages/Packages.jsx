@@ -186,7 +186,6 @@ const Packages = () => {
         />
       </Center>
 
-
       <HStack
         justify={"center"}
         align={"start"}
@@ -211,7 +210,7 @@ const Packages = () => {
           color={"black"}
           bgGradient="linear(to-r, magenta, pink)"
         >
-       Services tailored to your needs
+          Services tailored to your needs
         </Text>
       </HStack>
       <HStack
@@ -243,7 +242,7 @@ const Packages = () => {
               color={"black"}
               bgGradient="linear(to-r, purple, yellow)"
             >
-View our collective Packages
+              View our collective Packages
             </Text>
             <Text
               // data-aos="fade-in"
@@ -275,9 +274,10 @@ View our collective Packages
                       cursor={"pointer"}
                       mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
                       w={"100%"}
-                      transition={"transform 0.3s ease"}
+                      transition={"all 0.3s ease"}
                       _hover={{
-                        transform: "scale(1.01)",
+                        bgColor:"black",
+                        textColor:"white",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -287,6 +287,7 @@ View our collective Packages
                       bgColor={"white"}
                     >
                       <Text
+                        fontWeight={300}
                         textAlign={"center"}
                         fontSize={[
                           "14px",
@@ -296,7 +297,7 @@ View our collective Packages
                           "20px",
                           "20px",
                         ]}
-                        color={"black"}
+                       
                       >
                         {title}
                       </Text>{" "}
@@ -318,9 +319,10 @@ View our collective Packages
                       cursor={"pointer"}
                       mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
                       w={"100%"}
-                      transition={"transform 0.3s ease"}
+                      transition={"all 0.3s ease"}
                       _hover={{
-                        transform: "scale(1.01)",
+                        bgColor:"black",
+                        textColor:"white",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -330,6 +332,7 @@ View our collective Packages
                       bgColor={"white"}
                     >
                       <Text
+                        fontWeight={300}
                         textAlign={"center"}
                         fontSize={[
                           "14px",
@@ -339,7 +342,7 @@ View our collective Packages
                           "20px",
                           "20px",
                         ]}
-                        color={"black"}
+                       
                       >
                         {title}
                       </Text>{" "}

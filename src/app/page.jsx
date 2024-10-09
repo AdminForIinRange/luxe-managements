@@ -9,6 +9,7 @@ import GettingStarted from "@/components/landingPage/gettingStarted/gettingStart
 import Testimonials from "@/components/landingPage/testimonials/testimonials";
 import Faq from "@/components/landingPage/faq/faq";
 import Footer from "@/components/landingPage/footer/footer";
+import ComparisonTable from "@/components/landingPage/comparisonTable/comparisonTable";
 const Home = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const Home = () => {
       <Packages />
       <GettingStarted />
       <Testimonials />
+      {/* <ComparisonTable /> */}
       <Faq />
       <Footer />
     </>

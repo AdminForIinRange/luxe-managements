@@ -77,7 +77,7 @@ const QuickNavBox = () => {
               color={"black"} // white
             >
               <Text
-                fontWeight={300}
+                fontWeight={400}
                 zIndex={3}
                 w={"100%"}
                 fontSize={["20px", "22px", "22px", "22px", "28px", "28px"]}
@@ -87,7 +87,7 @@ const QuickNavBox = () => {
               <Text
                 w={"100%"}
                 fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-                fontWeight={"400"}
+                fontWeight={"300"}
                 h={["70px", "70px", "100px", "80px", "75px", "70px"]}
               >
                 {desc}
