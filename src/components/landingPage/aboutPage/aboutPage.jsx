@@ -136,13 +136,66 @@ const AboutPage = () => {
 
   return (
     <>
+      <Center my={["100px", "100px", "100px", "150px", "200px", "100px"]} >
+        <Divider
+        
+          ml={["50px", "50px", "50px", "50px", "50px", "50px"]}
+          color={"black"}
+          bgColor={"black"}
+        />
+
+        <HStack
+          //   data-aos="fade-up"
+        
+          justify={["center", "center", "center", "center", "center", "center"]}
+          align={"center"}
+          h={"100%"}
+        >
+          {" "}
+          <HStack
+            data-aos="fade-up"
+            rounded={"100px"}
+            justify={"start"}
+            align={"center"}
+            h={"100%"}
+        
+            bg={"white"}
+            border={"1px solid rgb(0, 0,0,0.25)"}
+            boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+            px={[5, 5, 5, 5, 5, 10]}
+            py={[1, 1, 2, 2, 2, 2]}
+          >
+            
+            <Box>
+              <Text
+              whiteSpace={"nowrap"}
+                textShadow={"0px 0px 100px black"}
+                w={"100%"}
+                h={"100%"}
+                textAlign={"center"}
+                color={"black"}
+                fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
+                fontWeight={500}
+              >
+                About Us
+              </Text>
+            </Box>
+          </HStack>
+        </HStack>
+        <Divider
+          
+          mr={["50px", "50px", "50px", "50px", "50px", "50px"]}
+          color={"black"}
+          bgColor={"black"}
+        />
+      </Center>
+
       <HStack
         justify={"center"}
         align={"start"}
         w={"100%"}
         h={"100%"}
         wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
-        mt={["150px", "150px", "150px", "200px", "250px", "150px"]}
       >
         <Text
           w={["95%", "95%", "95%", "70%", "90%", "100%"]}
@@ -182,7 +235,7 @@ const AboutPage = () => {
           wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "95%", "60%", "50%", "50%"]}>
-             <HStack
+            <HStack
               //   data-aos="fade-up"
               w={"100%"}
               justify={[
@@ -348,14 +401,12 @@ const AboutPage = () => {
           </Box> */}
         </HStack>
       </HStack>
-       
-      <Section1 topBoxIcons={topBoxIcons} bottomBoxIcons={bottomBoxIcons} />
-       
-      <Section2 top2BoxIcons={top2BoxIcons} bottom2BoxIcons={bottom2BoxIcons} />
-       
-      <Section3 top3BoxIcons={top3BoxIcons} bottom3BoxIcons={bottom3BoxIcons} />
 
-       
+      <Section1 topBoxIcons={topBoxIcons} bottomBoxIcons={bottomBoxIcons} />
+
+      <Section2 top2BoxIcons={top2BoxIcons} bottom2BoxIcons={bottom2BoxIcons} />
+
+      <Section3 top3BoxIcons={top3BoxIcons} bottom3BoxIcons={bottom3BoxIcons} />
     </>
   );
 };

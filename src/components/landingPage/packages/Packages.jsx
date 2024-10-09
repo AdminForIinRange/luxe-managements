@@ -136,6 +136,84 @@ const Packages = () => {
 
   return (
     <>
+      <Center my={["100px", "100px", "100px", "150px", "200px", "100px"]}>
+        <Divider
+          ml={["50px", "50px", "50px", "50px", "50px", "50px"]}
+          color={"black"}
+          bgColor={"black"}
+        />
+
+        <HStack
+          //   data-aos="fade-up"
+
+          justify={["center", "center", "center", "center", "center", "center"]}
+          align={"center"}
+          h={"100%"}
+        >
+          {" "}
+          <HStack
+            data-aos="fade-up"
+            rounded={"100px"}
+            justify={"start"}
+            align={"center"}
+            h={"100%"}
+            bg={"white"}
+            border={"1px solid rgb(0, 0,0,0.25)"}
+            boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+            px={[5, 5, 5, 5, 5, 10]}
+            py={[1, 1, 2, 2, 2, 2]}
+          >
+            <Box>
+              <Text
+                whiteSpace={"nowrap"}
+                textShadow={"0px 0px 100px black"}
+                w={"100%"}
+                h={"100%"}
+                textAlign={"center"}
+                color={"black"}
+                fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
+                fontWeight={500}
+              >
+                Services
+              </Text>
+            </Box>
+          </HStack>
+        </HStack>
+        <Divider
+          mr={["50px", "50px", "50px", "50px", "50px", "50px"]}
+          color={"black"}
+          bgColor={"black"}
+        />
+      </Center>
+
+
+      <HStack
+        justify={"center"}
+        align={"start"}
+        w={"100%"}
+        h={"100%"}
+        wrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
+      >
+        <Text
+          w={["95%", "95%", "95%", "70%", "90%", "100%"]}
+          fontSize={["45px", "45px", "45px", "45px", "85px", "65px"]}
+          fontWeight={300}
+          fontFamily={"Poppins"}
+          bgClip="text"
+          textAlign={[
+            "center",
+            "center",
+            "center",
+            "center",
+            "center",
+            "center",
+          ]}
+          color={"black"}
+          bgGradient="linear(to-r, magenta, pink)"
+        >
+       Services tailored to your needs
+        </Text>
+      </HStack>
       <HStack
         px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         justify={"center"} // !!
@@ -153,51 +231,6 @@ const Packages = () => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["95%", "95%", "95%", "95%", "95%", "95%"]}>
-            <HStack
-              //   data-aos="fade-up"
-              w={"100%"}
-              justify={[
-                "center",
-                "center",
-                "center",
-                "center",
-                "center",
-                "center",
-              ]}
-              align={"center"}
-              h={"100%"}
-            >
-              {" "}
-              <HStack
-                data-aos="fade-up"
-                rounded={"100px"}
-                justify={"start"}
-                align={"center"}
-                h={"100%"}
-                bg={"white"}
-                border={"1px solid rgb(0, 0,0,0.25)"}
-                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
-                px={[5, 5, 5, 5, 5, 5]}
-                py={[1, 1, 2, 2, 2, 2]}
-              >
-                <Box>
-                  <GoTriangleRight color="black" fontSize={"20px"} />
-                </Box>
-                <Box>
-                  <Text
-                    textShadow={"0px 0px 100px black"}
-                    w={"100%"}
-                    h={"100%"}
-                    textAlign={"center"}
-                    color={"black"}
-                    fontSize={["12px", "12px", "12px", "14px", "14px", "14px"]}
-                    fontWeight={500}
-                  >
-                    Our Specialities
-                  </Text>
-                </Box>
-              </HStack>
-            </HStack>
             <Text
               w={"100%"}
               // data-aos="fade-in"
@@ -264,7 +297,6 @@ const Packages = () => {
                           "20px",
                         ]}
                         color={"black"}
-                        
                       >
                         {title}
                       </Text>{" "}
@@ -326,7 +358,7 @@ const Packages = () => {
                 align={"start"}
               >
                 <Box
-                           border={"1px solid rgb(0, 0,0,0.25)"}
+                  border={"1px solid rgb(0, 0,0,0.25)"}
                   borderRadius={"15px"}
                   w={"100%"}
                   h={["400px", "400px", "600px", "480px", "480px", "480px"]}
@@ -546,7 +578,6 @@ const Packages = () => {
           {/* <Image src={collage} width={500} /> */}
         </HStack>
       </HStack>
-       
     </>
   );
 };
