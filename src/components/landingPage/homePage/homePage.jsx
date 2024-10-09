@@ -16,6 +16,8 @@ import "aos/dist/aos.css";
 
 import { FaSearch, FaFilter } from "react-icons/fa";
 import skyRise2 from "../../../assets/img/skyRise2.jpg";
+import bannerHouse from "../../../assets/img/bannerHouse.jpg";
+import bannerHouseBlur from "../../../assets/img/bannerHouseBlur.png";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import AboutPage from "../aboutPage/aboutPage";
 import QuickNavBox from "../quickNavBox/quickNavBox";
@@ -78,14 +80,19 @@ const HomePage = () => {
           pr={"5px"}
         >
           <Box
+
             className="animate__animated animate__fadeIn"
             rounded={"10px"}
             borderBottomRadius={"100px"}
             w={["100%", "100%", "100%", "100%", "100%", "100%"]}
             h={["375px", "410px", "450px", "525px", "600px", "600px"]}
-            bgPos={"center 60%"}
+            bgPos={"center 10%"}
             bgSize={"cover"}
-            style={{ backgroundImage: `url(${skyRise2.src})` }}
+            style={{
+              backgroundImage: `url(${bannerHouseBlur.src})`,
+            }}
+           
+            bgRepeat={"no-repeat"}
             loading="lazy"
           >
             <VStack
@@ -105,7 +112,7 @@ const HomePage = () => {
                 className="animate__animated animate__fadeInDown"
                 color={"white"} // Adding white outline effect
                 bgGradient="linear(to-r, green, red)"
-                textShadow={"0px 0px 5px gray"}
+                textShadow={"0px 0px 20px gray"}
               >
                 Under Development{" "}
               </Text>
@@ -119,7 +126,7 @@ const HomePage = () => {
                 w={["80%", "80%", "50%", "50%", "50%", "30%"]}
                 h={"20%"}
                 className="animate__animated animate__fadeInDown"
-                textShadow={"0px 0px 5px gray"}
+                textShadow={"0px 0px 20px gray"}
               >
                 Under Development Under Development
               </Text>
