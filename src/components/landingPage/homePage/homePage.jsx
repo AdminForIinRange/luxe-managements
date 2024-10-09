@@ -80,7 +80,6 @@ const HomePage = () => {
           pr={"5px"}
         >
           <Box
-
             className="animate__animated animate__fadeIn"
             rounded={"10px"}
             borderBottomRadius={"100px"}
@@ -91,7 +90,6 @@ const HomePage = () => {
             style={{
               backgroundImage: `url(${bannerHouseBlur.src})`,
             }}
-           
             bgRepeat={"no-repeat"}
             loading="lazy"
           >

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import {
-    Divider,
-    Center,
+  Divider,
+  Center,
   Box,
   VStack,
   Text,
@@ -57,7 +57,7 @@ const Faq = () => {
 
   return (
     <>
-     <Center my={["100px", "100px", "100px", "150px", "200px", "100px"]}>
+      <Center my={["100px", "100px", "100px", "150px", "200px", "100px"]}>
         <Divider
           ml={["50px", "50px", "50px", "50px", "50px", "50px"]}
           color={"black"}
@@ -107,12 +107,12 @@ const Faq = () => {
         />
       </Center>
 
-      <VStack px={["4%", "4%", "6%", "6%", "6%", "10%"]}
+      <VStack
+        px={["4%", "4%", "6%", "6%", "6%", "10%"]}
         w={"100%"}
         mt={["50px", "50px", "70px", "70px", "70px"]}
         justify={"center"}
         align={"center"}
-       
       >
         <Text
           w={"100%"}
@@ -145,7 +145,7 @@ const Faq = () => {
         </Text>
 
         <VStack
-        w={["95%", "95%", "95%", "95%", "95%", "95%"]}
+          w={["95%", "95%", "95%", "95%", "95%", "95%"]}
           mt={["50px", "50px", "70px", "70px", "70px"]}
         >
           <Accordion
@@ -159,7 +159,6 @@ const Faq = () => {
                 <h2>
                   <AccordionButton>
                     <Box
-                    
                       as="span"
                       flex="1"
                       textAlign="left"
@@ -171,7 +170,7 @@ const Faq = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel
-                color={"gray.600"}
+                  color={"gray.600"}
                   pb={4}
                   fontSize={["12px", "12px", "16px", "16px", "16px"]}
                 >

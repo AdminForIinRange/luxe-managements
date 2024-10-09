@@ -82,7 +82,7 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
           wrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         >
           <Box w={["100%", "100%", "100%", "80%", "70%", "60%"]}>
-             <HStack
+            <HStack
               //   data-aos="fade-up"
               w={"100%"}
               justify={[
@@ -272,8 +272,6 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
           </Box>
         </HStack>
       </HStack>
-
-       
     </>
   );
 };

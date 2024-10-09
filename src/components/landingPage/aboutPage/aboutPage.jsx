@@ -136,9 +136,8 @@ const AboutPage = () => {
 
   return (
     <>
-      <Center my={["100px", "100px", "100px", "150px", "200px", "100px"]} >
+      <Center my={["100px", "100px", "100px", "150px", "200px", "100px"]}>
         <Divider
-        
           ml={["50px", "50px", "50px", "50px", "50px", "50px"]}
           color={"black"}
           bgColor={"black"}
@@ -146,7 +145,7 @@ const AboutPage = () => {
 
         <HStack
           //   data-aos="fade-up"
-        
+
           justify={["center", "center", "center", "center", "center", "center"]}
           align={"center"}
           h={"100%"}
@@ -158,17 +157,15 @@ const AboutPage = () => {
             justify={"start"}
             align={"center"}
             h={"100%"}
-        
             bg={"white"}
             border={"1px solid rgb(0, 0,0,0.25)"}
             boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
             px={[5, 5, 5, 5, 5, 10]}
             py={[1, 1, 2, 2, 2, 2]}
           >
-            
             <Box>
               <Text
-              whiteSpace={"nowrap"}
+                whiteSpace={"nowrap"}
                 textShadow={"0px 0px 100px black"}
                 w={"100%"}
                 h={"100%"}
@@ -183,7 +180,6 @@ const AboutPage = () => {
           </HStack>
         </HStack>
         <Divider
-          
           mr={["50px", "50px", "50px", "50px", "50px", "50px"]}
           color={"black"}
           bgColor={"black"}
@@ -315,38 +311,43 @@ const AboutPage = () => {
               Airbnb management service.
             </Text>
             <HStack
-                        mt={"25px"}
-                        w={["100%", "100%", "60%", "50%", "40%", "30%"]}
-                        h={"100%"}
-                        justify={"end"}
-                        align={"end"}
-                        gap={"15px"}
-                      >
-                        <Box
-                          transition={"all 0.3s ease"}
-                          _hover={{
-                            bg: "black",
-                            color: "white",
-                          }}
-                          cursor={"pointer"}
-                          borderRadius={"15px"}
-                          //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                          w={"100%"}
-                          h={"50px"}
-                          bg={"white"}
-                          border={"1px solid rgb(0, 0,0,0.25)"}
-                        >
-                          {" "}
-                          <HStack
-                            justify={"center"}
-                            align={"center"}
-                            w={"100%"}
-                            h={"100%"}
-                          >
-                            <Text    fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]} textAlign={"center"}>Get In Touch</Text>
-                          </HStack>
-                        </Box>
-                      </HStack>
+              mt={"25px"}
+              w={["100%", "100%", "60%", "50%", "40%", "30%"]}
+              h={"100%"}
+              justify={"end"}
+              align={"end"}
+              gap={"15px"}
+            >
+              <Box
+                transition={"all 0.3s ease"}
+                _hover={{
+                  bg: "black",
+                  color: "white",
+                }}
+                cursor={"pointer"}
+                borderRadius={"15px"}
+                //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
+                w={"100%"}
+                h={"50px"}
+                bg={"white"}
+                border={"1px solid rgb(0, 0,0,0.25)"}
+              >
+                {" "}
+                <HStack
+                  justify={"center"}
+                  align={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Text
+                    fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
+                    textAlign={"center"}
+                  >
+                    Get In Touch
+                  </Text>
+                </HStack>
+              </Box>
+            </HStack>
 
             {/* <HStack
               w={["100%", "100%", "100%", "80%", "80%", "80%"]}

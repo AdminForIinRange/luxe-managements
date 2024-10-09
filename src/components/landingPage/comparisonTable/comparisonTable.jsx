@@ -1,5 +1,16 @@
-import React from 'react';
-import { Box, Table, Thead, Tbody, Tr, Th, Td, TableContainer, Heading, Center } from '@chakra-ui/react';
+import React from "react";
+import {
+  Box,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  TableContainer,
+  Heading,
+  Center,
+} from "@chakra-ui/react";
 
 export default function ComparisonTable() {
   const features = [
@@ -13,7 +24,11 @@ export default function ComparisonTable() {
     { name: "Luxury Toiletries Provided", us: true, others: false },
     { name: "Full Kitchen and Bathroom Cleaning", us: true, others: false },
     { name: "Stress-Free Onboarding", us: true, others: false },
-    { name: "Multi-Platform Listing (Airbnb, Booking.com)", us: true, others: true },
+    {
+      name: "Multi-Platform Listing (Airbnb, Booking.com)",
+      us: true,
+      others: true,
+    },
     { name: "Guest Communication Management", us: true, others: true },
     { name: "Dynamic Pricing Strategies", us: true, others: true },
     { name: "Booking Management", us: true, others: true },
@@ -23,7 +38,9 @@ export default function ComparisonTable() {
   return (
     <Box maxW="1200px" mx="auto" p={6}>
       <Center mb={8}>
-        <Heading as="h2" size="xl">Us vs. Other Competitors</Heading>
+        <Heading as="h2" size="xl">
+          Us vs. Other Competitors
+        </Heading>
       </Center>
       <TableContainer>
         <Table variant="striped" colorScheme="gray">
@@ -38,8 +55,8 @@ export default function ComparisonTable() {
             {features.map((feature, index) => (
               <Tr key={index}>
                 <Td>{feature.name}</Td>
-                <Td isNumeric>{feature.us ? '✓' : '✗'}</Td>
-                <Td isNumeric>{feature.others ? '✓' : '✗'}</Td>
+                <Td isNumeric>{feature.us ? "✓" : "✗"}</Td>
+                <Td isNumeric>{feature.others ? "✓" : "✗"}</Td>
               </Tr>
             ))}
           </Tbody>

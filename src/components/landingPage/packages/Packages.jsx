@@ -276,8 +276,8 @@ const Packages = () => {
                       w={"100%"}
                       transition={"all 0.3s ease"}
                       _hover={{
-                        bgColor:"black",
-                        textColor:"white",
+                        bgColor: "black",
+                        textColor: "white",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -297,7 +297,6 @@ const Packages = () => {
                           "20px",
                           "20px",
                         ]}
-                       
                       >
                         {title}
                       </Text>{" "}
@@ -321,8 +320,8 @@ const Packages = () => {
                       w={"100%"}
                       transition={"all 0.3s ease"}
                       _hover={{
-                        bgColor:"black",
-                        textColor:"white",
+                        bgColor: "black",
+                        textColor: "white",
                       }}
                       borderRadius={"10px"}
                       py={"5px"}
@@ -342,7 +341,6 @@ const Packages = () => {
                           "20px",
                           "20px",
                         ]}
-                       
                       >
                         {title}
                       </Text>{" "}

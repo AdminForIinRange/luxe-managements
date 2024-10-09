@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="RootLayout" style={{fontFamily:"Poppins"}}>
+      <body className="RootLayout" style={{ fontFamily: "Poppins" }}>
         <ChakraProvider>{children}</ChakraProvider>
         <SpeedInsights />
         <Analytics />

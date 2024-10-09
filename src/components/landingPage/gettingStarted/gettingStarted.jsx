@@ -312,7 +312,7 @@ const GettingStarted = () => {
                     </Box>
                   </HStack>
                 </VStack>
-              )
+              ),
             )}
             {/* <Image src={collage} />   //!cool */}
           </Box>

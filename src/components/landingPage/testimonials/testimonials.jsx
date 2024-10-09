@@ -93,14 +93,7 @@ const Testimonials = () => {
             <HStack
               //   data-aos="fade-up"
               w={"100%"}
-              justify={[
-                "center",
-                "center",
-                "start",
-                "start",
-                "start",
-                "start",
-              ]}
+              justify={["center", "center", "start", "start", "start", "start"]}
               align={"center"}
               h={"100%"}
             >
@@ -338,8 +331,6 @@ const Testimonials = () => {
           </Box>
         </HStack>
       </HStack>
-
-       
     </>
   );
 };
