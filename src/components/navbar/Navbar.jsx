@@ -134,7 +134,8 @@ const Navbar = ({}) => {
                 }}
                 h={"60px"}
                 bg={"white"}
-                boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
+                
+                boxShadow={"rgba(0, 0, 0, 0.1) 0px 0px 10px"} // the only one that has 0.1 
               >
                 <HStack
                   w={"100%"}
