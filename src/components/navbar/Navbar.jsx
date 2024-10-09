@@ -47,7 +47,7 @@ const Navbar = ({}) => {
   }, [yValue]);
 
   const links = [
-    { name: "about Us", link: "#aboutUs" },
+    { name: "About Us", link: "#aboutUs" },
     { name: "Services  ", link: "#services" },
     { name: "FAQ", link: "#faq" },
     { name: "test", link: "#blog" },
@@ -125,12 +125,17 @@ const Navbar = ({}) => {
               align={"center"}
               mt={"16.5px"}
               mb={"16.5px"}
+              _hover={{
+                w: [ "95%", "95%", "95%", "90%", "90%", "90%"]
+           
+              }}
             >
               <Box rounded={"15px"}
                 transition={"all 0.5s ease-in-out"}
                 w={"100%"}
                 _hover={{
                   h: "65",
+             
                 }}
                 h={"60px"}
                 bg={"white"}
