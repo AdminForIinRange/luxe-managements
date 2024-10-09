@@ -208,7 +208,7 @@ const Packages = () => {
               bgClip="text"
               textAlign={"center"}
               color={"black"}
-              bgGradient="linear(to-r, green, red)"
+              bgGradient="linear(to-r, purple, yellow)"
             >
               View our collective Packagess
             </Text>

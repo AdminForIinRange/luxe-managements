@@ -114,7 +114,7 @@ const GettingStarted = () => {
               bgClip="text"
               textAlign={["center", "center", "left", "left", "left", "left"]}
               color={"black"}
-              bgGradient="linear(to-r, green, red)"
+              bgGradient="linear(to-r, teal, blue)"
             >
               How we can get you get started
             </Text>

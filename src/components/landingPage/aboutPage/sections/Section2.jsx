@@ -137,7 +137,7 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
               bgClip="text"
               textAlign={["center", "center", "center", "left", "left", "left"]}
               color={"black"}
-              bgGradient="linear(to-r, green, red)"
+              bgGradient="linear(to-r, blue, green)"
             >
               Manage your rentals with Professionals
             </Text>

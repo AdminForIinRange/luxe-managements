@@ -20,7 +20,7 @@ const QuickNavBox = () => {
   const box = [
     {
       name: "Contact Us",
-      desc: "Have questions? Reach out to us for all your Airbnb management needs.",
+      desc: "Have questions? Reach out to our team for all your Airbnb management needs.",
 
       link: "#",
 
@@ -56,41 +56,39 @@ const QuickNavBox = () => {
         mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
       >
         <HStack
-          flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          flexWrap={["wrap", "wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
           w={["98%", "90%", "95%", "88%", "80%", "80%"]}
           h={"100%"}
           justify={"center"}
           align={"start"}
-          gap={["15px", "15px", "15px", "25px", "50px", "50px"]}
+          gap={["15px", "15px", "15px", "15px", "15px", "15px"]}
         >
           {box.map(({ name, desc, img }, index) => (
             <VStack
-         
               border={"1px solid rgb(0, 0,0,0.05)"}
               boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
               textAlign={"left"}
-              p={["4", "4", "4.5", "5", "5", "5"]}
+              p={"5"}
               rounded={"18px"}
               bg={"white"}
               w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-              h={"100%"}
+              h={["300px", "300px", "300px", "100%", "100%", "100%"]}
               key={index}
               color={"black"} // white
             >
               <Text
+                fontWeight={300}
                 zIndex={3}
                 w={"100%"}
                 fontSize={["20px", "22px", "22px", "22px", "28px", "28px"]}
-                fontWeight={"700"}
-                textAlign={"left"}
               >
                 {name}
               </Text>
               <Text
+                w={"100%"}
                 fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                 fontWeight={"400"}
-                textAlign={"left"}
-                h={["40px", "50px", "50px", "60px", "60px", "60px"]}
+                h={["70px", "70px", "100px", "80px", "75px", "70px"]}
               >
                 {desc}
               </Text>

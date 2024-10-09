@@ -159,7 +159,7 @@ const AboutPage = () => {
             "center",
           ]}
           color={"black"}
-          bgGradient="linear(to-r, green, red)"
+          bgGradient="linear(to-r, red, blue)"
         >
           Seamless Exceptional Management
         </Text>

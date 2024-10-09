@@ -160,7 +160,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
               bgClip="text"
               textAlign={["center", "center", "center", "left", "left", "left"]}
               color={"black"}
-              bgGradient="linear(to-r, green, red)"
+              bgGradient="linear(to-r, orange, pink)"
             >
               Enjoy our extensive services
             </Text>

@@ -228,7 +228,7 @@ const HomePage = () => {
                         ]}
                         textAlign={"center"}
                         fontWeight={400}
-                        color={"gray.700"}
+                        color={"black"}
                       >
                         {title}
                       </Text>

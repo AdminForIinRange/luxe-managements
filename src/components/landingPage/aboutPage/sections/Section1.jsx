@@ -121,7 +121,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
               bgClip="text"
               textAlign={["center", "center", "center", "left", "left", "left"]}
               color={"black"}
-              bgGradient="linear(to-r, green, red)"
+              bgGradient="linear(to-r, purple, blue)"
             >
               Say Goodbye to Hosting Hassles
             </Text>
