@@ -243,7 +243,7 @@ const Packages = () => {
               color={"black"}
               bgGradient="linear(to-r, purple, yellow)"
             >
-              View our collective Packagess
+View our collective Packages
             </Text>
             <Text
               // data-aos="fade-in"

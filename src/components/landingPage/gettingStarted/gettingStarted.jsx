@@ -233,6 +233,8 @@ const GettingStarted = () => {
                       </Box>
                       {index < 3 && (
                         <Box
+                          transition={"transform 0.3s ease"}  
+                       
                           zIndex={-1}
                           w={"5px"}
                           h={"70px"}
