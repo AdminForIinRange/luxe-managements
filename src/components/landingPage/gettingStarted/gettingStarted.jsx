@@ -7,11 +7,19 @@ import {
   Select,
   Center,
   Input,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { GoTriangleRight } from "react-icons/go";
+import Link from "next/link";
 const GettingStarted = () => {
   const GettingStartedSteps = [
     {
@@ -97,7 +105,11 @@ const GettingStarted = () => {
                 </Box>
               </HStack>
             </HStack>
+
+
+
             <Text
+           
               w={["100%", "100%", "80%", "80%", "80%", "80%"]}
               data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
@@ -154,6 +166,10 @@ const GettingStarted = () => {
                   h={"100%"}
                 >
                   <Text
+                  
+                   as={"a"}
+                   href="https://calendly.com/bhattaraianjesh123 "
+           target="_blank"
                     fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
                     textAlign={"center"}
                   >
@@ -163,50 +179,9 @@ const GettingStarted = () => {
               </Box>
             </HStack>
 
-            {/* <HStack
-              w={["100%", "100%", "80%", "80%", "80%", "80%"]}
-              justify={["center", "center", "start", "start", "start", "start"]}
-              align={"center"}
-            >
-              <HStack
-                mt={["25px", "25px", "50px", "25px", "25px", "25px"]}
-                w={["225px", "225px", "170px", "170px", "200px", "200px"]}
-                transition={"transform 0.3s ease"}
-                _hover={{
-                  transform: "translateX(10px)",
-                }}
-                justify={[
-                  "center",
-                  "center",
-                  "start",
-                  "start",
-                  "start",
-                  "start",
-                ]}
-                align={"center"}
-                borderRadius={"10px"}
-                px={"8px"}
-                py={"5px"}
-                mr={"5px"}
-                bg={"white"}
-                color={"black"}
-                bgColor={"black"}
-              >
-                <Text
-                  fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-                  color={"white"}
-                  px={"8px"}
-                >
-                  Learn more
-                </Text>{" "}
-                <Text fontSize={"30px"}>
-                  <HiArrowLongRight color="white" />
-                </Text>
-              </HStack>
-            </HStack> */}
+         
           </Box>
-          {/* <Image src={collage} width={500} /> */}
-
+       
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}
@@ -311,7 +286,7 @@ const GettingStarted = () => {
                     </Box>
                   </HStack>
                 </VStack>
-              ),
+              )
             )}
             {/* <Image src={collage} />   //!cool */}
           </Box>
