@@ -11,14 +11,11 @@ const Home = () => {
 
   return (
     <>
-      <Center
-        mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
-        h={"100%"}
-        w={"100%"}
-      >
+      <Center mt={["50px", "50px", "50px", "50px", "50px", "50px"]}>
         {" "}
         <Text
-          w={["90%", "90%", "90%", "90%", "90%", "90%"]}
+          mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
+          w={["80%", "80%", "80%", "80%", "80%", "80%"]}
           fontSize={["42px", "42px", "42px", "42px", "42px", "42px"]}
           fontWeight={300}
           textAlign={"center"}
@@ -27,7 +24,8 @@ const Home = () => {
           color={"black"} // Adding white outline effect
           bgGradient="linear(to-r, green, red)"
         >
-          🛠️ Under Development 🛠️ , 🪲 Currently Fixing Bugs 🪲 , ⚙️ Adding Functions ⚙️ , 🚅 Improving Performance 🚅
+          🛠️ Under Development 🛠️ , 🪲 Currently Fixing Bugs 🪲 , ⚙️ Adding
+          Functions ⚙️ , 🚅 Improving Performance 🚅
         </Text>
         <Loading />
       </Center>

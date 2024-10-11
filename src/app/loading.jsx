@@ -6,10 +6,10 @@ const Loading = () => {
     <VStack
       justify={"center"}
       align={"center"}
-      w={"100vw"}
-      h={"100vh"} // Full height of the viewport
+      w={"100%"}
+      h={"100%"} // Full height of the viewport
       position={"absolute"} // Absolute positioning
-      top={"0"} // Top of the viewport
+      top={"300"} // Top of the viewport
       left={"0"} // Left of the viewport
     >
       <HStack justify={"center"} align={"center"} w={"100%"} h={"100%"}>

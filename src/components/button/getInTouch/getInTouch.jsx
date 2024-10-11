@@ -24,8 +24,10 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { GoTriangleRight } from "react-icons/go";
 import Link from "next/link";
 
-
-const GetInTouch = ({width=["100%", "100%", "60%", "50%", "40%", "30%"], mt="25px"}) => {
+const GetInTouch = ({
+  width = ["100%", "100%", "60%", "50%", "40%", "30%"],
+  mt = "25px",
+}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -33,7 +35,6 @@ const GetInTouch = ({width=["100%", "100%", "60%", "50%", "40%", "30%"], mt="25p
       <HStack
         mt={mt}
         w={width}
-
         h={"100%"}
         justify={"end"}
         align={"end"}

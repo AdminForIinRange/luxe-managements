@@ -109,7 +109,7 @@ const QuickNavBox = () => {
                 zIndex={3}
               ></Box>
               {button == "Get in touch" ? (
-                <GetInTouch width={"100%"} mt={"5px"}  /> 
+                <GetInTouch width={"100%"} mt={"5px"} />
               ) : (
                 <HStack
                   mt={"5px"}

@@ -13,11 +13,8 @@ import Footer from "@/components/landingPage/footer/footer";
 import ComparisonTable from "@/components/landingPage/comparisonTable/comparisonTable";
 import { useState } from "react";
 const AirBnB = () => {
-
   const [rent, setRent] = useState(false);
 
-
-  
   return (
     <>
       <Navbar setRent={setRent} rent={rent} />

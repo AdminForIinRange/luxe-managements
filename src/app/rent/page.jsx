@@ -13,15 +13,11 @@ import Footer from "@/components/landingPage/footer/footer";
 import ComparisonTable from "@/components/landingPage/comparisonTable/comparisonTable";
 import { useState } from "react";
 const Rent = () => {
-
   const [rent, setRent] = useState(true);
 
-
-  
   return (
     <>
       <Navbar setRent={setRent} rent={rent} />
-
     </>
   );
 };

@@ -310,7 +310,7 @@ const AboutPage = () => {
               Experience hassle-free short-term rentals with Adelaide's leading
               Airbnb management service.
             </Text>
-           <GetInTouch width={["100%", "100%", "60%", "50%", "40%", "30%"]} />
+            <GetInTouch width={["100%", "100%", "60%", "50%", "40%", "30%"]} />
 
             {/* <HStack
               w={["100%", "100%", "100%", "80%", "80%", "80%"]}
