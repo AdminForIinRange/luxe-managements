@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  Switch,
   Box,
   Divider,
   HStack,
@@ -34,7 +35,7 @@ import Image from "next/image";
 import GetInTouch from "../button/getInTouch/getInTouch";
 import GettingStarted from "../landingPage/gettingStarted/gettingStarted";
 
-const Navbar = ({}) => {
+const Navbar = ({ setRent, rent }) => {
   const [isTablet] = useMediaQuery("(max-width: 767px)");
   const [night, setNight] = useState(true);
   const [yValue, setYvalue] = useState(false);
@@ -57,6 +58,8 @@ const Navbar = ({}) => {
   }, [yValue]);
 
   const links = [
+    { name: "Rent", link: "#faq", onClick: null },
+
     {
       name: "Contact",
       link: "",
@@ -65,6 +68,7 @@ const Navbar = ({}) => {
       },
       speicals: true,
     },
+
     {
       name: "About Us",
       link: "#aboutUs",
@@ -236,41 +240,126 @@ const Navbar = ({}) => {
 
                   {links.map(({ name, link, speicals, onClick }, index) => (
                     <>
-                      <HStack
-                        border={"1px solid rgb(0, 0,0,0.25)"}
-                        rounded={"15px"}
-                        px={[5, 5, 5, 5, 5, 5]}
-                        py={[2, 2, 2, 2, 2, 2]}
-                        animation={" all 0.3s ease-in-out"}
-                        _hover={{
-                          bg: "black",
-                          color: speicals ? "white" : "white",
-                          cursor: "pointer",
-                 
-                        }}
-                        key={index}
-                        justify={"end"}
-                        align={"end"}
-                        onClick={onClick}
-                        bgClip={speicals ? "text" : "none"}
-                        bgGradient={
-                          speicals ? "linear(to-r, red, blue)" : "none"
-                        }
-                      >
-                        <Text
-                          whiteSpace={"nowrap"}
-                          fontSize={[
-                            "12px",
-                            "12px",
-                            "12px",
-                            "12px",
-                            "14px",
-                            "16px",
-                          ]}
-                        >
-                          <Link href={link}>{name}</Link>
-                        </Text>
-                      </HStack>
+                      {name === "Rent" ? (
+                        <>
+                          {" "}
+                          <HStack
+                            bg={!rent ? "gray.200" : "gray.200"}
+                            _hover={{
+                              cursor: "pointer",
+                            }}
+                            rounded={"15px"}
+                            animation={" all 0.3s ease-in-out"}
+                            key={index}
+                            justify={"end"}
+                            align={"end"}
+                            onClick={onClick}
+                            bgClip={speicals ? "text" : "none"}
+                            bgGradient={
+                              speicals ? "linear(to-r, red, blue)" : "none"
+                            }
+                          >
+                            <Box
+                              w={"100%"}
+                              h={"100%"}
+                              onClick={() => setRent(true)}
+                              as="a"
+                              href={"/rent"}
+                            >
+                              <Text
+                                _hover={{
+                                  color: "white",
+                                  cursor: "pointer",
+                                }}
+                                color={!rent ? "black" : "white"}
+                                p={"2"}
+                                px={"5"}
+                                rounded={"15px"}
+                                bg={!rent ? "gray.200" : "blue.200"}
+                                whiteSpace={"nowrap"}
+                                fontSize={[
+                                  "12px",
+                                  "12px",
+                                  "12px",
+                                  "12px",
+                                  "14px",
+                                  "16px",
+                                ]}
+                              >
+                                Rent
+                              </Text>
+                            </Box>
+                            <Box
+                              as="a"
+                              href={"/airbnb"}
+                              w={"100%"}
+                              h={"100%"}
+                              onClick={() => setRent(false)}
+                            >
+                              <Text
+                                _hover={{
+                                  bg: !rent ? "#FF385C" : "gray.200",
+                                  color: !rent ? "white" : "white",
+                                  cursor: "pointer",
+                                }}
+                                bg={!rent ? "#FF385C" : "gray.200"}
+                                p={"2"}
+                                px={"5"}
+                                rounded={"15px"}
+                                color={!rent ? "white" : "black"}
+                                whiteSpace={"nowrap"}
+                                fontSize={[
+                                  "12px",
+                                  "12px",
+                                  "12px",
+                                  "12px",
+                                  "14px",
+                                  "16px",
+                                ]}
+                              >
+                                Airbnb
+                              </Text>
+                            </Box>
+                          </HStack>{" "}
+                        </>
+                      ) : (
+                        <>
+                          <HStack
+                            border={"1px solid rgb(0, 0,0,0.25)"}
+                            rounded={"15px"}
+                            px={[5, 5, 5, 5, 5, 5]}
+                            py={[2, 2, 2, 2, 2, 2]}
+                            animation={" all 0.3s ease-in-out"}
+                            _hover={{
+                              bg: "black",
+                              color: speicals ? "white" : "white",
+                              cursor: "pointer",
+                            }}
+                            key={index}
+                            justify={"end"}
+                            align={"end"}
+                            onClick={onClick}
+                            bgClip={speicals ? "text" : "none"}
+                            bgGradient={
+                              speicals ? "linear(to-r, red, blue)" : "none"
+                            }
+                          >
+                            <Text
+                              whiteSpace={"nowrap"}
+                              fontSize={[
+                                "12px",
+                                "12px",
+                                "12px",
+                                "12px",
+                                "14px",
+                                "16px",
+                              ]}
+                            >
+                              <Link href={link}>{name}</Link>
+                            </Text>
+                          </HStack>
+                        </>
+                      )}
                     </>
                   ))}
                 </HStack>
