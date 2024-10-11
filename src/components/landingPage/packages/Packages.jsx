@@ -210,7 +210,7 @@ const Packages = () => {
           color={"black"}
           bgGradient="linear(to-r, magenta, pink)"
         >
-          Services tailored to your needs
+          Services Tailored To Your Needs
         </Text>
       </HStack>
       <HStack
@@ -242,7 +242,7 @@ const Packages = () => {
               color={"black"}
               bgGradient="linear(to-r, purple, yellow)"
             >
-              View our collective Packages
+              View Our Collective Packages
             </Text>
             <Text
               data-aos="fade-in"

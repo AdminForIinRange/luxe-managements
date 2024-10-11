@@ -124,7 +124,7 @@ const GettingStarted = () => {
               color={"black"}
               bgGradient="linear(to-r, teal, blue)"
             >
-              How we can get you get started
+              How We Can Get You Get Started
             </Text>
             <Text
               data-aos="fade-in"

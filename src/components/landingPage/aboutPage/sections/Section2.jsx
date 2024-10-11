@@ -139,7 +139,7 @@ const Section2 = ({ top2BoxIcons, bottom2BoxIcons }) => {
               color={"black"}
               bgGradient="linear(to-r, blue, green)"
             >
-              Manage your rentals with Professionals
+              Manage Your Rentals With Professionals
             </Text>
 
             <HStack

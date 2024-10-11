@@ -123,7 +123,7 @@ const Section1 = ({ topBoxIcons, bottomBoxIcons }) => {
               color={"black"}
               bgGradient="linear(to-r, purple, blue)"
             >
-              Say Goodbye to Hosting Hassles
+              Say Goodbye To Hosting Hassles
             </Text>
 
             <HStack

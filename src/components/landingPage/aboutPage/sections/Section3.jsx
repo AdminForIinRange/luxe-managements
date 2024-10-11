@@ -162,7 +162,7 @@ const Section3 = ({ top3BoxIcons, bottom3BoxIcons }) => {
               color={"black"}
               bgGradient="linear(to-r, orange, pink)"
             >
-              Enjoy our extensive services
+              Enjoy Our Extensive Services
             </Text>
 
             <HStack

@@ -237,17 +237,16 @@ const Navbar = ({}) => {
                   {links.map(({ name, link, speicals, onClick }, index) => (
                     <>
                       <HStack
-                      animation={"all 0.3s ease"}
                         border={"1px solid rgb(0, 0,0,0.25)"}
                         rounded={"15px"}
                         px={[5, 5, 5, 5, 5, 5]}
                         py={[2, 2, 2, 2, 2, 2]}
+                        animation={" all 0.3s ease-in-out"}
                         _hover={{
-
-
                           bg: "black",
-                          color: "white",
+                          color: speicals ? "white" : "white",
                           cursor: "pointer",
+                 
                         }}
                         key={index}
                         justify={"end"}
