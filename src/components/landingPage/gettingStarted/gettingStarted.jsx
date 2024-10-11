@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   HStack,
@@ -14,13 +16,17 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
+  useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { GoTriangleRight } from "react-icons/go";
 import Link from "next/link";
+import GetInTouch from "@/components/button/getInTouch/getInTouch";
 const GettingStarted = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const GettingStartedSteps = [
     {
       id: 1,
@@ -106,10 +112,7 @@ const GettingStarted = () => {
               </HStack>
             </HStack>
 
-
-
             <Text
-           
               w={["100%", "100%", "80%", "80%", "80%", "80%"]}
               data-aos="fade-in"
               mt={["15px", "15px", "15px", "15px", "15px", "15px"]}
@@ -136,52 +139,9 @@ const GettingStarted = () => {
               Learn how we can help you get started with personalized guidance
               and expert support every step of the way.
             </Text>
-            <HStack
-              mt={"25px"}
-              w={["100%", "100%", "60%", "50%", "40%", "30%"]}
-              h={"100%"}
-              justify={"end"}
-              align={"end"}
-              gap={"15px"}
-            >
-              <Box
-                transition={"all 0.3s ease"}
-                _hover={{
-                  bg: "black",
-                  color: "white",
-                }}
-                cursor={"pointer"}
-                borderRadius={"15px"}
-                //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                w={"100%"}
-                h={"50px"}
-                bg={"white"}
-                border={"1px solid rgb(0, 0,0,0.25)"}
-              >
-                {" "}
-                <HStack
-                  justify={"center"}
-                  align={"center"}
-                  w={"100%"}
-                  h={"100%"}
-                >
-                  <Text
-                  
-                   as={"a"}
-                   href="https://calendly.com/bhattaraianjesh123 "
-           target="_blank"
-                    fontSize={["12px", "16px", "14px", "14px", "16px", "16px"]}
-                    textAlign={"center"}
-                  >
-                    Get In Touch
-                  </Text>
-                </HStack>
-              </Box>
-            </HStack>
-
-         
+            <GetInTouch />
           </Box>
-       
+
           <Box
             mt={["50px", "50px", "50px", "50px", "50px", "50px"]}
             display={["block", "block", "block", "block", "block", "block"]}

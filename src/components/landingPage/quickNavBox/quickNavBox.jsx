@@ -15,6 +15,7 @@ import womenCalling from "../../../assets/img/womenCalling.jpg";
 import interior3 from "../../../assets/img/interior3.jpg";
 import interior5 from "../../../assets/img/interior5.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
+import GetInTouch from "@/components/button/getInTouch/getInTouch";
 
 const QuickNavBox = () => {
   const box = [
@@ -22,10 +23,11 @@ const QuickNavBox = () => {
       name: "Contact Us",
       desc: "Have questions? Reach out to our team for all your Airbnb management needs.",
 
-      link: "#",
+      link: "",
 
       speicals: "",
       img: womenCalling.src,
+      button: "Get in touch",
     },
     {
       name: "View our Services",
@@ -35,6 +37,7 @@ const QuickNavBox = () => {
 
       speicals: "",
       img: interior5.src,
+      button: "View Services",
     },
     {
       name: "View our Portfolio",
@@ -42,6 +45,7 @@ const QuickNavBox = () => {
       link: "#",
       speicals: "",
       img: interior3.src,
+      button: "View Portfolio",
     },
   ];
   return (
@@ -63,7 +67,7 @@ const QuickNavBox = () => {
           align={"start"}
           gap={["15px", "15px", "15px", "15px", "15px", "15px"]}
         >
-          {box.map(({ name, desc, img }, index) => (
+          {box.map(({ name, desc, img, button }, index) => (
             <VStack
               border={"1px solid rgb(0, 0,0,0.05)"}
               boxShadow={"rgba(0, 0, 0, 0.05) 0px 0px 10px"}
@@ -104,38 +108,42 @@ const QuickNavBox = () => {
                 rounded={"18px"}
                 zIndex={3}
               ></Box>
-              <HStack
-                mt={"5px"}
-                w={["100%", "100%", "100%", "100%", "100%", "100%"]}
-                justify={"end"}
-                align={"end"}
-                gap={"15px"}
-              >
-                <Box
-                  transition={"all 0.3s ease"}
-                  _hover={{
-                    bg: "black",
-                    color: "white",
-                  }}
-                  cursor={"pointer"}
-                  borderRadius={"15px"}
-                  //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
-                  w={"100%"}
-                  h={"50px"}
-                  bg={"white"}
-                  border={"1px solid rgb(0, 0,0,0.25)"}
+              {button == "Get in touch" ? (
+                <GetInTouch width={"100%"} mt={"5px"}  /> 
+              ) : (
+                <HStack
+                  mt={"5px"}
+                  w={["100%", "100%", "100%", "100%", "100%", "100%"]}
+                  justify={"end"}
+                  align={"end"}
+                  gap={"15px"}
                 >
-                  {" "}
-                  <HStack
-                    justify={"center"}
-                    align={"center"}
+                  <Box
+                    transition={"all 0.3s ease"}
+                    _hover={{
+                      bg: "black",
+                      color: "white",
+                    }}
+                    cursor={"pointer"}
+                    borderRadius={"15px"}
+                    //   boxShadow={"rgba(0, 0, 0, 0.2) 0px 0px 10px"}
                     w={"100%"}
-                    h={"100%"}
+                    h={"50px"}
+                    bg={"white"}
+                    border={"1px solid rgb(0, 0,0,0.25)"}
                   >
-                    <Text textAlign={"center"}>View More</Text>
-                  </HStack>
-                </Box>
-              </HStack>
+                    {" "}
+                    <HStack
+                      justify={"center"}
+                      align={"center"}
+                      w={"100%"}
+                      h={"100%"}
+                    >
+                      <Text textAlign={"center"}>{button}</Text>
+                    </HStack>
+                  </Box>
+                </HStack>
+              )}
             </VStack>
           ))}
         </HStack>
