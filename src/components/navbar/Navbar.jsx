@@ -10,6 +10,14 @@ import {
   Center,
   useMediaQuery,
   Input,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -23,12 +31,14 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import Image from "next/image";
+import GetInTouch from "../button/getInTouch/getInTouch";
+import GettingStarted from "../landingPage/gettingStarted/gettingStarted";
 
 const Navbar = ({}) => {
   const [isTablet] = useMediaQuery("(max-width: 767px)");
   const [night, setNight] = useState(true);
   const [yValue, setYvalue] = useState(false);
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -47,13 +57,25 @@ const Navbar = ({}) => {
   }, [yValue]);
 
   const links = [
-    { name: "About Us", link: "#aboutUs" },
-    { name: "Services  ", link: "#services" },
-    { name: "FAQ", link: "#faq" },
-    { name: "test", link: "#blog" },
-    { name: "test", link: "#faq" },
+    {
+      name: "Contact",
+      link: "",
+      onClick: () => {
+        isOpen ? onClose() : onOpen();
+      },
+      speicals: true,
+    },
+    {
+      name: "About Us",
+      link: "#aboutUs",
+      onClick: null,
+    },
+    { name: "Services  ", link: "#services", onClick: null },
+    { name: "FAQ", link: "#faq", onClick: null },
+    { name: "test", link: "#faq", onClick: null },
   ];
 
+  const style = {};
   return (
     <>
       {/* Mobile Navbar */}
@@ -212,14 +234,17 @@ const Navbar = ({}) => {
                     </Box>
                   </HStack>
 
-                  {links.map(({ name, link }, index) => (
+                  {links.map(({ name, link, speicals, onClick }, index) => (
                     <>
                       <HStack
+                      animation={"all 0.3s ease"}
                         border={"1px solid rgb(0, 0,0,0.25)"}
                         rounded={"15px"}
                         px={[5, 5, 5, 5, 5, 5]}
                         py={[2, 2, 2, 2, 2, 2]}
                         _hover={{
+
+
                           bg: "black",
                           color: "white",
                           cursor: "pointer",
@@ -227,6 +252,11 @@ const Navbar = ({}) => {
                         key={index}
                         justify={"end"}
                         align={"end"}
+                        onClick={onClick}
+                        bgClip={speicals ? "text" : "none"}
+                        bgGradient={
+                          speicals ? "linear(to-r, red, blue)" : "none"
+                        }
                       >
                         <Text
                           whiteSpace={"nowrap"}
@@ -250,6 +280,22 @@ const Navbar = ({}) => {
           </HStack>
         </Box>
       )}
+
+      <Modal isOpen={isOpen} onClose={onClose} size={"3xl"} height={"100%"}>
+        <ModalOverlay />
+        <ModalContent bgColor={"#FBFCFD"}>
+          <ModalBody>
+            <>
+              <Box p={0} rounded={"lg"} h={"700px"} w={"100%"}>
+                <iframe
+                  style={{ width: "100%", height: "100%", border: "none" }}
+                  src="https://calendly.com/bhattaraianjesh123"
+                ></iframe>
+              </Box>
+            </>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </>
   );
 };
