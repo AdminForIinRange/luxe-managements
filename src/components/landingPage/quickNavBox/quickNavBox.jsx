@@ -108,9 +108,7 @@ const QuickNavBox = () => {
                 rounded={"18px"}
                 zIndex={3}
               ></Box>
-              {button == "Get in touch" ? (
-                <GetInTouch width={"100%"} mt={"5px"} />
-              ) : (
+           
                 <HStack
                   mt={"5px"}
                   w={["100%", "100%", "100%", "100%", "100%", "100%"]}
@@ -139,11 +137,11 @@ const QuickNavBox = () => {
                       w={"100%"}
                       h={"100%"}
                     >
-                      <Text textAlign={"center"}>{button}</Text>
+                      <Text as={"a"} textAlign={"center"}>{button}</Text>
                     </HStack>
                   </Box>
                 </HStack>
-              )}
+         
             </VStack>
           ))}
         </HStack>

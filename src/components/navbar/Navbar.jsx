@@ -97,7 +97,7 @@ const Navbar = ({ setRent, rent }) => {
             <HStack w={"100%"} h={"100%"} justify={"left"} align={"start"}>
               {" "}
               <Box w={["100px", "100px", "400px", "400px", "400px", "400px"]}>
-                <a href="/">
+                <a href="/airbnb">
                   {" "}
                   <Image src={Logo} width={"100%"} height={"100%"} alt="logo" />
                 </a>
@@ -179,7 +179,7 @@ const Navbar = ({ setRent, rent }) => {
                   <Box
                     w={["500px", "500px", "400px", "400px", "400px", "250px"]}
                   >
-                    <a href="/">
+                    <a href="/airbnb">
                       {" "}
                       <Image
                         src={Logo}
