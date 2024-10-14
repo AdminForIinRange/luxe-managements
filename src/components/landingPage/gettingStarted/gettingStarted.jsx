@@ -157,7 +157,7 @@ const GettingStarted = () => {
             {" "}
             {GettingStartedSteps.slice(0, 4).map(
               ({ id, title, description }, index) => (
-                <VStack key={id} w={"100%"} align={"center"} justify={"start"}>
+                <VStack key={id} w={"100%"} align={"center"} justify={"start"} >
                   <HStack
                     w={"100%"}
                     h={"100%"}
