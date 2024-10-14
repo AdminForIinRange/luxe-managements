@@ -183,8 +183,8 @@ const Navbar = ({ setRent, rent }) => {
                       {" "}
                       <Image
                         src={Logo}
-                        width={"100%"}
-                        height={"100%"}
+                        width={"1000px"}
+                        height={"1000px"}
                         alt="logo"
                       />
                     </a>
@@ -236,6 +236,49 @@ const Navbar = ({ setRent, rent }) => {
                         </Text>
                       </HStack>
                     </Box>
+
+                    <HStack
+      h={["80%", "80%", "80%", "80%", "80%", "80%"]}
+      
+                      display={[
+                        "block",
+                        "block",
+                        "block",
+                        "none",
+                        "none",
+                        "none",
+                      ]}
+                      border={"1px solid rgb(0, 0,0,0.25)"}
+                      rounded={"15px"}
+                      px={[5, 5, 5, 5, 5, 5]}
+                      py={[2, 2, 2, 2, 2, 2]}
+                      animation={" all 0.3s ease-in-out"}
+                      _hover={{
+                        bg: "black",
+                        color: "white",
+                        cursor: "pointer",
+                      }}
+                      justify={"center"}
+                      align={"center"}
+                    >
+                      <HStack w={"100%"}  h={"100%"}     justify={"center"}
+                      align={"center"}>
+                      <Text
+                        whiteSpace={"nowrap"}
+                        fontSize={[
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                          "14px",
+                          "16px",
+                        ]}
+                      >
+                        <FaBars size={"20px"} color={"black"} />
+                      </Text>
+                      </HStack>
+                      
+                    </HStack>
                   </HStack>
 
                   {links.map(({ name, link, speicals, onClick }, index) => (
@@ -244,6 +287,14 @@ const Navbar = ({ setRent, rent }) => {
                         <>
                           {" "}
                           <HStack
+                            display={[
+                              "none",
+                              "none",
+                              "none",
+                              "flex",
+                              "flex",
+                              "flex",
+                            ]}
                             bg={!rent ? "gray.200" : "gray.200"}
                             _hover={{
                               cursor: "pointer",
@@ -325,6 +376,14 @@ const Navbar = ({ setRent, rent }) => {
                       ) : (
                         <>
                           <HStack
+                            display={[
+                              "none",
+                              "none",
+                              "none",
+                              "flex",
+                              "flex",
+                              "flex",
+                            ]}
                             border={"1px solid rgb(0, 0,0,0.25)"}
                             rounded={"15px"}
                             px={[5, 5, 5, 5, 5, 5]}
